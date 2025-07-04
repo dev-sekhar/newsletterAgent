@@ -4,48 +4,62 @@ Here is your weekly roundup of the latest news in the world of Blockchain.
 
 
 
+## 🔷 DeFi
+
+
+### [Bitget Wallet Integrates Katana Mainnet, Tapping 1 Billion KAT Incentives Amid DeFi Yield Revival](https://www.globenewswire.com/news-release/2025/07/03/3109990/0/en/Bitget-Wallet-Integrates-Katana-Mainnet-Tapping-1-Billion-KAT-Incentives-Amid-DeFi-Yield-Revival.html)
+*   **Source:** GlobeNewswire
+*   **Published:** Jul 03, 2025
+*   **Summary:** Bitget Wallet has integrated Katana mainnet, allowing users to access 1 billion KAT incentives. This integration aims to tap into the DeFi yield revival, providing users with new investment opportunities. The move positions Bitget Wallet as a leading non-custodial crypto wallet in the DeFi space.
+---
+
+
 
 
 ## 🔷 Crypto
 
 
-### [Veteran macro investor delivers blunt verdict on public-private market war](https://www.thestreet.com/crypto/markets/veteran-macro-investor-delivers-blunt-verdict-on-public-private-market-war)
-*   **Source:** TheStreet
+### [Asset Managers: Blockchain Can Modernize Your Operations and Reinvigorate Your Product Line](https://www.coindesk.com/opinion/2025/07/03/asset-managers-blockchain-can-modernize-your-operations-and-reinvigorate-your-product-line)
+*   **Source:** CoinDesk
 *   **Published:** Jul 03, 2025
-*   **Summary:** Raoul Pal predicts the war between public and private markets is ending as Robinhood and Kraken expand into tokenized stocks, signaling a shift towards greater accessibility and mainstream adoption.
+*   **Summary:** Blockchain is a modern financial operating system that can modernize asset managers' operations and reinvigorate their product line, according to Tuongvy Le. It's not a speculative detour, but a technology that can bring efficiency and transparency to the financial industry. By embracing blockchain, asset managers can stay ahead of the curve and adapt to changing market conditions.
 ---
 
-### [As American As Cryptocurrency](https://www.forbes.com/sites/johnberlau/2025/07/03/as-american-as-cryptocurrency/)
-*   **Source:** Forbes
+### [Holiday promotion is open for a limited time, the time to invest has come](https://www.globenewswire.com/news-release/2025/07/03/3110029/0/en/Holiday-promotion-is-open-for-a-limited-time-the-time-to-invest-has-come.html)
+*   **Source:** GlobeNewswire
 *   **Published:** Jul 03, 2025
-*   **Summary:** The article discusses how the Founding Fathers, particularly George Washington, would likely appreciate the cryptocurrency revolution due to its decentralized and democratic nature, mirroring the principles of the American Revolution.
+*   **Summary:** PS Miner is offering a limited-time promotion to celebrate July 4th, providing a 10% bonus for users who recharge their member accounts between 0:00 and 23:59 on July 4th. The promotion is only available for a limited time and applies to recharges of any amount. This offer is a great opportunity for users to invest and earn a bonus.
 ---
 
-### [Bitmine Immersion - BMNR stock soars 70% in wild morning rally, smashes 52-week high - what's driving the rally?](https://economictimes.indiatimes.com/news/international/us/bitmine-immersion-bmnr-stock-soars-70-in-wild-morning-rally-smashes-52-week-high-whats-driving-the-rally/articleshow/122232169.cms)
-*   **Source:** The Times of India
+### [Cardano’s ADA Rises as Altcoin Trading Volume Surges Amid Broader Rally](https://www.coindesk.com/markets/2025/07/03/cardano-s-ada-rises-as-altcoin-trading-volume-surges-amid-broader-rally)
+*   **Source:** CoinDesk
 *   **Published:** Jul 03, 2025
-*   **Summary:** Bitmine Immersion stock experienced a 70% surge in morning trading, setting a new 52-week high. The stock's price jumped to $97.00, outpacing average trading volume. The rally's cause remains unclear, sparking market attention and speculation.
----
-
-### [The Great Bitcoin Power Shift Has Large Holders Dumping 500,000 Coins](https://finance.yahoo.com/news/great-bitcoin-power-shift-large-150051087.html)
-*   **Source:** Yahoo Entertainment
-*   **Published:** Jul 03, 2025
-*   **Summary:** A power shift is occurring in the Bitcoin market, with large holders dumping 500,000 coins. This silent transfer of control is reshaping the $2.1 trillion market. The exact reasons behind the dump are unclear, but it may be a sign of a market correction.
----
-
-### [HIVE Digital Technologies’ AI Cloud Earnings Tripled, Here Is What You Should Know?](https://finance.yahoo.com/news/hive-digital-technologies-ai-cloud-145721258.html)
-*   **Source:** Yahoo Entertainment
-*   **Published:** Jul 03, 2025
-*   **Summary:** HIVE Digital Technologies' AI cloud earnings tripled, making it one of the 10 most undervalued AI stocks to buy according to analysts. The company's stock performance is expected to improve due to its growing revenue. The article highlights the potential of HIVE Digital Technologies in the AI and cloud computing sectors.
+*   **Summary:** Cardano's native token ADA has reached a 5-month high due to increased trading volume amid global economic uncertainty and technical developments. The surge in trading volume is a sign of growing interest in the cryptocurrency market. The rally is a positive sign for the cryptocurrency's future prospects.
 ---
 
 
 
 
+## 🔷 NFTs
+
+
+### [New Anime Studio Azuki Partners With Will & Jada Pinkett Smith’s Westbrook To Build The ‘Next Generation Of Anime’](https://www.cartoonbrew.com/anime/will-smith-jada-pinkett-smith-westbrook-inc-studio-azuki-248220.html)
+*   **Source:** Cartoon Brew
+*   **Published:** Jul 03, 2025
+*   **Summary:** Westbrook Inc. partners with Studio Azuki to develop original anime IPs and adaptations. The partnership aims to build the 'next generation of anime'. The collaboration will focus on creating new anime content.
+---
 
 
 
 
+## 🔷 Metaverse
+
+
+### [REAPER ACTUAL Is an Open World Persistent Shooter from the Makers of PlanetSide 2](https://wccftech.com/reaper-actual-is-an-open-world-persistent-shooter-from-the-makers-of-planetside-2/)
+*   **Source:** Wccftech
+*   **Published:** Jul 03, 2025
+*   **Summary:** REAPER ACTUAL is an open-world persistent first-person shooter game announced by Distinct Possibility Studios, led by former PlanetSide 2 developers. The game will feature a persistent world, allowing players to interact with each other and the environment. The studio aims to create a unique gaming experience with REAPER ACTUAL.
+---
 
 
 
@@ -53,16 +67,22 @@ Here is your weekly roundup of the latest news in the world of Blockchain.
 ## 🔷 Other
 
 
-### [This AI Startup Cracks Open Pre-IPO Investing For Everyone](https://www.forbes.com/sites/torconstantino/2025/07/03/this-ai-startup-cracks-open-pre-ipo-investing-for-everyone/)
-*   **Source:** Forbes
+### [Tech-Driven Resilience: Strategies to Safeguard Operations Across Borders](https://socialnomics.net/2025/07/03/tech-driven-resilience-strategies-to-safeguard-operations-across-borders/)
+*   **Source:** Socialnomics.net
 *   **Published:** Jul 03, 2025
-*   **Summary:** Jarsy, an AI startup, allows everyday investors to access pre-IPO companies like SpaceX, Stripe, and Anthropic for $10. Backed by Breyer Capital, Jarsy aims to democratize pre-IPO investing. This move could potentially disrupt traditional venture capital and IPO processes.
+*   **Summary:** The article discusses the importance of resilience in global business operations, highlighting strategies to safeguard operations across borders in the face of geopolitical tensions, pandemics, and other forces.
 ---
 
-### [India’s digital supply chain revolution: Turning e-waste into a trillion-dollar green opportunity](https://economictimes.indiatimes.com/news/economy/policy/indias-digital-supply-chain-revolution-turning-e-waste-into-a-trillion-dollar-green-opportunity/articleshow/122229723.cms)
-*   **Source:** The Times of India
+### [The Percentage of Tasks AI Agents Are Currently Failing At May Spell Trouble for the Industry](https://futurism.com/ai-agents-failing-industry)
+*   **Source:** Futurism
 *   **Published:** Jul 03, 2025
-*   **Summary:** India's digital economy faces an e-waste challenge, with millions of tons generated annually. Supply Chain 4.0, integrating AI, IoT, and blockchain, offers a technology-driven solution for sustainable e-waste management. This approach has the potential to create a trillion-dollar green opportunity.
+*   **Summary:** The article discusses the potential issues in the AI industry due to the high failure rate of AI agents in completing tasks. Since the emergence of ChatGPT, venture capitalist investments in AI have increased significantly. The article suggests that this may spell trouble for the industry if the agents are not able to deliver as expected.
+---
+
+### [Generative AI Fintech Market Report 2025, with Profiles of 25 Players including Azilen Technologies, Coherent Solutions, Genie AI, Google, IBM, Mostly AI, OpenAI, Rishabh Software, Salesforce, and more](https://www.globenewswire.com/news-release/2025/07/03/3109946/28124/en/Generative-AI-Fintech-Market-Report-2025-with-Profiles-of-25-Players-including-Azilen-Technologies-Coherent-Solutions-Genie-AI-Google-IBM-Mostly-AI-OpenAI-Rishabh-Software-Salesfor.html)
+*   **Source:** GlobeNewswire
+*   **Published:** Jul 03, 2025
+*   **Summary:** The article discusses the potential of generative AI in fintech, highlighting its applications in fraud detection, investment optimization, customer engagement, and compliance automation. The report profiles 25 players in the market, including Azilen Technologies, Coherent Solutions, and Google. The demand for personalized solutions is driving the adoption of generative AI in fintech.
 ---
 
 
