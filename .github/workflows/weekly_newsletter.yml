@@ -3,62 +3,56 @@
 name: Generate Weekly Newsletter
 
 on:
-  # Schedule to run every Sunday at 08:00 UTC (you can change this)
   schedule:
     - cron: '0 8 * * 0'
-
-  # Allows you to run this workflow manually from the GitHub Actions tab
   workflow_dispatch:
+    inputs:
+      keyword:
+        description: 'The keyword to search for news articles'
+        required: true
+        default: 'Blockchain'
+        type: string
 
 jobs:
   build-and-publish:
-    # Use the latest version of Ubuntu for the runner
     runs-on: ubuntu-latest
+    
+    # ADD THIS PERMISSIONS BLOCK
+    permissions:
+      contents: write
 
     steps:
-      # Step 1: Check out your repository's code
+      # ... the rest of your file is exactly the same ...
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Set up the Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-          cache: 'pip' # Caches dependencies for faster builds
+          cache: 'pip'
 
-      # Step 3: Install the required Python libraries
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Step 4: Run the agent script to generate the newsletter
       - name: Run the agent to generate newsletter
         env:
-          # These secrets are securely passed as environment variables
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          KEYWORD_INPUT: ${{ inputs.keyword }}
         run: |
           python main.py
 
-      # Step 5: Commit the new newsletter and updated database back to the repo
       - name: Commit and push the new files
         run: |
-          # Configure git with a bot user
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
-          # Add the generated markdown file and the updated database
           git add *.md *.db
-          
-          # Check if there are any changes to commit to avoid empty commits
           if git diff --staged --quiet; then
             echo "No new articles found. No changes to commit."
           else
-            # Commit the changes with a descriptive message
             git commit -m "📰 Automated Weekly Newsletter - $(date -u +'%Y-%m-%d')"
-            
-            # Push the changes back to the main branch
             git push
           fi
