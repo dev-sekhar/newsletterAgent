@@ -1,5 +1,10 @@
+# requirements.txt
+groq
 requests
 python-dotenv
-groq
 dateparser
 jinja2
+# --- New LangChain Libraries ---
+langchain
+langchain-groq
+langchain-community
