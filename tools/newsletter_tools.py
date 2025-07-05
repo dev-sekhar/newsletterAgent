@@ -1,5 +1,3 @@
-# tools/newsletter_tools.py
-
 import os
 import requests
 import groq
@@ -13,7 +11,7 @@ from database import setup_database, is_url_processed, add_url_to_db
 
 
 class NewsletterPipeline:
-    # ... The NewsletterPipeline class is completely unchanged ...
+
     def __init__(self, config):
         self.config = config
         self.groq_client = groq.Groq(api_key=config['groq_api_key'])
@@ -74,7 +72,7 @@ class NewsletterPipeline:
         ) for article in articles}
         if not all_sources:
             return categorized_content
-        # --- FIX: ADDED 'JSON' TO THE PROMPT ---
+
         prompt = f"""You are a meticulous senior news editor. Review the following list of news sources: {list(all_sources)}. Your task is to identify and return only the sources that are well-known, reputable, and high-quality for news on business and technology. Exclude blogs, press release aggregators, and unknown entities. Return a valid JSON object with a single key "approved_sources" which is a list of strings of the sources you approve. Example: {{"approved_sources": ["Reuters", "TechCrunch", "Bloomberg"]}}"""
         try:
             response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[
@@ -98,12 +96,9 @@ class NewsletterPipeline:
         return template.render(keyword=keyword, date=datetime.now().strftime('%B %d, %Y'), classified_articles=content)
 
 
-# --- ROBUST TOOL DEFINITIONS WITH SINGLE DICT INPUT ---
-
 @tool
 def create_newsletter_draft(keyword: str) -> str:
     """Creates a draft of the newsletter for a given topic. This is the first step."""
-    # ... (function body is unchanged)
     print("\nTOOL: `create_newsletter_draft` called.")
     config = {'groq_api_key': os.getenv("GROQ_API_KEY"), 'news_api_key': os.getenv("NEWS_API_KEY"), 'model_name': "llama3-8b-8192",
               'max_articles_per_category': 5, 'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"]}
@@ -123,19 +118,44 @@ def create_newsletter_draft(keyword: str) -> str:
 
 
 @tool
-def review_newsletter_draft(review_input: dict) -> str:
+def review_newsletter_draft(review_input: dict | str) -> str:
     """
-    Reviews a newsletter draft. Input must be a JSON object with two keys: 'newsletter_draft' (the full markdown text) and 'topic' (the original topic string).
+    Reviews a newsletter draft. Input can be a JSON object OR a string representation of a JSON object with two keys: 'newsletter_draft' (the full markdown text) and 'topic' (the original topic string).
     Returns a JSON object with 'decision' ('approve' or 'reject') and 'reason'.
     """
     print("\nTOOL: `review_newsletter_draft` called.")
-    newsletter_draft = review_input.get('newsletter_draft')
-    topic = review_input.get('topic')
-    if not newsletter_draft or not topic:
-        return json.dumps({"decision": "reject", "reason": "Input error: 'newsletter_draft' and 'topic' keys are required."})
+
+    try:
+        # If the agent passes a string, try to parse it as JSON
+        if isinstance(review_input, str):
+            # A common issue is the agent using single quotes, which is invalid JSON.
+            # We can replace them with double quotes for a more robust parse.
+            review_input = json.loads(review_input.replace("'", "\""))
+
+        newsletter_draft = review_input.get('newsletter_draft')
+        topic = review_input.get('topic')
+
+        if not newsletter_draft or not topic:
+            return json.dumps({"decision": "reject", "reason": "Input error: 'newsletter_draft' and 'topic' keys are required."})
+
+    except (json.JSONDecodeError, TypeError) as e:
+        return json.dumps({"decision": "reject", "reason": f"Input error: The provided input was not a valid dictionary or JSON string. Error: {e}"})
 
     client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
-    prompt = f"""You are a meticulous Editor-in-Chief... (Your full review prompt)"""
+    prompt = f"""
+    You are a meticulous Editor-in-Chief. Your task is to review the following newsletter draft on the topic of '{topic}'.
+
+    Perform two checks:
+    1.  **Quality & Sufficiency:** Is the newsletter substantial? A good newsletter should have at least 3 categories with articles. If it's too short or empty, reject it.
+    2.  **Relevance:** Read each article's summary. Is every single article genuinely related to '{topic}'? If you find any off-topic articles, reject the draft and mention which articles are problematic.
+
+    Return your final verdict as a single, valid JSON object with two keys: "decision" (which must be "approve" or "reject") and "reason" (a brief explanation for your decision).
+
+    Newsletter Draft:
+    ---
+    {newsletter_draft}
+    ---
+    """
     try:
         response = client.chat.completions.create(model="llama3-70b-8192", messages=[
                                                   {"role": "user", "content": prompt}], temperature=0, response_format={"type": "json_object"})
