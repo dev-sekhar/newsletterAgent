@@ -11,18 +11,15 @@ from jinja2 import Environment, FileSystemLoader
 from langchain_core.tools import tool
 from database import setup_database, is_url_processed, add_url_to_db
 
-# --- This class holds the logic for our pipeline steps ---
-
 
 class NewsletterPipeline:
+    # ... The NewsletterPipeline class is completely unchanged ...
     def __init__(self, config):
         self.config = config
         self.groq_client = groq.Groq(api_key=config['groq_api_key'])
-        # Use a faster model for simple tasks, and a more powerful one for complex tasks
         self.fast_model = "llama3-8b-8192"
         self.smart_model = "llama3-70b-8192"
 
-    # ... fetch_all_articles, curate_selection, assemble_newsletter methods are unchanged ...
     def fetch_all_articles(self, keyword):
         print("PIPELINE STEP: Fetching all articles...")
         since_date = (datetime.now() - timedelta(days=7)
@@ -34,13 +31,51 @@ class NewsletterPipeline:
         response.raise_for_status()
         return response.json().get('articles', [])
 
+    def categorize_and_summarize_all(self, articles):
+        print("PIPELINE STEP: Categorizing and summarizing all articles...")
+        processed_articles = []
+        for article in articles:
+            if is_url_processed(article['url']):
+                continue
+            if not article.get('title') or "[Removed]" in article.get('title'):
+                continue
+            try:
+                cat_prompt = f"Categorize the following article into ONE of these categories: {self.config['categories']}. Article Title: \"{article['title']}\". Return a JSON object with one key: \"category\". Example: {{\"category\": \"DeFi\"}}"
+                cat_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
+                                                                        {"role": "user", "content": cat_prompt}], temperature=0, response_format={"type": "json_object"})
+                category = json.loads(cat_response.choices[0].message.content).get(
+                    "category", "Other")
+                if category not in self.config['categories']:
+                    category = "Other"
+                sum_prompt = f"Write a concise, 3-sentence summary for the following article. Article Title: \"{article['title']}\". Article Description: \"{article.get('description', '')}\". Return a JSON object with one key: \"summary\". Example: {{\"summary\": \"This is a summary.\"}}"
+                sum_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
+                                                                        {"role": "user", "content": sum_prompt}], temperature=0, response_format={"type": "json_object"})
+                summary = json.loads(
+                    sum_response.choices[0].message.content).get("summary")
+                if category and summary:
+                    processed_articles.append({'title': article['title'], 'url': article['url'], 'source': article['source']['name'], 'published_at': dateparser.parse(
+                        article['publishedAt']).strftime('%b %d, %Y'), 'category': category, 'summary': summary})
+                    add_url_to_db(article['url'])
+                else:
+                    print(
+                        f"  > Skipping article '{article['title']}': Failed to get both category and summary.")
+            except Exception as e:
+                print(
+                    f"  > Skipping article '{article['title']}' due to a critical error: {e}")
+        categorized_content = {category: []
+                               for category in self.config['categories']}
+        for p_article in processed_articles:
+            categorized_content[p_article['category']].append(p_article)
+        return categorized_content
+
     def curate_selection(self, categorized_content):
         print("PIPELINE STEP: Curating final selection...")
         all_sources = {article['source'] for articles in categorized_content.values(
         ) for article in articles}
         if not all_sources:
             return categorized_content
-        prompt = f"""You are a meticulous senior news editor... (Your full reputation prompt)"""
+        # --- FIX: ADDED 'JSON' TO THE PROMPT ---
+        prompt = f"""You are a meticulous senior news editor. Review the following list of news sources: {list(all_sources)}. Your task is to identify and return only the sources that are well-known, reputable, and high-quality for news on business and technology. Exclude blogs, press release aggregators, and unknown entities. Return a valid JSON object with a single key "approved_sources" which is a list of strings of the sources you approve. Example: {{"approved_sources": ["Reuters", "TechCrunch", "Bloomberg"]}}"""
         try:
             response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[
                                                                 {"role": "user", "content": prompt}], temperature=0, response_format={"type": "json_object"})
@@ -62,69 +97,13 @@ class NewsletterPipeline:
         template = env.get_template('newsletter_template.md')
         return template.render(keyword=keyword, date=datetime.now().strftime('%B %d, %Y'), classified_articles=content)
 
-    # --- REWRITTEN AND MORE ROBUST METHOD ---
 
-    def categorize_and_summarize_all(self, articles):
-        print("PIPELIPNE STEP: Categorizing and summarizing all articles...")
-        processed_articles = []
-        for article in articles:
-            if is_url_processed(article['url']):
-                continue
-            if not article.get('title') or "[Removed]" in article.get('title'):
-                continue
-
-            try:
-                # --- STEP 1: CATEGORIZE (Simple, reliable task) ---
-                cat_prompt = f"Categorize the following article into ONE of these categories: {self.config['categories']}. Article Title: \"{article['title']}\". Return a JSON object with one key: \"category\". Example: {{\"category\": \"DeFi\"}}"
-                cat_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
-                                                                        {"role": "user", "content": cat_prompt}], temperature=0, response_format={"type": "json_object"})
-                category = json.loads(cat_response.choices[0].message.content).get(
-                    "category", "Other")
-                if category not in self.config['categories']:
-                    category = "Other"
-
-                # --- STEP 2: SUMMARIZE (Simple, reliable task) ---
-                sum_prompt = f"Write a concise, 3-sentence summary for the following article. Article Title: \"{article['title']}\". Article Description: \"{article.get('description', '')}\". Return a JSON object with one key: \"summary\". Example: {{\"summary\": \"This is a summary.\"}}"
-                sum_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
-                                                                        {"role": "user", "content": sum_prompt}], temperature=0, response_format={"type": "json_object"})
-                summary = json.loads(
-                    sum_response.choices[0].message.content).get("summary")
-
-                # --- STEP 3: COMBINE ---
-                if category and summary:
-                    processed_articles.append({
-                        'title': article['title'], 'url': article['url'], 'source': article['source']['name'],
-                        'published_at': dateparser.parse(article['publishedAt']).strftime('%b %d, %Y'),
-                        'category': category,
-                        'summary': summary
-                    })
-                    add_url_to_db(article['url'])
-                else:
-                    print(
-                        f"  > Skipping article '{article['title']}': Failed to get both category and summary.")
-
-            except Exception as e:
-                print(
-                    f"  > Skipping article '{article['title']}' due to a critical error: {e}")
-
-        # Now, group the successfully processed articles by category
-        categorized_content = {category: []
-                               for category in self.config['categories']}
-        for p_article in processed_articles:
-            categorized_content[p_article['category']].append(p_article)
-
-        return categorized_content
-
-# --- TOOL DEFINITIONS (UNCHANGED) ---
-
+# --- ROBUST TOOL DEFINITIONS WITH SINGLE DICT INPUT ---
 
 @tool
 def create_newsletter_draft(keyword: str) -> str:
-    """
-    Creates a complete draft of the newsletter for a given topic. This should be the first tool used.
-    It performs fetching, categorization, curation, and assembly.
-    The output is the full newsletter content as a single markdown string.
-    """
+    """Creates a draft of the newsletter for a given topic. This is the first step."""
+    # ... (function body is unchanged)
     print("\nTOOL: `create_newsletter_draft` called.")
     config = {'groq_api_key': os.getenv("GROQ_API_KEY"), 'news_api_key': os.getenv("NEWS_API_KEY"), 'model_name': "llama3-8b-8192",
               'max_articles_per_category': 5, 'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"]}
@@ -144,13 +123,17 @@ def create_newsletter_draft(keyword: str) -> str:
 
 
 @tool
-def review_newsletter_draft(newsletter_draft: str, topic: str) -> str:
+def review_newsletter_draft(review_input: dict) -> str:
     """
-    Reviews a newsletter draft for quality and relevance. This is a critical quality assurance step that should be used after creating a draft.
-    Input is the full markdown text of the newsletter and the original topic.
-    Returns a JSON object with a 'decision' ('approve' or 'reject') and a 'reason'.
+    Reviews a newsletter draft. Input must be a JSON object with two keys: 'newsletter_draft' (the full markdown text) and 'topic' (the original topic string).
+    Returns a JSON object with 'decision' ('approve' or 'reject') and 'reason'.
     """
     print("\nTOOL: `review_newsletter_draft` called.")
+    newsletter_draft = review_input.get('newsletter_draft')
+    topic = review_input.get('topic')
+    if not newsletter_draft or not topic:
+        return json.dumps({"decision": "reject", "reason": "Input error: 'newsletter_draft' and 'topic' keys are required."})
+
     client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
     prompt = f"""You are a meticulous Editor-in-Chief... (Your full review prompt)"""
     try:
@@ -163,10 +146,7 @@ def review_newsletter_draft(newsletter_draft: str, topic: str) -> str:
 
 @tool
 def publish_final_newsletter(newsletter_markdown: str) -> str:
-    """
-    Saves the final, approved newsletter content to a file. This is the last tool to be used in the workflow, only after a draft has been successfully reviewed and approved.
-    Input must be the full markdown string of the newsletter.
-    """
+    """Saves the final, approved newsletter. Input is the full markdown string."""
     print("\nTOOL: `publish_final_newsletter` called.")
     filename = f"newsletter_{datetime.now().strftime('%Y-%m-%d')}.md"
     with open(filename, 'w', encoding='utf-8') as f:
