@@ -7,54 +7,34 @@ from langchain_groq import ChatGroq
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain import hub
 
-# Import our new, powerful tool
-from tools.newsletter_tools import run_newsletter_creation_pipeline
+# Import our new, granular tools
+from tools.newsletter_tools import create_newsletter_draft, review_newsletter_draft, publish_final_newsletter
 
 
 def main():
-    """
-    This is the main entry point for the AGENTIC Newsletter Workflow.
-    It creates a Master Reasoning Agent and gives it a high-level goal.
-    """
     load_dotenv()
-
     print("--- Initializing Master Reasoning Agent ---")
 
-    # 1. The LLM (The "Brain" of the agent)
-    # We use a powerful model for reasoning tasks.
-    llm = ChatGroq(
-        model_name="llama3-70b-8192",
-        temperature=0,
-        api_key=os.getenv("GROQ_API_KEY")
-    )
+    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0,
+                   api_key=os.getenv("GROQ_API_KEY"))
 
-    # 2. The Toolbox
-    # The Master Agent has access to all functions decorated with @tool.
-    tools = [run_newsletter_creation_pipeline]
+    # Give the agent its new, more capable toolbox
+    tools = [
+        create_newsletter_draft,
+        review_newsletter_draft,
+        publish_final_newsletter
+    ]
 
-    # 3. The Prompt (The Agent's "Personality" or "Operating System")
-    # We use a standard "ReAct" (Reason+Act) prompt from the LangChain Hub.
-    # This prompt tells the agent how to think, what tools it has, and how to use them.
     prompt = hub.pull("hwchase17/react")
-
-    # 4. The Agent
-    # We bind the LLM, tools, and prompt together to create the agent.
     agent = create_react_agent(llm, tools, prompt)
-
-    # 5. The Agent Executor (The "Runtime" for the agent)
-    # This is what actually runs the agent's thought process and executes its chosen tools.
-    # verbose=True lets us see the agent's thoughts in real-time.
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+    agent_executor = AgentExecutor(
+        agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
 
     print("\n--- Agent Initialized. Giving it the primary goal. ---\n")
 
-    # Get the keyword from GitHub Actions or use a default
-    keyword = os.getenv("KEYWORD_INPUT", "Quantum Computing")
+    keyword = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
+    goal = f"Create, stringently review, and then publish this week's newsletter for the topic '{keyword}'. Do not publish a draft that is low quality or has off-topic articles."
 
-    # This is the high-level goal we give to our agent.
-    goal = f"Create and publish this week's newsletter for the topic '{keyword}'."
-
-    # Invoke the agent and let it figure out how to achieve the goal.
     agent_executor.invoke({"input": goal})
 
 
