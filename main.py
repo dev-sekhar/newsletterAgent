@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 from langchain_groq import ChatGroq
 from langchain.agents import AgentExecutor, create_react_agent
-from langchain_core.prompts import hub
+from langchain import hub
 
 # Import our new, powerful tool
 from tools.newsletter_tools import run_newsletter_creation_pipeline
