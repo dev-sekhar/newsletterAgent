@@ -1,0 +1,89 @@
+# 'Blockchain' Weekly Newsletter - July 06, 2025
+
+Here is your weekly roundup of the latest news in the world of 'Blockchain'.
+
+
+
+## 🔷 DeFi
+
+
+### [AllScale Raises $1.5 Million to Develop Stablecoin Solutions for Small Businesses](http://www.pymnts.com/news/investment-tracker/2025/allscale-raises-1-5-million-to-develop-stablecoin-solutions-for-small-businesses/)
+*   **Source:** pymnts.com
+*   **Published:** Jul 04, 2025
+*   **Summary:** AllScale raises $1.5 million to develop stablecoin solutions for small businesses, aiming to make it easier for them to use stablecoins for invoicing, social commerce, and payroll solutions.
+---
+
+### [Mercado Bitcoin to Tokenize Real-World Assets on XRPL Blockchain](http://www.pymnts.com/blockchain/2025/mercado-bitcoin-to-tokenize-real-world-assets-on-xrpl-blockchain/)
+*   **Source:** pymnts.com
+*   **Published:** Jul 04, 2025
+*   **Summary:** Mercado Bitcoin plans to tokenize over $200 million in permissioned real-world assets on the XRP Ledger blockchain, as announced by Ripple in a blog post.
+---
+
+### [Ondo Finance to Buy SEC-Regulated Broker Oasis Pro for U.S. Tokenized Stock Push](https://www.coindesk.com/business/2025/07/04/ondo-finance-to-buy-sec-regulated-broker-oasis-pro-for-us-tokenized-stock-push)
+*   **Source:** CoinDesk
+*   **Published:** Jul 04, 2025
+*   **Summary:** Ondo Finance is set to acquire SEC-regulated broker Oasis Pro to expand its presence in the U.S. tokenized stock market. The deal, pending regulatory approval, will grant Ondo licenses to operate a broker-dealer, ATS, and transfer agent for digital securities. This move aims to strengthen Ondo's position in the U.S. market.
+---
+
+### [Russian State Giant Rostec Plans Ruble-Pegged Stablecoin, Payment Platform on Tron: TASS](https://www.coindesk.com/business/2025/07/04/russian-state-giant-rostec-plans-ruble-pegged-stablecoin-payment-platform-on-tron-tass)
+*   **Source:** CoinDesk
+*   **Published:** Jul 04, 2025
+*   **Summary:** Rostec, a Russian state-owned giant, plans to launch a ruble-pegged stablecoin called RUBx on the Tron blockchain, which will be integrated with the country's banking system.
+---
+
+### [Coinbase's Base Sees Over $4B in Capital Outflows Through Cross-Chain Bridges; Ethereum Registers Inflows of $8.5B](https://www.coindesk.com/markets/2025/07/04/coinbase-s-base-sees-over-usd4b-in-capital-outflows-ethereum-registers-inflows-of-usd8-5b)
+*   **Source:** CoinDesk
+*   **Published:** Jul 04, 2025
+*   **Summary:** Coinbase's Base has seen a net outflow of $4.3 billion this year, while Ethereum has registered inflows of $8.5 billion, reversing Base's previous top performer position.
+---
+
+
+
+
+## 🔷 Crypto
+
+
+### [Clarification on Hivello Buy-Back Announcement](https://financialpost.com/globe-newswire/clarification-on-hivello-buy-back-announcement)
+*   **Source:** Financial Post
+*   **Published:** Jul 04, 2025
+*   **Summary:** Blockmate Ventures Inc. announces a clarification on the buy-back of 13.5 million $HVLO tokens under recent news.
+---
+
+### [Ethereum is powering Wall Street's future. The crypto scene at Cannes shows how far it's come](https://www.cnbc.com/2025/07/04/the-ethcc-crypto-scene-at-cannes-shows-how-far-ethereum-has-come.html)
+*   **Source:** CNBC
+*   **Published:** Jul 04, 2025
+*   **Summary:** Ethereum's institutional adoption is accelerating, with major financial institutions like BlackRock, Deutsche Bank, Coinbase, and Kraken building directly on its rails, showcasing its growing influence in the financial sector.
+---
+
+### [Top analyst who correctly predicted market rally turns bullish on rising tech stock](https://www.thestreet.com/crypto/markets/robinhoods-bold-move-offers-openai-and-spacex-shares-)
+*   **Source:** TheStreet
+*   **Published:** Jul 04, 2025
+*   **Summary:** Matt Hougan, a top analyst who correctly predicted the market rally, is now bullish on Robinhood's stock, expecting its latest rollout to enable 24/7, near-instant settlements.
+---
+
+### [BBVA launches bitcoin and ether trading and custody services in Spain](https://www.finextra.com/pressarticle/106222/bbva-launches-bitcoin-and-ether-trading-and-custody-services-in-spain)
+*   **Source:** Finextra
+*   **Published:** Jul 04, 2025
+*   **Summary:** BBVA has launched a cryptocurrency trading and custody service for bitcoin and ether, available to all retail customers of legal age in Spain. The service was filed with the National Securities Market Commission (CNMV) and is now available to customers. The service allows customers to buy, sell, and hold bitcoin and ether.
+---
+
+### [YZi Labs joins Digital Asset funding round](https://www.finextra.com/pressarticle/106221/yzi-labs-joins-digital-asset-funding-round)
+*   **Source:** Finextra
+*   **Published:** Jul 04, 2025
+*   **Summary:** YZi Labs has invested in Digital Asset, a platform providing enterprise-grade tools for building compliant solutions in regulated markets.
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*This newsletter was automatically generated by the AI Newsletter Agent.*
