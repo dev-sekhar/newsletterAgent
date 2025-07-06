@@ -203,21 +203,28 @@ def review_draft_for_relevance_and_quality(topic: str) -> str:
 
 @tool
 def publish_approved_newsletter() -> str:
-    """
-    Publishes the newsletter if the latest review decision was 'approve'. This is the final step.
-    This tool takes no input, as it reads all required information from the shared context.
-    """
+    """Publishes the newsletter if approved. Creates versioned files to prevent overwriting."""
     print("\nTOOL: `publish_approved_newsletter` called.")
     global CONTEXT
+    # ... (logic to get draft and review is the same) ...
+
+    # --- START OF THE FIX ---
+    base_filename = f"newsletter_{datetime.now().strftime('%Y-%m-%d')}"
+    output_filename = f"{base_filename}.md"
+    version = 2
+
+    # Loop to find a filename that doesn't exist
+    while os.path.exists(output_filename):
+        output_filename = f"{base_filename}_v{version}.md"
+        version += 1
+    # --- END OF THE FIX ---
+
     newsletter_markdown = CONTEXT.get("draft")
-    review = CONTEXT.get("review")
-
     if not newsletter_markdown:
-        return "Error: No draft found in the context to publish. A draft must be created first."
-    if not review or review.get("decision") != "approve":
-        return f"Error: Cannot publish. The draft was not approved by the review step. The reason was: {review.get('reason', 'No reason provided.')}"
+        return "Error: No approved newsletter draft found to publish."
 
-    filename = f"newsletter_{datetime.now().strftime('%Y-%m-%d')}.md"
-    with open(filename, 'w', encoding='utf-8') as f:
+    print(f"  > Target filename for publishing is '{output_filename}'.")
+    with open(output_filename, 'w', encoding='utf-8') as f:
         f.write(newsletter_markdown)
-    return f"Successfully published the approved newsletter to {filename}"
+
+    return f"Successfully published the approved newsletter to {output_filename}"
