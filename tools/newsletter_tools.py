@@ -1,5 +1,3 @@
-# tools/newsletter_tools.py
-
 import os
 import requests
 import groq
@@ -10,6 +8,7 @@ from jinja2 import Environment, FileSystemLoader
 
 from langchain_core.tools import tool
 from database import setup_database, is_url_processed, add_url_to_db
+from bs4 import BeautifulSoup  # Import for HTML sanitation
 
 # --- This class holds the core logic for our pipeline steps ---
 
@@ -40,8 +39,18 @@ class NewsletterPipeline:
                 continue
             if not article.get('title') or "[Removed]" in article.get('title'):
                 continue
+
             try:
-                # STEP 1: CATEGORIZE
+                # --- Sanitize the description to remove HTML tags ---
+                raw_description = article.get('description', '')
+                if raw_description:
+                    soup = BeautifulSoup(raw_description, 'html.parser')
+                    clean_description = soup.get_text(
+                        separator=' ', strip=True)
+                else:
+                    clean_description = ''
+
+                # --- STEP 1: CATEGORIZE (Simple, reliable task) ---
                 cat_prompt = f"Categorize the following article into ONE of these categories: {self.config['categories']}. Article Title: \"{article['title']}\". Return a JSON object with one key: \"category\". Example: {{\"category\": \"DeFi\"}}"
                 cat_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
                                                                         {"role": "user", "content": cat_prompt}], temperature=0, response_format={"type": "json_object"})
@@ -50,14 +59,14 @@ class NewsletterPipeline:
                 if category not in self.config['categories']:
                     category = "Other"
 
-                # STEP 2: SUMMARIZE
-                sum_prompt = f"Write a concise, 3-sentence summary for the following article. Article Title: \"{article['title']}\". Article Description: \"{article.get('description', '')}\". Return a JSON object with one key: \"summary\". Example: {{\"summary\": \"This is a summary.\"}}"
+                # --- STEP 2: SUMMARIZE (Simple, reliable task with clean input) ---
+                sum_prompt = f"Write a concise, 3-sentence summary for the following article. Article Title: \"{article['title']}\". Article Description: \"{clean_description}\". Return a JSON object with one key: \"summary\". Example: {{\"summary\": \"This is a summary.\"}}"
                 sum_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
                                                                         {"role": "user", "content": sum_prompt}], temperature=0, response_format={"type": "json_object"})
                 summary = json.loads(
                     sum_response.choices[0].message.content).get("summary")
 
-                # STEP 3: COMBINE
+                # --- STEP 3: COMBINE ---
                 if category and summary:
                     processed_articles.append({
                         'title': article['title'], 'url': article['url'], 'source': article['source']['name'],
@@ -77,6 +86,7 @@ class NewsletterPipeline:
                                for category in self.config['categories']}
         for p_article in processed_articles:
             categorized_content[p_article['category']].append(p_article)
+
         return categorized_content
 
     def curate_selection(self, categorized_content):
@@ -203,25 +213,26 @@ def review_draft_for_relevance_and_quality(topic: str) -> str:
 
 @tool
 def publish_approved_newsletter() -> str:
-    """Publishes the newsletter if approved. Creates versioned files to prevent overwriting."""
+    """
+    Publishes the newsletter if approved. Creates versioned files to prevent overwriting.
+    This is the final step and takes no input.
+    """
     print("\nTOOL: `publish_approved_newsletter` called.")
     global CONTEXT
-    # ... (logic to get draft and review is the same) ...
+    newsletter_markdown = CONTEXT.get("draft")
+    review = CONTEXT.get("review")
 
-    # --- START OF THE FIX ---
+    if not newsletter_markdown:
+        return "Error: No draft found in the context to publish."
+    if not review or review.get("decision") != "approve":
+        return f"Error: Cannot publish. The draft was not approved. Last review reason: {review.get('reason', 'No reason provided.')}"
+
     base_filename = f"newsletter_{datetime.now().strftime('%Y-%m-%d')}"
     output_filename = f"{base_filename}.md"
     version = 2
-
-    # Loop to find a filename that doesn't exist
     while os.path.exists(output_filename):
         output_filename = f"{base_filename}_v{version}.md"
         version += 1
-    # --- END OF THE FIX ---
-
-    newsletter_markdown = CONTEXT.get("draft")
-    if not newsletter_markdown:
-        return "Error: No approved newsletter draft found to publish."
 
     print(f"  > Target filename for publishing is '{output_filename}'.")
     with open(output_filename, 'w', encoding='utf-8') as f:

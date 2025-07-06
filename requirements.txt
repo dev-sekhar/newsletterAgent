@@ -4,9 +4,8 @@ requests
 python-dotenv
 dateparser
 jinja2
-
-# --- LangChain Libraries (More Specific) ---
 langchain>=0.1.0
 langchain-groq
 langchain-core
 langchain-community
+beautifulsoup4
