@@ -4,19 +4,19 @@ name: Generate Weekly Newsletter
 
 on:
   schedule:
-    - cron: '0 8 * * 0'
+    - cron: "0 8 * * 0"
   workflow_dispatch:
     inputs:
       keyword:
-        description: 'The keyword to search for news articles'
+        description: "The keyword to search for news articles"
         required: true
-        default: 'Blockchain'
+        default: "Blockchain"
         type: string
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    
+
     # ADD THIS PERMISSIONS BLOCK
     permissions:
       contents: write
@@ -29,8 +29,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-          cache: 'pip'
+          python-version: "3.10"
+          cache: "pip"
 
       - name: Install dependencies
         run: |

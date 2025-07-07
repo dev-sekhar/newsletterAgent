@@ -4,14 +4,13 @@ import os
 import requests
 import groq
 import json
-import ast  # For safely parsing string representations of lists/dicts
+import ast
 from datetime import datetime, timedelta
 import dateparser
 from jinja2 import Environment, FileSystemLoader
-
 from langchain_core.tools import tool
 from database import setup_database, is_url_processed, add_url_to_db
-from bs4 import BeautifulSoup  # Import for HTML sanitation
+from bs4 import BeautifulSoup
 
 # --- This class holds the core logic for our pipeline steps ---
 
@@ -43,7 +42,6 @@ class NewsletterPipeline:
             if not article.get('title') or "[Removed]" in article.get('title'):
                 continue
             try:
-                # Sanitize the description to remove HTML tags
                 raw_description = article.get('description', '')
                 if raw_description:
                     soup = BeautifulSoup(raw_description, 'html.parser')
@@ -52,7 +50,6 @@ class NewsletterPipeline:
                 else:
                     clean_description = ''
 
-                # STEP 1: CATEGORIZE
                 cat_prompt = f"Categorize the following article into ONE of these categories: {self.config['categories']}. Article Title: \"{article['title']}\". Return a JSON object with one key: \"category\". Example: {{\"category\": \"DeFi\"}}"
                 cat_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
                                                                         {"role": "user", "content": cat_prompt}], temperature=0, response_format={"type": "json_object"})
@@ -61,14 +58,12 @@ class NewsletterPipeline:
                 if category not in self.config['categories']:
                     category = "Other"
 
-                # STEP 2: SUMMARIZE
                 sum_prompt = f"Write a concise, 3-sentence summary for the following article. Article Title: \"{article['title']}\". Article Description: \"{clean_description}\". Return a JSON object with one key: \"summary\". Example: {{\"summary\": \"This is a summary.\"}}"
                 sum_response = self.groq_client.chat.completions.create(model=self.fast_model, messages=[
                                                                         {"role": "user", "content": sum_prompt}], temperature=0, response_format={"type": "json_object"})
                 summary = json.loads(
                     sum_response.choices[0].message.content).get("summary")
 
-                # STEP 3: COMBINE
                 if category and summary:
                     processed_articles.append({
                         'title': article['title'], 'url': article['url'], 'source': article['source']['name'],
@@ -96,7 +91,6 @@ class NewsletterPipeline:
         ) for article in articles}
         if not all_sources:
             return categorized_content
-
         prompt = f"""You are a meticulous senior news editor. Review the following list of news sources: {list(all_sources)}. Your task is to identify and return only the sources that are well-known, reputable, and high-quality for news on business and technology. Exclude blogs, press release aggregators, and unknown entities. Return a valid JSON object with a single key "approved_sources" which is a list of strings of the sources you approve. Example: {{"approved_sources": ["Reuters", "TechCrunch", "Bloomberg"]}}"""
         try:
             response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[
@@ -109,13 +103,10 @@ class NewsletterPipeline:
             print(
                 f"  > Curation LLM check failed: {e}. Using all sources as fallback.")
             reputable_sources = all_sources
-
         final_content = {}
         for category, articles in categorized_content.items():
-            reputable_articles = [
-                a for a in articles if a['source'] in reputable_sources]
-            final_content[category] = reputable_articles[:
-                                                         self.config['max_articles_per_category']]
+            final_content[category] = [a for a in articles if a['source']
+                                       in reputable_sources][:self.config['max_articles_per_category']]
         return final_content
 
     def assemble_newsletter(self, content, keyword):
@@ -131,6 +122,33 @@ CONTEXT = {"draft": None, "review": None}
 
 
 @tool
+def generate_search_subtopics(topic: str) -> list[str]:
+    """
+    Generates a list of 5-7 specific, high-signal search sub-topics based on a broad main topic.
+    This should be the very first step to ensure the articles fetched are highly relevant.
+    The output is a list of strings.
+    """
+    print(f"\nTOOL: `generate_search_subtopics` called for topic '{topic}'.")
+    client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
+    prompt = f"""
+    You are a research analyst. Your task is to brainstorm a list of 5 to 7 specific, diverse, and high-quality search queries related to the main topic: '{topic}'.
+    These sub-topics will be used to find news articles. They should be distinct from each other to ensure a wide range of content.
+    Return your answer as a single, valid JSON object with one key, "sub_topics", which is a list of strings.
+    Example: {{"sub_topics": ["Decentralized Finance (DeFi) security", "NFT market analysis", "Blockchain in supply chain management"]}}
+    """
+    try:
+        response = client.chat.completions.create(model="llama3-70b-8192", messages=[
+                                                  {"role": "user", "content": prompt}], temperature=0.5, response_format={"type": "json_object"})
+        result = json.loads(response.choices[0].message.content)
+        sub_topics = result.get("sub_topics", [])
+        print(f"  > Generated sub-topics: {sub_topics}")
+        return sub_topics
+    except Exception as e:
+        print(f"  > Failed to generate sub-topics: {e}")
+        return [topic]
+
+
+@tool
 def create_initial_draft(keywords: list[str] | str) -> str:
     """
     Creates the first draft of the newsletter using a list of specific keywords. This must be used after generating sub-topics.
@@ -139,10 +157,8 @@ def create_initial_draft(keywords: list[str] | str) -> str:
     """
     print(f"\nTOOL: `create_initial_draft` called.")
     global CONTEXT
-
     try:
         if isinstance(keywords, str):
-            import ast
             keywords = ast.literal_eval(keywords)
         if not isinstance(keywords, list):
             raise ValueError("Input must be a list of strings.")
@@ -204,6 +220,8 @@ def review_draft_for_relevance_and_quality(topic: str) -> str:
         return "Error: No draft found in the context to review. You must run `create_initial_draft` first."
 
     client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+    # --- START OF FIX ---
     prompt = f"""
     You are a meticulous Editor-in-Chief. Your task is to review the following newsletter draft on the topic of '{topic}'.
 
@@ -218,6 +236,7 @@ def review_draft_for_relevance_and_quality(topic: str) -> str:
     {newsletter_draft}
     ---
     """
+    # --- END OF FIX ---
     try:
         response = client.chat.completions.create(model="llama3-70b-8192", messages=[
                                                   {"role": "user", "content": prompt}], temperature=0, response_format={"type": "json_object"})
@@ -236,10 +255,11 @@ def publish_approved_newsletter() -> str:
     Publishes the newsletter if approved. Creates versioned files to prevent overwriting.
     This is the final step and takes no input.
     """
+
     print("\nTOOL: `publish_approved_newsletter` called.")
     global CONTEXT
-    review = CONTEXT.get("review")
     newsletter_markdown = CONTEXT.get("draft")
+    review = CONTEXT.get("review")
 
     if not newsletter_markdown:
         return "Error: No draft found in the context to publish."
