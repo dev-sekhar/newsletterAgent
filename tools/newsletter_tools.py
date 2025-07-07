@@ -159,7 +159,74 @@ def generate_search_subtopics(topic: str) -> list[str]:
 
 
 @tool
-def create_initial_draft(keywords: list[str]) -> str:
+def create_initial_draft(keywords: list[str] | str) -> str:
+    """
+    Creates the first draft of the newsletter using a list of specific keywords. This must be used after generating sub-topics.
+    Input can be a list of keyword strings OR a string representation of a list.
+    It fetches, categorizes, curates, and assembles the draft, saving it to the context.
+    """
+    print(f"\nTOOL: `create_initial_draft` called.")
+
+    # --- START OF FIX: PARSE THE INPUT ROBUSTLY ---
+    try:
+        # If the agent passes a string representation of a list, parse it.
+        if isinstance(keywords, str):
+            # Use ast.literal_eval for safe evaluation of Python literals like lists
+            # It's safer than json.loads for this specific format
+            import ast
+            keywords = ast.literal_eval(keywords)
+
+        if not isinstance(keywords, list):
+            raise ValueError("Input must be a list of strings.")
+
+        print(f"  > Processing with {len(keywords)} keywords: {keywords}")
+
+    except (ValueError, SyntaxError) as e:
+        return f"Error: Input was not a valid list or list string. Error: {e}"
+    # --- END OF FIX ---
+
+    global CONTEXT
+    CONTEXT = {"draft": None, "review": None}
+    db_file = "articles.db"
+    if os.path.exists(db_file):
+        os.remove(db_file)
+        print("  > Cleared previous database for a fresh start.")
+    setup_database()
+
+    config = {
+        'groq_api_key': os.getenv("GROQ_API_KEY"),
+        'news_api_key': os.getenv("NEWS_API_KEY"),
+        'model_name': "llama3-8b-8192",
+        'max_articles_per_category': 5,
+        'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"]
+    }
+
+    pipeline = NewsletterPipeline(config)
+
+    all_articles = []
+    for keyword in keywords:
+        all_articles.extend(pipeline.fetch_all_articles(keyword))
+
+    unique_articles = list(
+        {article['url']: article for article in all_articles}.values())
+    print(f"  > Found {len(unique_articles)} unique articles in total.")
+
+    if not unique_articles:
+        return "Error: No articles were found for any of the sub-topics."
+
+    categorized = pipeline.categorize_and_summarize_all(unique_articles)
+    if not any(categorized.values()):
+        return "Error: No new articles could be processed."
+
+    curated = pipeline.curate_selection(categorized)
+    if not any(curated.values()):
+        return "Error: No articles passed the curation filters."
+
+    primary_keyword = keywords[0] if keywords else "General"
+    markdown_draft = pipeline.assemble_newsletter(curated, primary_keyword)
+    CONTEXT["draft"] = markdown_draft
+    return f"Successfully created an initial draft using {len(keywords)} sub-topics. It is now ready for review."
+
     """
     Creates the first draft of the newsletter using a list of specific keywords. This must be used after generating sub-topics.
     Input is a list of keyword strings. It fetches, categorizes, curates, and assembles the draft, saving it to the context.
