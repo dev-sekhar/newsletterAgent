@@ -8,17 +8,19 @@ from langchain import hub
 
 # Import our new, smarter set of tools
 from tools.newsletter_tools import (
-    generate_search_subtopics, # NEW
+    generate_search_subtopics,  # NEW
     create_initial_draft,
     review_draft_for_relevance_and_quality,
     publish_approved_newsletter
 )
 
+
 def main():
     load_dotenv()
     print("--- Initializing Master Reasoning Agent ---")
 
-    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0, api_key=os.getenv("GROQ_API_KEY"))
+    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0,
+                   api_key=os.getenv("GROQ_API_KEY"))
 
     # The agent's complete toolbox
     tools = [
@@ -30,12 +32,16 @@ def main():
 
     prompt = hub.pull("hwchase17/react")
     agent = create_react_agent(llm, tools, prompt)
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True, max_iterations=15)
+    agent_executor = AgentExecutor(
+        agent=agent, tools=tools, verbose=True, handle_parsing_errors=True, max_iterations=15)
 
     print("\n--- Agent Initialized. Giving it the primary goal. ---\n")
 
-    keyword = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
-    
+    keyword = os.getenv("KEYWORD_INPUT")
+    if not keyword:
+        raise ValueError(
+            "KEYWORD_INPUT environment variable not set. Please set it in your .env file or GitHub Actions.")
+
     # The final, most advanced goal prompt
     goal = f"""
     Your goal is to create and publish a high-quality weekly newsletter for the main topic '{keyword}'.
@@ -49,6 +55,7 @@ def main():
     """
 
     agent_executor.invoke({"input": goal})
+
 
 if __name__ == "__main__":
     main()
