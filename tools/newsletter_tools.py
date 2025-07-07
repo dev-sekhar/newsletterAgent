@@ -4,6 +4,7 @@ import os
 import requests
 import groq
 import json
+import ast  # For safely parsing string representations of lists/dicts
 from datetime import datetime, timedelta
 import dateparser
 from jinja2 import Environment, FileSystemLoader
@@ -19,7 +20,6 @@ class NewsletterPipeline:
     def __init__(self, config):
         self.config = config
         self.groq_client = groq.Groq(api_key=config['groq_api_key'])
-        # Use a faster model for simple tasks, and a more powerful one for complex tasks
         self.fast_model = "llama3-8b-8192"
         self.smart_model = "llama3-70b-8192"
 
@@ -83,7 +83,6 @@ class NewsletterPipeline:
                 print(
                     f"  > Skipping article '{article['title']}' due to a critical error: {e}")
 
-        # Group the successfully processed articles by category
         categorized_content = {category: []
                                for category in self.config['categories']}
         for p_article in processed_articles:
@@ -132,33 +131,6 @@ CONTEXT = {"draft": None, "review": None}
 
 
 @tool
-def generate_search_subtopics(topic: str) -> list[str]:
-    """
-    Generates a list of 5-7 specific, high-signal search sub-topics based on a broad main topic.
-    This should be the very first step to ensure the articles fetched are highly relevant.
-    The output is a list of strings.
-    """
-    print(f"\nTOOL: `generate_search_subtopics` called for topic '{topic}'.")
-    client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
-    prompt = f"""
-    You are a research analyst. Your task is to brainstorm a list of 5 to 7 specific, diverse, and high-quality search queries related to the main topic: '{topic}'.
-    These sub-topics will be used to find news articles. They should be distinct from each other to ensure a wide range of content.
-    Return your answer as a single, valid JSON object with one key, "sub_topics", which is a list of strings.
-    Example: {{"sub_topics": ["Decentralized Finance (DeFi) security", "NFT market analysis", "Blockchain in supply chain management"]}}
-    """
-    try:
-        response = client.chat.completions.create(model="llama3-70b-8192", messages=[
-                                                  {"role": "user", "content": prompt}], temperature=0.5, response_format={"type": "json_object"})
-        result = json.loads(response.choices[0].message.content)
-        sub_topics = result.get("sub_topics", [])
-        print(f"  > Generated sub-topics: {sub_topics}")
-        return sub_topics
-    except Exception as e:
-        print(f"  > Failed to generate sub-topics: {e}")
-        return [topic]  # Fallback to the original topic
-
-
-@tool
 def create_initial_draft(keywords: list[str] | str) -> str:
     """
     Creates the first draft of the newsletter using a list of specific keywords. This must be used after generating sub-topics.
@@ -166,26 +138,18 @@ def create_initial_draft(keywords: list[str] | str) -> str:
     It fetches, categorizes, curates, and assembles the draft, saving it to the context.
     """
     print(f"\nTOOL: `create_initial_draft` called.")
+    global CONTEXT
 
-    # --- START OF FIX: PARSE THE INPUT ROBUSTLY ---
     try:
-        # If the agent passes a string representation of a list, parse it.
         if isinstance(keywords, str):
-            # Use ast.literal_eval for safe evaluation of Python literals like lists
-            # It's safer than json.loads for this specific format
             import ast
             keywords = ast.literal_eval(keywords)
-
         if not isinstance(keywords, list):
             raise ValueError("Input must be a list of strings.")
-
         print(f"  > Processing with {len(keywords)} keywords: {keywords}")
-
     except (ValueError, SyntaxError) as e:
         return f"Error: Input was not a valid list or list string. Error: {e}"
-    # --- END OF FIX ---
 
-    global CONTEXT
     CONTEXT = {"draft": None, "review": None}
     db_file = "articles.db"
     if os.path.exists(db_file):
@@ -202,7 +166,6 @@ def create_initial_draft(keywords: list[str] | str) -> str:
     }
 
     pipeline = NewsletterPipeline(config)
-
     all_articles = []
     for keyword in keywords:
         all_articles.extend(pipeline.fetch_all_articles(keyword))
@@ -222,58 +185,6 @@ def create_initial_draft(keywords: list[str] | str) -> str:
     if not any(curated.values()):
         return "Error: No articles passed the curation filters."
 
-    primary_keyword = keywords[0] if keywords else "General"
-    markdown_draft = pipeline.assemble_newsletter(curated, primary_keyword)
-    CONTEXT["draft"] = markdown_draft
-    return f"Successfully created an initial draft using {len(keywords)} sub-topics. It is now ready for review."
-
-    """
-    Creates the first draft of the newsletter using a list of specific keywords. This must be used after generating sub-topics.
-    Input is a list of keyword strings. It fetches, categorizes, curates, and assembles the draft, saving it to the context.
-    """
-    print(
-        f"\nTOOL: `create_initial_draft` called with {len(keywords)} keywords.")
-    global CONTEXT
-    # Clear context and db at the start of a new process to prevent loops
-    CONTEXT = {"draft": None, "review": None}
-    db_file = "articles.db"
-    if os.path.exists(db_file):
-        os.remove(db_file)
-        print("  > Cleared previous database for a fresh start.")
-    setup_database()
-
-    config = {
-        'groq_api_key': os.getenv("GROQ_API_KEY"),
-        'news_api_key': os.getenv("NEWS_API_KEY"),
-        'model_name': "llama3-8b-8192",
-        'max_articles_per_category': 5,  # Create a larger draft for the reviewer
-        'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"]
-    }
-
-    pipeline = NewsletterPipeline(config)
-
-    all_articles = []
-    # Fetch articles for each keyword and combine them
-    for keyword in keywords:
-        all_articles.extend(pipeline.fetch_all_articles(keyword))
-
-    # Remove duplicates based on URL
-    unique_articles = list(
-        {article['url']: article for article in all_articles}.values())
-    print(f"  > Found {len(unique_articles)} unique articles in total.")
-
-    if not unique_articles:
-        return "Error: No articles were found for any of the sub-topics."
-
-    categorized = pipeline.categorize_and_summarize_all(unique_articles)
-    if not any(categorized.values()):
-        return "Error: No new articles could be processed."
-
-    curated = pipeline.curate_selection(categorized)
-    if not any(curated.values()):
-        return "Error: No articles passed the curation filters."
-
-    # Use the primary keyword for the newsletter title
     primary_keyword = keywords[0] if keywords else "General"
     markdown_draft = pipeline.assemble_newsletter(curated, primary_keyword)
     CONTEXT["draft"] = markdown_draft
@@ -325,11 +236,10 @@ def publish_approved_newsletter() -> str:
     Publishes the newsletter if approved. Creates versioned files to prevent overwriting.
     This is the final step and takes no input.
     """
-
     print("\nTOOL: `publish_approved_newsletter` called.")
     global CONTEXT
-    newsletter_markdown = CONTEXT.get("draft")
     review = CONTEXT.get("review")
+    newsletter_markdown = CONTEXT.get("draft")
 
     if not newsletter_markdown:
         return "Error: No draft found in the context to publish."
