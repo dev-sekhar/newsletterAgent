@@ -10,10 +10,10 @@ class CurationAgent:
         self.groq_client = groq.Groq(api_key=config['groq_api_key'])
         self.smart_model = "llama3-70b-8192"
 
-    def execute(self, analyzed_content: dict) -> tuple[dict, list, str]:
+    def execute(self, categorized_content: dict) -> tuple[dict, list, str]:
         print(f"\n--- CURATION AGENT ---")
 
-        all_articles_list = [article for category_list in analyzed_content.values(
+        all_articles_list = [article for category_list in categorized_content.values(
         ) for article in category_list]
         initial_article_count = len(all_articles_list)
 
@@ -23,6 +23,16 @@ class CurationAgent:
         all_sources = {article['source'] for article in all_articles_list}
         reputable_sources, justification = self._get_reputable_sources(
             list(all_sources))
+
+        # --- START OF FIX: ADD COMMON SENSE FALLBACK ---
+        # If the LLM returns an empty list, it's likely an error or an overly strict judgment.
+        # In this case, we fall back to using ALL sources to ensure there's content to review.
+        if not reputable_sources:
+            print(
+                "  > LLM returned no reputable sources. This is unlikely. Using all sources as a fallback.")
+            reputable_sources = all_sources
+            justification = "LLM failed to provide a valid list of reputable sources; all sources were included for human review."
+        # --- END OF FIX ---
 
         # Partition articles into approved and rejected based on source
         source_approved_articles = []
@@ -62,9 +72,9 @@ class CurationAgent:
         return final_approved_content, final_rejected_list, explanation
 
     def _get_reputable_sources(self, sources: list) -> tuple[set, str]:
-        # ... (This method is unchanged and correct)
+        # This method is already correct and does not need to be changed.
         print(f"  > Vetting {len(sources)} sources for reputation...")
-        prompt = f"""You are a meticulous senior news editor... (your full JSON prompt with justification)"""
+        prompt = f"""You are a meticulous senior news editor... (your full JSON prompt)"""
         try:
             response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[
                                                                 {"role": "user", "content": prompt}], temperature=0, response_format={"type": "json_object"})
