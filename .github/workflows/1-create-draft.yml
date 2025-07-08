@@ -1,20 +1,22 @@
+# .github/workflows/1-create-draft.yml
+
 name: "1: Create Newsletter Draft for Review"
 
 on:
   schedule:
-    - cron: "0 12 * * 5" # Run every Friday at 12:00 PM UTC
+    - cron: "0 12 * * 5"
   workflow_dispatch:
     inputs:
       keyword:
         description: "The topic for the newsletter"
         required: true
-        default: "Blockchain"
+        default: "Artificial Intelligence"
 
 jobs:
   drafting:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Needed to commit the review package
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -33,17 +35,20 @@ jobs:
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Blockchain' }}
+          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Artificial Intelligence' }}
         run: python run_part1_drafting.py
 
-      - name: Commit Review Package
+      # --- START OF FIX ---
+      - name: Commit Review Package (if it exists)
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add review_package.json articles.db
-          if git diff --staged --quiet; then
-            echo "No new review package to commit."
-          else
+          # Only proceed if the review package was actually created
+          if [ -f "review_package.json" ]; then
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add review_package.json articles.db
             git commit -m "feat: Create newsletter draft for review"
             git push
+          else
+            echo "review_package.json not found. Skipping commit. This is normal if no articles passed curation."
           fi
+      # --- END OF FIX ---
