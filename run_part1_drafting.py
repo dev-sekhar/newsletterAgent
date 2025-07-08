@@ -21,11 +21,11 @@ def create_review_package():
         'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"],
     }
 
-    topic = os.getenv("KEYWORD_INPUT", "Blockchain")
+    topic = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
 
     orchestrator = Orchestrator(config)
 
-    # Run the first part of the pipeline
+    # Run the curation pipeline and get the two lists for the review package
     approved_for_review, rejected_for_review = orchestrator.run_curation(topic)
 
     if not approved_for_review and not rejected_for_review:

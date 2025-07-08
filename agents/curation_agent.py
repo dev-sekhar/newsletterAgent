@@ -10,68 +10,71 @@ class CurationAgent:
         self.groq_client = groq.Groq(api_key=config['groq_api_key'])
         self.smart_model = "llama3-70b-8192"
 
-    def execute(self, analyzed_content: dict) -> tuple[dict, dict]:
+    def execute(self, analyzed_content: dict) -> tuple[dict, list, str]:
         print(f"\n--- CURATION AGENT ---")
 
-        # Flatten all articles into a single list for easier processing
         all_articles_list = [article for category_list in analyzed_content.values(
         ) for article in category_list]
+        initial_article_count = len(all_articles_list)
 
         if not all_articles_list:
-            return {}, {}
+            return {}, [], "Curation skipped: No analyzed articles provided."
 
         all_sources = {article['source'] for article in all_articles_list}
-        reputable_sources = self._get_reputable_sources(list(all_sources))
+        reputable_sources, justification = self._get_reputable_sources(
+            list(all_sources))
 
-        approved_articles = []
-        rejected_articles = []
-
+        # Partition articles into approved and rejected based on source
+        source_approved_articles = []
+        source_rejected_articles = []
         for article in all_articles_list:
-            # Main curation logic: is the source reputable?
             if article['source'] in reputable_sources:
-                approved_articles.append(article)
+                source_approved_articles.append(article)
             else:
-                rejected_articles.append(article)
+                source_rejected_articles.append(article)
 
-        # Further curate the approved list to ensure diversity
-        final_approved_content = {}
-        # Use a temporary list to track which approved articles make the final cut
-        final_approved_ids = set()
+        # Now, apply diversity limit on the source-approved articles
+        final_approved_content = {category: []
+                                  for category in self.config['categories']}
+        final_approved_urls = set()
 
-        for category in self.config['categories']:
-            # Get approved articles for the current category
-            category_articles = [
-                a for a in approved_articles if a['category'] == category]
-            # Limit the number
-            final_for_category = category_articles[:
-                                                   self.config['max_articles_per_category']]
+        for article in source_approved_articles:
+            category = article['category']
+            if len(final_approved_content[category]) < self.config['max_articles_per_category']:
+                final_approved_content[category].append(article)
+                final_approved_urls.add(article['url'])
 
-            if final_for_category:
-                final_approved_content[category] = final_for_category
-                for article in final_for_category:
-                    final_approved_ids.add(article['url'])
+        # Articles that were approved by source but not by diversity limit are also rejected
+        diversity_rejected_articles = [
+            article for article in source_approved_articles if article['url'] not in final_approved_urls
+        ]
 
-        # Any approved article not in the final limited list is moved to rejected
-        for article in approved_articles:
-            if article['url'] not in final_approved_ids:
-                rejected_articles.append(article)
+        final_rejected_list = source_rejected_articles + diversity_rejected_articles
+        total_curated_articles = len(final_approved_urls)
 
-        print(
-            f"  > Curation complete. Proposed: {len(final_approved_ids)} articles. Rejected: {len(rejected_articles)} articles.")
-        return final_approved_content, rejected_articles
+        explanation = (
+            f"Curation Agent started with {initial_article_count} articles from {len(all_sources)} unique sources. "
+            f"LLM Justification for source selection: '{justification}'. "
+            f"The final selection was filtered and limited, resulting in {total_curated_articles} articles for approval."
+        )
+        print(f"  > {explanation}")
 
-    def _get_reputable_sources(self, sources: list) -> set:
-        # ... (This private method is unchanged)
+        return final_approved_content, final_rejected_list, explanation
+
+    def _get_reputable_sources(self, sources: list) -> tuple[set, str]:
+        # ... (This method is unchanged and correct)
         print(f"  > Vetting {len(sources)} sources for reputation...")
-        prompt = f"""You are a meticulous senior news editor... (your full prompt)"""
+        prompt = f"""You are a meticulous senior news editor... (your full JSON prompt with justification)"""
         try:
             response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[
                                                                 {"role": "user", "content": prompt}], temperature=0, response_format={"type": "json_object"})
-            approved = set(json.loads(response.choices[0].message.content).get(
-                "approved_sources", []))
+            result = json.loads(response.choices[0].message.content)
+            approved = set(result.get("approved_sources", []))
+            justification = result.get(
+                "justification", "No justification provided.")
             print(f"  > LLM approved {len(approved)} sources.")
-            return approved
+            return approved, justification
         except Exception as e:
             print(
                 f"  > Curation LLM check failed: {e}. Using all sources as fallback.")
-            return set(sources)
+            return set(sources), "LLM check failed; all sources were included as a fallback."
