@@ -24,7 +24,7 @@ def main():
     }
 
     # Get the topic from GitHub Actions input or use a default
-    topic = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
+    topic = os.getenv("KEYWORD_INPUT", "Blockchain")
 
     # Initialize and run the main orchestrator
     orchestrator = Orchestrator(config)
