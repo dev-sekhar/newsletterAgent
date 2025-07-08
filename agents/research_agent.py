@@ -6,6 +6,7 @@ import groq
 import json
 from datetime import datetime, timedelta
 
+
 class ResearchAgent:
     def __init__(self, config):
         self.config = config
@@ -16,20 +17,30 @@ class ResearchAgent:
     def execute(self, topic: str) -> tuple[list[dict], str]:
         print(f"\n--- RESEARCH AGENT ---")
         sub_topics = self._generate_subtopics(topic)
-        
+
         all_articles = []
         for sub_topic in sub_topics:
             all_articles.extend(self._fetch_articles(sub_topic))
-            
-        unique_articles = list({article['url']: article for article in all_articles}.values())
-        
+
+        # --- START OF FIX: DATA CLEANING ---
+        # Ensure we only have valid dictionaries and remove duplicates
+        cleaned_articles = []
+        seen_urls = set()
+        for article in all_articles:
+            # Check if article is a dictionary and has a URL
+            if isinstance(article, dict) and article.get('url'):
+                if article['url'] not in seen_urls:
+                    cleaned_articles.append(article)
+                    seen_urls.add(article['url'])
+        # --- END OF FIX ---
+
         explanation = (
             f"Initial research for topic '{topic}' was expanded to {len(sub_topics)} specific sub-topics: {sub_topics}. "
-            f"A total of {len(unique_articles)} unique articles were fetched from the NewsAPI across these topics."
+            f"A total of {len(cleaned_articles)} unique articles were fetched from the NewsAPI across these topics."
         )
         print(f"  > {explanation}")
-        
-        return unique_articles, explanation
+
+        return cleaned_articles, explanation
 
     def _generate_subtopics(self, topic: str) -> list[str]:
         print(f"  > Generating search sub-topics for '{topic}'...")
@@ -40,23 +51,31 @@ class ResearchAgent:
         Example: {{"sub_topics": ["Decentralized Finance (DeFi) security", "NFT market analysis", "Blockchain in supply chain management"]}}
         """
         try:
-            response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[{"role": "user", "content": prompt}], temperature=0.5, response_format={"type": "json_object"})
+            response = self.groq_client.chat.completions.create(model=self.smart_model, messages=[
+                                                                {"role": "user", "content": prompt}], temperature=0.5, response_format={"type": "json_object"})
             result = json.loads(response.choices[0].message.content)
             sub_topics = result.get("sub_topics", [])
             print(f"  > Generated sub-topics: {sub_topics}")
             return sub_topics
         except Exception as e:
-            print(f"  > Failed to generate sub-topics: {e}. Falling back to main topic.")
+            print(
+                f"  > Failed to generate sub-topics: {e}. Falling back to main topic.")
             return [topic]
 
     def _fetch_articles(self, keyword: str) -> list:
         print(f"  > Fetching articles for: '{keyword}'...")
-        since_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%S')
-        params = {'q': keyword, 'from': since_date, 'sortBy': 'publishedAt', 'apiKey': self.news_api_key, 'language': 'en'}
+        since_date = (datetime.now() - timedelta(days=7)
+                      ).strftime('%Y-%m-%dT%H:%M:%S')
+        params = {'q': keyword, 'from': since_date, 'sortBy': 'publishedAt',
+                  'apiKey': self.news_api_key, 'language': 'en'}
         try:
-            response = requests.get("https://newsapi.org/v2/everything", params=params)
+            response = requests.get(
+                "https://newsapi.org/v2/everything", params=params)
             response.raise_for_status()
-            return response.json().get('articles', [])
+            # Ensure the API response is valid before returning
+            data = response.json()
+            return data.get('articles', []) if isinstance(data, dict) else []
         except Exception as e:
-            print(f"    > Could not fetch articles for keyword '{keyword}'. Error: {e}")
+            print(
+                f"    > Could not fetch articles for keyword '{keyword}'. Error: {e}")
             return []
