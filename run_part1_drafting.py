@@ -21,7 +21,7 @@ def create_review_package():
         'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"],
     }
 
-    topic = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
+    topic = os.getenv("KEYWORD_INPUT", "Blockchain")
 
     orchestrator = Orchestrator(config)
 
