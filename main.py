@@ -8,7 +8,7 @@ from langchain import hub
 
 # Import our new, smarter set of tools
 from tools.newsletter_tools import (
-    generate_search_subtopics,  # NEW
+    generate_search_subtopics,
     create_initial_draft,
     review_draft_for_relevance_and_quality,
     publish_approved_newsletter
