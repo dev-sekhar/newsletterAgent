@@ -1,0 +1,418 @@
+{
+    "topic": "Blockchain",
+    "approved_articles": {
+        "DeFi": [
+            {
+                "title": "Tokenised Stocks: What They Are, What They Aren't, and Why They Matter",
+                "url": "https://www.finextra.com/blogposting/28839/tokenised-stocks-what-they-are-what-they-arent-and-why-they-matter",
+                "source": "Finextra",
+                "published_at": "Jul 07, 2025",
+                "category": "DeFi",
+                "summary": "Tokenised stocks are a new investment option that allows for fractional ownership of traditional stocks, offering greater accessibility and flexibility. They are not the same as initial coin offerings (ICOs) or security tokens, but rather a way to tokenize existing stocks. This innovation has the potential to democratize investing and increase liquidity in the financial markets."
+            },
+            {
+                "title": "How to buy a home with a crypto-backed loan",
+                "url": "https://cointelegraph.com/news/how-to-buy-a-home-with-a-crypto-backed-loan",
+                "source": "Cointelegraph",
+                "published_at": "Jul 04, 2025",
+                "category": "DeFi",
+                "summary": "Discover platforms offering crypto-backed mortgages, allowing you to use digital assets like BTC and ETH to finance real estate purchases without selling your holdings. Learn how to buy a home with a crypto-backed loan and explore the benefits and risks involved. This innovative financing option can help you achieve your real estate goals while retaining your cryptocurrency investments."
+            },
+            {
+                "title": "Ripple and OpenPayd Team to Bolster Stablecoin Payments",
+                "url": "http://www.pymnts.com/cryptocurrency/2025/ripple-openpayd-team-bolster-stablecoin-payments/",
+                "source": "pymnts.com",
+                "published_at": "Jul 02, 2025",
+                "category": "DeFi",
+                "summary": "Ripple and OpenPayd have partnered to enhance stablecoin payments, combining OpenPayd's global fiat infrastructure with Ripple's blockchain technology. The collaboration will integrate real-time payment rails, multicurrency accounts, and virtual accounts. This partnership aims to streamline and expand stablecoin payment capabilities."
+            }
+        ],
+        "Crypto": [
+            {
+                "title": "Crypto\u2019s Breakthrough Moment Is Finally Here, Vitalik Buterin Says",
+                "url": "https://bitcoinist.com/cryptos-breakthrough-moment-is-finally-here-vitalik-buterin-says/",
+                "source": "Bitcoinist",
+                "published_at": "Jul 03, 2025",
+                "category": "Crypto",
+                "summary": "Ethereum's co-founder Vitalik Buterin believes crypto has reached a breakthrough moment, marking a major milestone. He made the statement at the annual EthCC gathering. Buterin's comments come as corporate Bitcoin holdings surge past 3 million BTC."
+            },
+            {
+                "title": "Bluewave Nexor: This Bluewave Nexor App Sets New Standard in AI-Driven Trading with Unmatched Security and User Approval",
+                "url": "https://www.globenewswire.com/news-release/2025/07/07/3110925/0/en/Bluewave-Nexor-This-Bluewave-Nexor-App-Sets-New-Standard-in-AI-Driven-Trading-with-Unmatched-Security-and-User-Approval.html",
+                "source": "GlobeNewswire",
+                "published_at": "Jul 07, 2025",
+                "category": "Crypto",
+                "summary": "Bluewave Nexor is redefining AI-powered trading with a platform built for precision, security, and global accessibility, backed by real-time analytics and advanced automation."
+            },
+            {
+                "title": "The Crypto Ecosystem: Key Elements And Risks",
+                "url": "https://bitrebels.com/technology/crypto-ecosystem-key-elements-risks/",
+                "source": "Bitrebels.com",
+                "published_at": "Jul 07, 2025",
+                "category": "Crypto",
+                "summary": "The cryptocurrency market has grown to a $3.42 trillion ecosystem, revolutionizing global finance and impacting 861 million users worldwide. From humble beginnings with Bitcoin in 2008, the market has blossomed into a vast and complex system. However, this growth also brings significant risks and challenges."
+            }
+        ],
+        "Web3": [],
+        "NFTs": [],
+        "Regulation": [
+            {
+                "title": "16 billion passwords leaked. Is it finally time for blockchain-based digital identity?",
+                "url": "https://cointelegraph.com/explained/16-billion-passwords-leaked-is-it-finally-time-for-blockchain-based-digital-identity",
+                "source": "Cointelegraph",
+                "published_at": "Jul 03, 2025",
+                "category": "Regulation",
+                "summary": "A massive password leak has sparked debate about the need for blockchain-based digital identity and decentralized systems to replace traditional password security, which is increasingly vulnerable to breaches."
+            },
+            {
+                "title": "Who\u2019s winning the West\u2019s crypto regulation race?",
+                "url": "https://cointelegraph.com/news/who-s-winning-the-west-s-crypto-regulation-race",
+                "source": "Cointelegraph",
+                "published_at": "Jul 04, 2025",
+                "category": "Regulation",
+                "summary": "The US is pushing forward with sweeping crypto legislation, while the EU relies on MiCA and the UK takes a cautious approach. Gemini's head of Europe weighs in on the implications for innovation and adoption. The regulatory landscape is shaping up to be a key factor in the future of crypto."
+            },
+            {
+                "title": "Central Bank Digital Currency (CBDC) \u2013 Global Officials Look at New Era of Digital Finance",
+                "url": "https://dailyhodl.com/2025/07/01/central-bank-digital-currency-cbdc-global-officials-look-at-new-era-of-digital-finance/",
+                "source": "The Daily Hodl",
+                "published_at": "Jul 02, 2025",
+                "category": "Regulation",
+                "summary": "Central banks worldwide are accelerating the exploration and creation of Central Bank Digital Currencies (CBDCs), transforming the finance landscape. The initial tentative approach has turned into a global race to update financial systems. This shift is expected to bring significant changes to the way money is created, used, and transferred."
+            }
+        ],
+        "Metaverse": [],
+        "Other": [
+            {
+                "title": "India\u2019s First E-Voting App Usage in Bihar Sparks Voters\u2019 Data Security & Privacy Concerns",
+                "url": "https://www.medianama.com/2025/07/223-india-first-e-voting-app-bihar-voters-data-security-privacy-concerns/",
+                "source": "MediaNama.com",
+                "published_at": "Jul 02, 2025",
+                "category": "Other",
+                "summary": "India's first e-voting app usage in Bihar sparks concerns over voters' data security and privacy, as the app's privacy policy allows for personal data to be used beyond voting purposes."
+            },
+            {
+                "title": "Green Beret turned freedom fighter: Doc Pete Chambers launches bold campaign for TEXAS GOVERNOR",
+                "url": "https://www.naturalnews.com/2025-07-02-doc-pete-chambers-launches-campaign-texas-governor.html",
+                "source": "Naturalnews.com",
+                "published_at": "Jul 02, 2025",
+                "category": "Other",
+                "summary": "Dr. Pete 'Doc' Chambers, a retired Green Beret and combat physician, is running for Texas governor as an anti-establishment disruptor, focusing on border security, medical freedom, and cryptocurrency innovation."
+            },
+            {
+                "title": "Monahans names Joel Haft as head of Internal Audit",
+                "url": "https://www.internationalaccountingbulletin.com/news/monahans-joel-haft-head-internal-audit-service-line/",
+                "source": "Internationalaccountingbulletin.com",
+                "published_at": "Jul 07, 2025",
+                "category": "Other",
+                "summary": "Monahans has appointed Joel Haft as its new head of Internal Audit, bringing experience from working with boards, audit committees, and regulators in financial services, fintech, and blockchain industries."
+            }
+        ]
+    },
+    "rejected_articles": [
+        {
+            "title": "UAE quashes reports claiming grant of Golden Visa to cryptocurrency investors",
+            "url": "https://economictimes.indiatimes.com/news/international/uae/uae-quashes-reports-claiming-grant-of-golden-visa-to-cryptocurrency-investors/articleshow/122286295.cms",
+            "source": "The Times of India",
+            "published_at": "Jul 07, 2025",
+            "category": "Crypto",
+            "summary": "The UAE has denied reports that golden visas are granted to cryptocurrency investors, stating that the visas adhere to strict criteria excluding digital currency investments and emphasizing commitment to transparency and investor protection."
+        },
+        {
+            "title": "Wall Street Moves on-Chain as Tokenization of US Stocks Goes Global",
+            "url": "http://www.pymnts.com/blockchain/2025/wall-street-moves-on-chain-as-tokenization-of-us-stocks-goes-global/",
+            "source": "pymnts.com",
+            "published_at": "Jul 03, 2025",
+            "category": "Crypto",
+            "summary": "Wall Street is moving on-chain as tokenization of US stocks goes global, marking a convergence of traditional finance and crypto markets. J.P. Morgan and other major financial institutions are leading the charge. This trend is expected to continue in 2025, despite uncertainty."
+        },
+        {
+            "title": "Will The United States Become A Blockchain Super Power?",
+            "url": "https://www.forbes.com/sites/digital-assets/2025/07/02/will-the-united-states-become-a-blockchain-super-power/",
+            "source": "Forbes",
+            "published_at": "Jul 02, 2025",
+            "category": "Crypto",
+            "summary": "The US is poised to become a blockchain superpower with new legislation, potentially unleashing a wave of innovation similar to the 1996 Telecommunications Act's impact on the internet. The legislation aims to create a favorable regulatory environment for blockchain development and adoption. If successful, the US could become a hub for blockchain innovation and entrepreneurship."
+        },
+        {
+            "title": "Crypto & Bitcoin Casinos: Reddit Community Reveals The Safe Crypto Casinos in 2025",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109314/0/en/Crypto-Bitcoin-Casinos-Reddit-Community-Reveals-The-Safe-Crypto-Casinos-in-2025.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Crypto",
+            "summary": "The Reddit community reveals the safe crypto casinos in 2025, as the iGaming world is flipped upside down by the rise of crypto casinos fueled by blockchain and powered by cryptocurrencies like Bitcoin, Ethereum, and others."
+        },
+        {
+            "title": "Everything Blockchain Inc. Eyes Historic First: Tokenizing OTC Stock After Robinhood\u2019s Market-Defining Shift",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3108995/0/en/Everything-Blockchain-Inc-Eyes-Historic-First-Tokenizing-OTC-Stock-After-Robinhood-s-Market-Defining-Shift.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Crypto",
+            "summary": "Everything Blockchain Inc. aims to become the first US OTC-listed entity to fully tokenize its equity, building a diversified crypto treasury. This move comes after Robinhood's market-defining shift. The company is poised to make history in the blockchain and cryptocurrency space."
+        },
+        {
+            "title": "The Blockchain Group, Smarter Web Company and Semler Scientific buy over 500 Bitcoin on Monday",
+            "url": "https://coinjournal.net/news/the-blockchain-group-smarter-web-company-and-semler-scientific-buy-over-500-bitcoin-on-monday/",
+            "source": "Coinjournal.net",
+            "published_at": "Jul 07, 2025",
+            "category": "Crypto",
+            "summary": "The Blockchain Group, Smarter Web Company, and Semler Scientific purchased over 500 Bitcoin on Monday, increasing their exposure to the cryptocurrency."
+        },
+        {
+            "title": "Best Blockchain Stocks To Consider \u2013 July 4th",
+            "url": "https://www.etfdailynews.com/2025/07/07/best-blockchain-stocks-to-consider-july-4th/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 07, 2025",
+            "category": "Crypto",
+            "summary": "Oracle, Riot Platforms, Core Scientific, Applied Digital, Bitdeer Technologies Group, HIVE Digital Technologies, and FTI Consulting are the seven Blockchain stocks to watch today, according to MarketBeat's stock screener tool."
+        },
+        {
+            "title": "Top Blockchain Stocks To Consider \u2013 July 3rd",
+            "url": "https://www.etfdailynews.com/2025/07/06/top-blockchain-stocks-to-consider-july-3rd/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 06, 2025",
+            "category": "Crypto",
+            "summary": "Oracle, Riot Platforms, and Applied Digital are the top Blockchain stocks to consider, according to MarketBeat's stock screener tool. These companies develop, implement, or utilize blockchain's decentralized technology. The stocks are publicly traded and offer a way to invest in the growing blockchain industry."
+        },
+        {
+            "title": "Promising Blockchain Stocks To Follow Now \u2013 July 2nd",
+            "url": "https://www.etfdailynews.com/2025/07/05/promising-blockchain-stocks-to-follow-now-july-2nd/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 05, 2025",
+            "category": "Crypto",
+            "summary": "Oracle, Riot Platforms, Earlyworks, Applied Digital, and Core Scientific are the five Blockchain stocks to watch today, according to MarketBeat's stock screener tool."
+        },
+        {
+            "title": "Crypto Security Market Size to Surpass USD 21.21 Billion by 2032, Owing to Rising Institutional Adoption and Demand for Robust Regulatory Compliance | SNS Insider",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109898/0/en/Crypto-Security-Market-Size-to-Surpass-USD-21-21-Billion-by-2032-Owing-to-Rising-Institutional-Adoption-and-Demand-for-Robust-Regulatory-Compliance-SNS-Insider.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Crypto",
+            "summary": "The crypto security market is expected to surpass USD 21.21 billion by 2032, driven by rising institutional adoption and demand for robust regulatory compliance, as the market witnesses exponential growth due to increased integration of cryptocurrencies across sectors and the need to safeguard digital assets from cyber threats."
+        },
+        {
+            "title": "Best Blockchain Stocks To Follow Today \u2013 July 1st",
+            "url": "https://www.etfdailynews.com/2025/07/03/best-blockchain-stocks-to-follow-today-july-1st/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 03, 2025",
+            "category": "Crypto",
+            "summary": "Oracle, Riot Platforms, Applied Digital, Core Scientific, Argo Blockchain, HIVE Digital Technologies, and Globant are the seven Blockchain stocks to watch today, according to MarketBeat's stock screener tool."
+        },
+        {
+            "title": "SEALSQ Quantum-Resistant Technology Tackles Potential Bitcoin\u2019s Quantum Vulnerabilities",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109225/0/en/SEALSQ-Quantum-Resistant-Technology-Tackles-Potential-Bitcoin-s-Quantum-Vulnerabilities.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Crypto",
+            "summary": "SEALSQ Corp develops quantum-resistant technology to address potential vulnerabilities in Bitcoin, reaffirming its focus on Semiconductors, PKI, and Post-Quantum technology products."
+        },
+        {
+            "title": "Blockchain Stocks To Add to Your Watchlist \u2013 June 29th",
+            "url": "https://www.etfdailynews.com/2025/07/02/blockchain-stocks-to-add-to-your-watchlist-june-29th/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 02, 2025",
+            "category": "Crypto",
+            "summary": "Oracle, Core Scientific, Riot Platforms, Applied Digital, Bitdeer Technologies Group, Globant, and FTI Consulting are seven Blockchain stocks to watch, according to MarketBeat's stock screener tool."
+        },
+        {
+            "title": "Bitget Wallet Partners with Mastercard and Immersve to Introduce Zero-Fee Crypto Card",
+            "url": "https://financialpost.com/globe-newswire/bitget-wallet-partners-with-mastercard-and-immersve-to-introduce-zero-fee-crypto-card",
+            "source": "Financial Post",
+            "published_at": "Jul 04, 2025",
+            "category": "Crypto",
+            "summary": "Bitget Wallet partners with Mastercard and Immersve to introduce a zero-fee crypto card, enabling users to make payments directly from their digital wallets."
+        },
+        {
+            "title": "Bitget Wallet Partners with Mastercard and Immersve to Introduce Zero-Fee Crypto Card",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110273/0/en/Bitget-Wallet-Partners-with-Mastercard-and-Immersve-to-Introduce-Zero-Fee-Crypto-Card.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Crypto",
+            "summary": "Bitget Wallet has partnered with Mastercard and Immersve to introduce a zero-fee crypto card, allowing users to seamlessly convert and spend their cryptocurrencies."
+        },
+        {
+            "title": "Crypto & Bitcoin Casinos 2025 (EXPOSED): All iGaming Experts Disclose the No ID Verification Casinos",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109848/0/en/Crypto-Bitcoin-Casinos-2025-EXPOSED-All-iGaming-Experts-Disclose-the-No-ID-Verification-Casinos.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Crypto",
+            "summary": "All iGaming experts disclose no ID verification crypto casinos, also known as no-KYC, in a new report. The report highlights the rise of these casinos, which allow players to gamble without providing identification. The report aims to expose the best no ID verification crypto casinos for 2025."
+        },
+        {
+            "title": "Bitcoin & Crypto Casinos: CTR Collective Experts Help Players Choose No KYC Casinos",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109554/0/en/Bitcoin-Crypto-Casinos-CTR-Collective-Experts-Help-Players-Choose-No-KYC-Casinos.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Crypto",
+            "summary": "Players face issues like payout delays, identity checks, and limited wallet support when searching for the best crypto casino. To help, CTR Collective experts provide guidance on choosing no KYC casinos. Players are becoming more discerning and seeking tailored options based on their preferences."
+        },
+        {
+            "title": "How The IMF Prevents Global Bitcoin Adoption (And Why They Do It)",
+            "url": "https://www.activistpost.com/how-the-imf-prevents-global-bitcoin-adoption-and-why-they-do-it/",
+            "source": "Activistpost.com",
+            "published_at": "Jul 04, 2025",
+            "category": "Regulation",
+            "summary": "The IMF has been preventing global Bitcoin adoption by providing loans to countries with strong Bitcoin policies, which are then abandoned in response to IMF demands, as seen in Argentina and the Central African Republic."
+        },
+        {
+            "title": "Fake Image Detection Market is Poised to Expand Beyond US$ 12,901.11 Million By 2033, Says Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111178/0/en/Fake-Image-Detection-Market-is-Poised-to-Expand-Beyond-US-12-901-11-Million-By-2033-Says-Astute-Analytica.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "The fake image detection market is expected to grow beyond $12,901.11 million by 2033, driven by the increasing demand for authenticity infrastructure in newsrooms, ecommerce, and social media to combat the proliferation of generative tools."
+        },
+        {
+            "title": "Japan Testing, Inspection & Certification Market to Worth Over US$ 21.35 Billion by 2033 | Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111013/0/en/Japan-Testing-Inspection-Certification-Market-to-Worth-Over-US-21-35-Billion-by-2033-Astute-Analytica.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Japan's testing, inspection & certification market is expected to reach over $21.35 billion by 2033, driven by intensified regulations, digitalized remote audits, and advanced labs addressing emerging risks."
+        },
+        {
+            "title": "Data443 Risk Mitigation (OTCMKTS:ATDS) and Ituran Location and Control (NASDAQ:ITRN) Head to Head Analysis",
+            "url": "https://www.etfdailynews.com/2025/07/07/data443-risk-mitigation-otcmktsatds-and-ituran-location-and-control-nasdaqitrn-head-to-head-analysis/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Data443 Risk Mitigation and Ituran Location and Control are both small-cap industrials companies, but which is the better investment? The article compares the two companies based on their strengths."
+        },
+        {
+            "title": "Criminal Hackers Are Employing AI To Facilitate Identity Theft.",
+            "url": "https://www.forbes.com/sites/chuckbrooks/2025/07/06/criminal-hackers-are-employing-ai-to-facilitate-identity-theft/",
+            "source": "Forbes",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Criminal hackers are using artificial intelligence to facilitate identity theft by infiltrating and examining victim networks and launching automated phishing attempts."
+        },
+        {
+            "title": "Codatta \u00d7 Binance Booster Program: Building a Global Knowledge Layer for AI-Powered Nutrition",
+            "url": "https://savoypetr02.medium.com/codatta-binance-booster-program-building-a-global-knowledge-layer-for-ai-powered-nutrition-d0f0c2fbb5b6",
+            "source": "Medium",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Codatta and Binance have launched a program to build a global knowledge layer for AI-powered nutrition, aiming to improve data precision in the health and nutrition industry."
+        },
+        {
+            "title": "India could reach $9.82 trillion in economic activity by 2035: PwC report",
+            "url": "https://economictimes.indiatimes.com/news/economy/indicators/india-could-reach-9-82-trillion-in-economic-activity-by-2035-pwc-report/articleshow/122280519.cms",
+            "source": "The Times of India",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "PwC India predicts that Indian businesses could unlock $9.82 trillion in economic value by 2035 by adopting domain-led models addressing human and industrial needs, through cross-sector collaboration and innovation."
+        },
+        {
+            "title": "Cloud Computing Market worth $2,281.1 billion by 2030- Exclusive Report by MarketsandMarkets\u2122",
+            "url": "https://www.prnewswire.co.uk/news-releases/cloud-computing-market-worth-2-281-1-billion-by-2030--exclusive-report-by-marketsandmarkets-302498135.html",
+            "source": "PR Newswire UK",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The Cloud Computing Market is expected to grow from $1,294.9 billion in 2025 to $2,281.1 billion by 2030, at a CAGR of 12.0% during the forecast period."
+        },
+        {
+            "title": "Idea Proposed By RFK Has Some In MAHA Scratching Their Heads",
+            "url": "https://dailycaller.com/2025/07/03/rfks-wearable-technology-maha-palantir-calley-casey-means-trump/",
+            "source": "The Daily Caller",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Robert F. Kennedy Jr. announced a campaign to encourage Americans to wear health trackers, surprising some in MAHA. The move is a departure from his typical environmental activism. The campaign's purpose and potential impact are unclear."
+        },
+        {
+            "title": "Connected Logistics Market Outlook Report 2025-2034 | North America Leads Adoption; Asia-Pacific Emerges as Key Growth Region",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109929/28124/en/Connected-Logistics-Market-Outlook-Report-2025-2034-North-America-Leads-Adoption-Asia-Pacific-Emerges-as-Key-Growth-Region.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The Connected Logistics Market is projected to grow from USD 26.1 billion in 2025 to USD 80.4 billion by 2034, with a 13.3% CAGR, driven by e-commerce, IoT adoption, and demand for efficiency."
+        },
+        {
+            "title": "Hazardous Goods Logistics Market Outlook 2025-2034 | Global Push for Harmonized Safety Standards Fuels Growth, Europe and North America Lead in Regulatory Changes and Technological Integration",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109924/28124/en/Hazardous-Goods-Logistics-Market-Outlook-2025-2034-Global-Push-for-Harmonized-Safety-Standards-Fuels-Growth-Europe-and-North-America-Lead-in-Regulatory-Changes-and-Technological-In.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The Hazardous Goods Logistics Market is projected to grow from USD 212.8 billion in 2025 to USD 421.8 billion by 2034, driven by rising chemical, energy, and pharma sectors, and enhanced safety regulations and digitization."
+        },
+        {
+            "title": "Healthcare Distribution Market Size to Hit USD 1,765.68 Billion in 2032 | Coherent Market Insights",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109910/0/en/Healthcare-Distribution-Market-Size-to-Hit-USD-1-765-68-Billion-in-2032-Coherent-Market-Insights.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The global Healthcare Distribution Market is expected to grow from USD 1,120.67 Bn in 2025 to USD 1,765.68 Bn by 2032, with a CAGR of 6.7% from 2025 to 2032."
+        },
+        {
+            "title": "Ethical Food Market Size, Share, Trends, Analysis, and Forecast 2025-2034 | Industry Growth, Competitive Landscape, Opportunities, and Challenges",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109731/28124/en/Ethical-Food-Market-Size-Share-Trends-Analysis-and-Forecast-2025-2034-Industry-Growth-Competitive-Landscape-Opportunities-and-Challenges.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The global ethical food market is projected to grow at a 9.4% CAGR, reaching USD 292.6 billion by 2034, driven by rising consumer demand for sustainability, transparency, and ethical sourcing."
+        },
+        {
+            "title": "Global Real-World Evidence Solution Market to Grow at a Substantial Growth Rate of ~8% by 2032 | DelveInsight",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109420/0/en/Global-Real-World-Evidence-Solution-Market-to-Grow-at-a-Substantial-Growth-Rate-of-8-by-2032-DelveInsight.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The real-world evidence solutions market is driven by the increasing prevalence of chronic diseases and advancements in technologies such as big data analytics, machine learning, and artificial intelligence, expected to grow at a substantial rate of ~8% by 2032."
+        },
+        {
+            "title": "Influencer Marketing Platform Market to Worth Over US$ 216.3 Billion By 2033 | Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109156/0/en/Influencer-Marketing-Platform-Market-to-Worth-Over-US-216-3-Billion-By-2033-Astute-Analytica.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The influencer marketing platform market is expected to reach US$ 216.3 billion by 2033, with a high return on investment of US$ 6.50 per dollar invested. AI-driven campaigns are widely adopted by 92% of brands, with mobile-first strategies and micro-influencers achieving superior engagement rates. The performance-based pricing model is also gaining popularity."
+        },
+        {
+            "title": "Legal Cannabis Global Strategic Business Report 2025 | Market to Surpass $110 Billion by 2030 - Expansion of Cannabis Legalization in Europe and Latin America Unlocks New Opportunities",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3108985/28124/en/Legal-Cannabis-Global-Strategic-Business-Report-2025-Market-to-Surpass-110-Billion-by-2030-Expansion-of-Cannabis-Legalization-in-Europe-and-Latin-America-Unlocks-New-Opportunities.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The global legal cannabis market is expected to surpass $110 billion by 2030, driven by expanding medical and wellness applications, CBD-based products, e-commerce, and sustainable cultivation methods, with legalization in Europe and Latin America unlocking new opportunities."
+        },
+        {
+            "title": "Disrupted and Deployed: How Tech Killed the 9-to-5 Workday",
+            "url": "https://www.psychologytoday.com/us/blog/the-power-of-slow/202506/disrupted-and-deployed-how-tech-killed-the-9-to-5-workday",
+            "source": "Psychology Today",
+            "published_at": "Jul 01, 2025",
+            "category": "Other",
+            "summary": "Disruptive technology is transforming the traditional 9-to-5 workday, replacing it with flexible, skills-based work arrangements that prioritize adaptability, creativity, and lifelong learning."
+        },
+        {
+            "title": "\u26a1 Weekly Recap: Chrome 0-Day, Ivanti Exploits, MacOS Stealers, Crypto Heists and More",
+            "url": "https://thehackernews.com/2025/07/weekly-recap-chrome-0-day-ivanti.html",
+            "source": "Internet",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Even strong systems can be vulnerable to threats if a small detail is overlooked, and most attacks start with subtle, easily missed signs, rather than loud alarms."
+        },
+        {
+            "title": "Financial Comparison: Globant (NYSE:GLOB) vs. Aware (NASDAQ:AWRE)",
+            "url": "https://www.etfdailynews.com/2025/07/07/financial-comparison-globant-nyseglob-vs-aware-nasdaqawre/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Globant and Aware are both computer and technology companies, but which is the better investment? We will compare the two companies based on institutional ownership, valuation, and more."
+        },
+        {
+            "title": "How a digital drug dealer went about business quietly with a postal plan",
+            "url": "https://economictimes.indiatimes.com/news/india/how-a-digital-drug-dealer-went-about-business-quietly-with-a-postal-plan/articleshow/122271622.cms",
+            "source": "The Times of India",
+            "published_at": "Jul 05, 2025",
+            "category": "Other",
+            "summary": "Edison Babu, a former engineer, was the mastermind behind 'Ketamelon,' India's top-tier darknet drug empire, which exploited the government postal service to distribute drugs across the country, highlighting a vulnerability in the system."
+        },
+        {
+            "title": "Mastercard Start Path takes on cybersecurity startups",
+            "url": "https://www.finextra.com/pressarticle/106195/mastercard-start-path-takes-on-cybersecurity-startups",
+            "source": "Finextra",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Mastercard Start Path has launched a new Security Solutions program to support high-potential startups in cybersecurity, fraud mitigation, digital identity, and payment resiliency. The program aims to accelerate innovation and adoption of new technologies. Startups selected for the program will receive funding, mentorship, and access to Mastercard's expertise and resources."
+        }
+    ]
+}
