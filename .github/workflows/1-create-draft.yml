@@ -1,0 +1,49 @@
+name: "1: Create Newsletter Draft for Review"
+
+on:
+  schedule:
+    - cron: "0 12 * * 5" # Run every Friday at 12:00 PM UTC
+  workflow_dispatch:
+    inputs:
+      keyword:
+        description: "The topic for the newsletter"
+        required: true
+        default: "Artificial Intelligence"
+
+jobs:
+  drafting:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit the review package
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Drafting Workflow (Part 1)
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Artificial Intelligence' }}
+        run: python run_part1_drafting.py
+
+      - name: Commit Review Package
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add review_package.json articles.db
+          if git diff --staged --quiet; then
+            echo "No new review package to commit."
+          else
+            git commit -m "feat: Create newsletter draft for review"
+            git push
+          fi
