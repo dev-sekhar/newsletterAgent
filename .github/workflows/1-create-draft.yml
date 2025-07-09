@@ -12,7 +12,7 @@ on:
       keyword:
         description: "The topic for the newsletter"
         required: true
-        default: "Artificial Intelligence"
+        default: "Blockchain"
 
 jobs:
   drafting:
@@ -39,7 +39,7 @@ jobs:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           # Use the manual input if provided, otherwise use the default
-          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Artificial Intelligence' }}
+          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Blockchain' }}
         run: python run_part1_drafting.py
 
       - name: Commit Review Package (if it exists)
