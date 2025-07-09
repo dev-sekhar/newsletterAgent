@@ -28,15 +28,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # --- START OF THE FIX ---
       - name: Run Publishing Script (Part 2)
         env:
-          # The writing agent doesn't use API keys, but it's good practice
+          # These keys are not strictly needed by the script but are included for consistency
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        # This line is the only change. It now points to the correct script.
-        run: python run_part2_publish_script.py
-      # --- END OF THE FIX ---
+        run: python run_part2_publishing.py
 
       - name: Commit Final Newsletter (if it exists)
         run: |

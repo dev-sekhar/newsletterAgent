@@ -21,25 +21,23 @@ def create_review_package():
         'categories': ["DeFi", "Crypto", "Web3", "NFTs", "Regulation", "Metaverse", "Other"],
     }
 
-    topic = os.getenv("KEYWORD_INPUT", "Blockchain")
+    topic = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
 
     orchestrator = Orchestrator(config)
 
-    # Run the curation pipeline and get the two lists for the review package
     approved_for_review, rejected_for_review = orchestrator.run_curation(topic)
 
     if not approved_for_review and not rejected_for_review:
-        print("\n--- No articles processed. Halting. ---")
+        print(
+            "\n--- No articles processed. Halting. No review package will be created. ---")
         return
 
-    # Prepare the review package
     review_package = {
         "topic": topic,
         "approved_articles": approved_for_review,
         "rejected_articles": rejected_for_review
     }
 
-    # Save to a file
     output_filename = "review_package.json"
     with open(output_filename, 'w', encoding='utf-8') as f:
         json.dump(review_package, f, indent=4)
