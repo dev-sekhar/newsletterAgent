@@ -11,14 +11,17 @@ from tools.newsletter_tools import (
     generate_search_subtopics,
     create_initial_draft,
     review_draft_for_relevance_and_quality,
-    publish_approved_newsletter # Agent needs to know about it, even if it doesn't call it
+    # Agent needs to know about it, even if it doesn't call it
+    publish_approved_newsletter
 )
+
 
 def main():
     load_dotenv()
     print("--- Initializing Master Reasoning Agent for Drafting ---")
 
-    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0, api_key=os.getenv("GROQ_API_KEY"))
+    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0,
+                   api_key=os.getenv("GROQ_API_KEY"))
 
     tools = [
         generate_search_subtopics,
@@ -29,12 +32,13 @@ def main():
 
     prompt = hub.pull("hwchase17/react")
     agent = create_react_agent(llm, tools, prompt)
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True, max_iterations=15)
+    agent_executor = AgentExecutor(
+        agent=agent, tools=tools, verbose=True, handle_parsing_errors=True, max_iterations=15)
 
     print("\n--- Agent Initialized. Giving it the primary goal. ---\n")
 
-    keyword = os.getenv("KEYWORD_INPUT", "Artificial Intelligence")
-    
+    keyword = os.getenv("KEYWORD_INPUT", "Blockchain")
+
     goal = f"""
     Your goal is to create a high-quality draft of a weekly newsletter for the topic '{keyword}'.
 
@@ -46,6 +50,7 @@ def main():
     """
 
     agent_executor.invoke({"input": goal})
+
 
 if __name__ == "__main__":
     main()
