@@ -84,12 +84,12 @@
                 "summary": "The real-world evidence solutions market is driven by the increasing prevalence of chronic diseases and advancements in technologies such as big data analytics, machine learning, and artificial intelligence, expected to grow at a substantial rate of ~8% by 2032."
             },
             {
-                "title": "Japan Testing, Inspection & Certification Market to Worth Over US$ 21.35 Billion by 2033 | Astute Analytica",
-                "url": "https://www.globenewswire.com/news-release/2025/07/07/3111013/0/en/Japan-Testing-Inspection-Certification-Market-to-Worth-Over-US-21-35-Billion-by-2033-Astute-Analytica.html",
-                "source": "GlobeNewswire",
-                "published_at": "Jul 07, 2025",
+                "title": "How a digital drug dealer went about business quietly with a postal plan",
+                "url": "https://economictimes.indiatimes.com/news/india/how-a-digital-drug-dealer-went-about-business-quietly-with-a-postal-plan/articleshow/122271622.cms",
+                "source": "The Times of India",
+                "published_at": "Jul 05, 2025",
                 "category": "Other",
-                "summary": "Japan's testing, inspection & certification market is expected to reach over $21.35 billion by 2033, driven by intensified regulations, digitalized remote audits, and advanced labs addressing emerging risks."
+                "summary": "Edison Babu, a former engineer, was the mastermind behind 'Ketamelon,' India's top-tier darknet drug empire, which exploited the government postal service to distribute drugs across the country, highlighting a vulnerability in the system."
             }
         ]
     },
@@ -109,6 +109,14 @@
             "published_at": "Jul 02, 2025",
             "category": "DeFi",
             "summary": "Oasis Protocol Foundation has announced the official mainnet launch of Runtime Offchain Logic (ROFL), aiming to help Web3 developers build seamless and efficient applications on the AI-focused and privacy-first Oasis Layer 1 blockchain."
+        },
+        {
+            "title": "Galaxy\u2019s EURAU to Set Alight EU Stablecoin Crypto Market \u2013 Spotlight on Best Wallet Token",
+            "url": "https://bitcoinist.com/eurau-stablecoin-spotlights-best-wallet-token/",
+            "source": "Bitcoinist",
+            "published_at": "Jul 04, 2025",
+            "category": "DeFi",
+            "summary": "Galaxy Digital's AllUnity secures BaFin license to launch EURAU, the first euro-backed stablecoin to meet MiCAR's full regulatory standard, marking a significant move in the EU stablecoin market."
         },
         {
             "title": "Experts Tip Ruvi AI (RUVI) For ADA Latecomers, Over 103x Predicted For Its Utility Token This Year",
@@ -191,36 +199,12 @@
             "summary": "Oracle, Core Scientific, Riot Platforms, Applied Digital, Bitdeer Technologies Group, Globant, and FTI Consulting are seven Blockchain stocks to watch, according to MarketBeat's stock screener tool."
         },
         {
-            "title": "Central Bank Digital Currency (CBDC) \u2013 Global Officials Look at New Era of Digital Finance",
-            "url": "https://dailyhodl.com/2025/07/01/central-bank-digital-currency-cbdc-global-officials-look-at-new-era-of-digital-finance/",
-            "source": "The Daily Hodl",
-            "published_at": "Jul 02, 2025",
-            "category": "Regulation",
-            "summary": "Central banks worldwide are accelerating the exploration and creation of Central Bank Digital Currencies (CBDCs), transforming the finance landscape. The initial tentative approach has turned into a global race to update financial systems. This shift is expected to bring significant changes to the way money is created, used, and transferred."
-        },
-        {
-            "title": "How The IMF Prevents Global Bitcoin Adoption (And Why They Do It)",
-            "url": "https://www.activistpost.com/how-the-imf-prevents-global-bitcoin-adoption-and-why-they-do-it/",
-            "source": "Activistpost.com",
-            "published_at": "Jul 04, 2025",
-            "category": "Regulation",
-            "summary": "The IMF has been preventing global Bitcoin adoption by providing loans to countries with strong Bitcoin policies, which are then abandoned in response to IMF demands, as seen in Argentina and the Central African Republic."
-        },
-        {
             "title": "Monahans names Joel Haft as head of Internal Audit",
             "url": "https://www.internationalaccountingbulletin.com/news/monahans-joel-haft-head-internal-audit-service-line/",
             "source": "Internationalaccountingbulletin.com",
             "published_at": "Jul 07, 2025",
             "category": "Other",
             "summary": "Monahans has appointed Joel Haft as its new head of Internal Audit, bringing experience from working with boards, audit committees, and regulators in financial services, fintech, and blockchain industries."
-        },
-        {
-            "title": "Data443 Risk Mitigation (OTCMKTS:ATDS) and Ituran Location and Control (NASDAQ:ITRN) Head to Head Analysis",
-            "url": "https://www.etfdailynews.com/2025/07/07/data443-risk-mitigation-otcmktsatds-and-ituran-location-and-control-nasdaqitrn-head-to-head-analysis/",
-            "source": "ETF Daily News",
-            "published_at": "Jul 07, 2025",
-            "category": "Other",
-            "summary": "Data443 Risk Mitigation and Ituran Location and Control are both small-cap industrials companies, but which is the better investment? The article compares the two companies based on their strengths."
         },
         {
             "title": "\u26a1 Weekly Recap: Chrome 0-Day, Ivanti Exploits, MacOS Stealers, Crypto Heists and More",
@@ -237,6 +221,14 @@
             "published_at": "Jul 07, 2025",
             "category": "Other",
             "summary": "Globant and Aware are both computer and technology companies, but which is the better investment? We will compare the two companies based on institutional ownership, valuation, and more."
+        },
+        {
+            "title": "Data443 Risk Mitigation (OTCMKTS:ATDS) and Ituran Location and Control (NASDAQ:ITRN) Head to Head Analysis",
+            "url": "https://www.etfdailynews.com/2025/07/07/data443-risk-mitigation-otcmktsatds-and-ituran-location-and-control-nasdaqitrn-head-to-head-analysis/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Data443 Risk Mitigation and Ituran Location and Control are both small-cap industrials companies, but which is the better investment? The article compares the two companies based on their strengths."
         },
         {
             "title": "VC Roundup: DeFi, AI, hybrid exchanges showcase resilient month for crypto",
@@ -277,14 +269,6 @@
             "published_at": "Jul 02, 2025",
             "category": "DeFi",
             "summary": "Ripple and OpenPayd have partnered to enhance stablecoin payments, combining OpenPayd's global fiat infrastructure with Ripple's blockchain technology. The collaboration will integrate real-time payment rails, multicurrency accounts, and virtual accounts. This partnership aims to streamline and expand stablecoin payment capabilities."
-        },
-        {
-            "title": "XRP Mining Launches New Passive Income App for Cloud Mining",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109297/0/en/XRP-Mining-Launches-New-Passive-Income-App-for-Cloud-Mining.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "DeFi",
-            "summary": "XRP Mining has launched a mobile cloud mining app for earning daily passive income without requiring expensive hardware, complicated setup, or cryptocurrency knowledge."
         },
         {
             "title": "YZi Labs joins Digital Asset funding round",
@@ -332,7 +316,7 @@
             "source": "The Times of India",
             "published_at": "Jul 07, 2025",
             "category": "Crypto",
-            "summary": "The UAE has denied reports that it grants golden visas to cryptocurrency investors, stating that the visas adhere to strict criteria excluding digital currency investments and emphasizing its commitment to transparency and investor protection."
+            "summary": "The UAE has denied reports that golden visas are granted to cryptocurrency investors, stating that the visas adhere to strict criteria excluding digital currency investments and emphasizing commitment to transparency and investor protection."
         },
         {
             "title": "Wall Street Moves on-Chain as Tokenization of US Stocks Goes Global",
@@ -367,62 +351,6 @@
             "summary": "Everything Blockchain Inc. aims to become the first US OTC-listed entity to fully tokenize its equity, building a diversified crypto treasury. This move comes after Robinhood's market-defining shift. The company is poised to make history in the blockchain and cryptocurrency space."
         },
         {
-            "title": "Crypto Security Market Size to Surpass USD 21.21 Billion by 2032, Owing to Rising Institutional Adoption and Demand for Robust Regulatory Compliance | SNS Insider",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109898/0/en/Crypto-Security-Market-Size-to-Surpass-USD-21-21-Billion-by-2032-Owing-to-Rising-Institutional-Adoption-and-Demand-for-Robust-Regulatory-Compliance-SNS-Insider.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "The crypto security market is expected to surpass USD 21.21 billion by 2032, driven by rising institutional adoption and demand for robust regulatory compliance, as the market witnesses exponential growth due to increased integration of cryptocurrencies across sectors and the need to safeguard digital assets from cyber threats."
-        },
-        {
-            "title": "Bitcoin Solaris Enters Final Phase of Presale Ahead of Mobile Mining App Launch",
-            "url": "https://www.globenewswire.com/news-release/2025/07/06/3110581/0/en/Bitcoin-Solaris-Enters-Final-Phase-of-Presale-Ahead-of-Mobile-Mining-App-Launch.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 06, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin Solaris enters its final phase of presale ahead of the launch of its mobile mining app, promising a unique take on the concept of Bitcoin 2.0."
-        },
-        {
-            "title": "AAS MINER Rolls Out 2025 AI Cloud Mining Plan \u2014 Fully SEC-Compliant, Risk-Controlled, and Tailored for Crypto Enthusiasts",
-            "url": "https://www.globenewswire.com/news-release/2025/07/05/3110566/0/en/AAS-MINER-Rolls-Out-2025-AI-Cloud-Mining-Plan-Fully-SEC-Compliant-Risk-Controlled-and-Tailored-for-Crypto-Enthusiasts.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "AAS MINER has launched its 2025 AI Cloud Mining Plan, which is fully SEC-compliant, risk-controlled, and designed for crypto enthusiasts. The plan aims to provide a secure and efficient mining experience. It is expected to be a game-changer in the crypto mining industry."
-        },
-        {
-            "title": "Bitcoin Solaris Unveils Nova App and Enters Final Presale Phase Ahead of July Launch",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110351/0/en/Bitcoin-Solaris-Unveils-Nova-App-and-Enters-Final-Presale-Phase-Ahead-of-July-Launch.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin Solaris has announced the upcoming release of its Solaris Nova App, a flagship app designed to democratize crypto mining, and has entered its final presale phase ahead of a July launch."
-        },
-        {
-            "title": "APT Miner launches GreenMine 2.0, redefining the global green cloud mining method",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3110108/0/en/APT-Miner-launches-GreenMine-2-0-redefining-the-global-green-cloud-mining-method.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "APT Miner launches GreenMine 2.0, a next-generation platform for green cloud mining, as the cryptocurrency market experiences a new round of growth."
-        },
-        {
-            "title": "CertiK Cements Institutional Presence After CEO\u2019s Strategic Engagements in Hong Kong",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109870/0/en/CertiK-Cements-Institutional-Presence-After-CEO-s-Strategic-Engagements-in-Hong-Kong.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "CertiK launches an institutional suite, offering Web3 security for banks, regulators, and enterprises, following CEO's strategic engagements in Hong Kong. The suite provides compliance-ready solutions for institutional clients. This move solidifies CertiK's institutional presence in the market."
-        },
-        {
-            "title": "Bitcoin Solaris Enters Final Weeks of Presale Amid Growing Investor Interest",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109776/0/en/Bitcoin-Solaris-Enters-Final-Weeks-of-Presale-Amid-Growing-Investor-Interest.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin Solaris has entered its final four weeks of presale, having raised over $6 million and gained 13,650 users, amid growing investor interest."
-        },
-        {
             "title": "Bitget Wallet Partners with Mastercard and Immersve to Introduce Zero-Fee Crypto Card",
             "url": "https://financialpost.com/globe-newswire/bitget-wallet-partners-with-mastercard-and-immersve-to-introduce-zero-fee-crypto-card",
             "source": "Financial Post",
@@ -455,124 +383,60 @@
             "summary": "Players face issues like payout delays, identity checks, and limited wallet support when searching for the best crypto casino. To help, CTR Collective experts provide guidance on choosing no KYC casinos. Players are becoming more discerning and seeking tailored options based on their preferences."
         },
         {
-            "title": "Bitcoin mining: A beginner\u2019s guide to how it works",
-            "url": "https://www.bostonherald.com/2025/07/07/bitcoin-mining-beginner-guide/",
-            "source": "Boston Herald",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin mining is the process of verifying transactions and adding them to the public ledger called the blockchain. Miners use powerful computers to solve complex mathematical problems, which helps to secure the network and verify transactions. In return, miners are rewarded with a certain amount of newly minted Bitcoins."
-        },
-        {
-            "title": "Blockchain technology leads the future, BTCMiner cloud mining gives you $500",
-            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111254/0/en/Blockchain-technology-leads-the-future-BTCMiner-cloud-mining-gives-you-500.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Blockchain technology is leading the future with unstoppable momentum, driving innovation and change globally. BTCMiner cloud mining offers a $500 incentive. The technology is transforming all aspects of life."
-        },
-        {
-            "title": "BAY Miner launches AI-optimized cloud mining platform to support BTC and SOL mining using green energy",
-            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111138/0/en/BAY-Miner-launches-AI-optimized-cloud-mining-platform-to-support-BTC-and-SOL-mining-using-green-energy.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "BAY Miner launches a cloud mining platform optimized with AI for BTC and SOL mining, utilizing green energy. The platform aims to lead the next-generation of crypto mining with efficient empowerment and ESG renewable energy. It supports mining of both Bitcoin and Solana cryptocurrencies."
-        },
-        {
-            "title": "BAY Miner Announces Major Launch: Free Mobile Cloud Mining App Drives Global Expansion into Eco-Friendly Cryptocurrency",
-            "url": "https://www.globenewswire.com/news-release/2025/07/06/3110686/0/en/BAY-Miner-Announces-Major-Launch-Free-Mobile-Cloud-Mining-App-Drives-Global-Expansion-into-Eco-Friendly-Cryptocurrency.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 06, 2025",
-            "category": "Crypto",
-            "summary": "BAY Miner announces the launch of a free mobile cloud mining app, expanding its global presence in the eco-friendly cryptocurrency market. The app allows users to mine Bitcoin, Dogecoin, and Litecoin for free. The strategic launch targets mobile users, aiming to increase adoption and accessibility of cryptocurrency."
-        },
-        {
-            "title": "How to mine Bitcoin? BSTR Miner launches next-generation cloud mining platform to make Bitcoin within reach",
-            "url": "https://www.globenewswire.com/news-release/2025/07/05/3110563/0/en/How-to-mine-Bitcoin-BSTR-Miner-launches-next-generation-cloud-mining-platform-to-make-Bitcoin-within-reach.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "BSTR Miner launches a new generation of cloud mining platform to make Bitcoin mining more accessible as the value of Bitcoin increases, simplifying the complex process of traditional mining."
-        },
-        {
-            "title": "NR7 Miner Revolutionizes Digital Assets with Launch of AI Cloud Mining for Sustainable Future",
-            "url": "https://www.globenewswire.com/news-release/2025/07/05/3110547/0/en/NR7-Miner-Revolutionizes-Digital-Assets-with-Launch-of-AI-Cloud-Mining-for-Sustainable-Future.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "NR7 Miner has launched AI cloud mining, revolutionizing digital assets with sustainable future in mind. AI optimizes cloud mining, paving the way for low-carbon digital assets. This innovation drives the future of green computing power."
-        },
-        {
-            "title": "AIXA Miner Raises $80M Series B to Advance AI Cloud Mining for Passive Income",
-            "url": "https://www.globenewswire.com/news-release/2025/07/05/3110545/0/en/AIXA-Miner-Raises-80M-Series-B-to-Advance-AI-Cloud-Mining-for-Passive-Income.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "AIXA Miner has raised $80M in Series B funding to advance AI cloud mining for passive income, with plans to boost green energy data centers and deliver up to 25% higher returns for global users."
-        },
-        {
-            "title": "Green Crypto Mining: BAY Miner Launches Sustainable AI-Powered Cloud Mining for Bitcoin and Ethereum",
-            "url": "https://www.globenewswire.com/news-release/2025/07/05/3110535/0/en/Green-Crypto-Mining-BAY-Miner-Launches-Sustainable-AI-Powered-Cloud-Mining-for-Bitcoin-and-Ethereum.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "BAY Miner launches sustainable AI-powered cloud mining for Bitcoin and Ethereum, combining renewable energy and AI optimization for efficient, hardware-free mining."
-        },
-        {
-            "title": "ALL4 Mining Projects 2X User Growth in July with Upgraded Mobile UX and Renewable-Powered Mining",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110455/0/en/ALL4-Mining-Projects-2X-User-Growth-in-July-with-Upgraded-Mobile-UX-and-Renewable-Powered-Mining.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "ALL4 Mining projects 2X user growth in July due to upgraded mobile UX and renewable-powered mining, aiming to double its user base."
-        },
-        {
-            "title": "Revolutionizing Crypto: XRP Mining Rolls Out Accessible Cloud Mining APP",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110422/0/en/Revolutionizing-Crypto-XRP-Mining-Rolls-Out-Accessible-Cloud-Mining-APP.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "XRP Mining introduces a user-friendly cloud mining app, making cryptocurrency earnings simple, secure, and accessible to everyone."
-        },
-        {
-            "title": "XRP Mining Launches Innovative Cloud Mining App to Empower Global Crypto Users",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109926/0/en/XRP-Mining-Launches-Innovative-Cloud-Mining-App-to-Empower-Global-Crypto-Users.html",
+            "title": "Crypto Security Market Size to Surpass USD 21.21 Billion by 2032, Owing to Rising Institutional Adoption and Demand for Robust Regulatory Compliance | SNS Insider",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109898/0/en/Crypto-Security-Market-Size-to-Surpass-USD-21-21-Billion-by-2032-Owing-to-Rising-Institutional-Adoption-and-Demand-for-Robust-Regulatory-Compliance-SNS-Insider.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 03, 2025",
             "category": "Crypto",
-            "summary": "XRP Mining has launched a cloud mining app to empower global crypto users, sparking excitement in the crypto landscape."
+            "summary": "The crypto security market is expected to surpass USD 21.21 billion by 2032, driven by rising institutional adoption and demand for robust regulatory compliance, as the market witnesses exponential growth due to increased integration of cryptocurrencies across sectors and the need to safeguard digital assets from cyber threats."
         },
         {
-            "title": "AIXA Miner Introduces Risk-Free Passive Income with Automated, Secure Crypto Mining",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109867/0/en/AIXA-Miner-Introduces-Risk-Free-Passive-Income-with-Automated-Secure-Crypto-Mining.html",
+            "title": "Blue Gold Limited Partners with TripleBolt to Explore Possible Blockchain-Backed Gold Token",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109882/0/en/Blue-Gold-Limited-Partners-with-TripleBolt-to-Explore-Possible-Blockchain-Backed-Gold-Token.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 03, 2025",
             "category": "Crypto",
-            "summary": "AIXA Miner offers new users risk-free passive income through automated and secure crypto mining, providing free access to cloud mining for Bitcoin and Dogecoin, backed by advanced security and eco-friendly infrastructure."
+            "summary": "Blue Gold Limited partners with TripleBolt to explore a blockchain-backed gold token, advancing sustainable mining projects."
         },
         {
-            "title": "BTC Miner: Earn Millions Daily with Stable Returns, Even Amid XRP's Volatility",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109438/0/en/BTC-Miner-Earn-Millions-Daily-with-Stable-Returns-Even-Amid-XRP-s-Volatility.html",
+            "title": "How to Mine Bitcoin: BSTR Miner Launches Simplified Bitcoin Mining Platform: Cloud Contracts & AI Tools Aim to Demystify Entry for Newcomers",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109627/0/en/How-to-Mine-Bitcoin-BSTR-Miner-Launches-Simplified-Bitcoin-Mining-Platform-Cloud-Contracts-AI-Tools-Aim-to-Demystify-Entry-for-Newcomers.html",
             "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
+            "published_at": "Jul 03, 2025",
             "category": "Crypto",
-            "summary": "A new BTC miner promises stable returns and millions in daily earnings, even amidst XRP's volatility, offering a high-return investment opportunity for those seeking stability in the cryptocurrency market."
+            "summary": "BSTR Miner has launched a simplified Bitcoin mining platform, offering cloud contracts and AI tools to help newcomers enter the market. The platform focuses on hardware rental and efficiency to make mining more accessible. As the Bitcoin market cap surpasses $2.1 trillion, the platform aims to capitalize on the surge in interest."
         },
         {
-            "title": "AIXA Miner Launches AI-Driven Cloud Mining Platform to Deliver Consistent Profits Without Complexity",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109289/0/en/AIXA-Miner-Launches-AI-Driven-Cloud-Mining-Platform-to-Deliver-Consistent-Profits-Without-Complexity.html",
-            "source": "GlobeNewswire",
+            "title": "Mastercard Start Path takes on cybersecurity startups",
+            "url": "https://www.finextra.com/pressarticle/106195/mastercard-start-path-takes-on-cybersecurity-startups",
+            "source": "Finextra",
             "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "AIXA Miner has launched an AI-driven cloud mining platform that aims to deliver consistent profits without complexity, utilizing intelligent automation and user-friendly design for all investors."
+            "category": "Other",
+            "summary": "Mastercard Start Path has launched a new Security Solutions program to support high-potential startups in cybersecurity, fraud mitigation, digital identity, and payment resiliency. The program aims to accelerate innovation and adoption of new technologies. Startups selected for the program will receive funding, mentorship, and access to Mastercard's expertise and resources."
         },
         {
-            "title": "TopNotchCrypto Introduces Commission-Free Cloud Mining for Reliable Passive Returns",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109144/0/en/TopNotchCrypto-Introduces-Commission-Free-Cloud-Mining-for-Reliable-Passive-Returns.html",
+            "title": "Fake Image Detection Market is Poised to Expand Beyond US$ 12,901.11 Million By 2033, Says Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111178/0/en/Fake-Image-Detection-Market-is-Poised-to-Expand-Beyond-US-12-901-11-Million-By-2033-Says-Astute-Analytica.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "The fake image detection market is expected to grow beyond $12,901.11 million by 2033, driven by the increasing demand for authenticity infrastructure in newsrooms, ecommerce, and social media to combat the proliferation of generative tools."
+        },
+        {
+            "title": "Influencer Marketing Platform Market to Worth Over US$ 216.3 Billion By 2033 | Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109156/0/en/Influencer-Marketing-Platform-Market-to-Worth-Over-US-216-3-Billion-By-2033-Astute-Analytica.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "TopNotchCrypto introduces a commission-free cloud mining platform that utilizes AI, clean energy, and compliance to provide reliable passive returns for daily income."
+            "category": "Other",
+            "summary": "The influencer marketing platform market is expected to reach US$ 216.3 billion by 2033, with a high return on investment of US$ 6.50 per dollar invested. AI-driven campaigns are widely adopted by 92% of brands, with mobile-first strategies and micro-influencers achieving superior engagement rates. The performance-based pricing model is also gaining popularity."
+        },
+        {
+            "title": "Japan Testing, Inspection & Certification Market to Worth Over US$ 21.35 Billion by 2033 | Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111013/0/en/Japan-Testing-Inspection-Certification-Market-to-Worth-Over-US-21-35-Billion-by-2033-Astute-Analytica.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Japan's testing, inspection & certification market is expected to reach over $21.35 billion by 2033, driven by intensified regulations, digitalized remote audits, and advanced labs addressing emerging risks."
         },
         {
             "title": "Criminal Hackers Are Employing AI To Facilitate Identity Theft.",
@@ -647,36 +511,12 @@
             "summary": "The Hazardous Goods Logistics Market is projected to grow from USD 212.8 billion in 2025 to USD 421.8 billion by 2034, driven by rising chemical, energy, and pharma sectors, and enhanced safety regulations and digitization."
         },
         {
-            "title": "Influencer Marketing Platform Market to Worth Over US$ 216.3 Billion By 2033 | Astute Analytica",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109156/0/en/Influencer-Marketing-Platform-Market-to-Worth-Over-US-216-3-Billion-By-2033-Astute-Analytica.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "Other",
-            "summary": "The influencer marketing platform market is expected to reach US$ 216.3 billion by 2033, with a high return on investment of US$ 6.50 per dollar invested. AI-driven campaigns are widely adopted by 92% of brands, with mobile-first strategies and micro-influencers achieving superior engagement rates. The performance-based pricing model is also gaining popularity."
-        },
-        {
             "title": "QuantGold Launches Qsecore: World\u2019s First SIM-Layer Encryption Platform for Mobile Security",
             "url": "https://www.globenewswire.com/news-release/2025/07/02/3109087/0/en/QuantGold-Launches-Qsecore-World-s-First-SIM-Layer-Encryption-Platform-for-Mobile-Security.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 02, 2025",
             "category": "Other",
             "summary": "QuantGold has launched Qsecore, the world's first SIM-layer encryption platform for mobile security. The platform provides military-grade voice, messaging, and data vault to mobile users. The rollout is set to begin in August following successful testing."
-        },
-        {
-            "title": "How a digital drug dealer went about business quietly with a postal plan",
-            "url": "https://economictimes.indiatimes.com/news/india/how-a-digital-drug-dealer-went-about-business-quietly-with-a-postal-plan/articleshow/122271622.cms",
-            "source": "The Times of India",
-            "published_at": "Jul 05, 2025",
-            "category": "Other",
-            "summary": "Edison Babu, a former engineer, was the mastermind behind 'Ketamelon,' India's top-tier darknet drug empire, which exploited the government postal service to distribute drugs across the country, highlighting a vulnerability in the system."
-        },
-        {
-            "title": "Mastercard Start Path takes on cybersecurity startups",
-            "url": "https://www.finextra.com/pressarticle/106195/mastercard-start-path-takes-on-cybersecurity-startups",
-            "source": "Finextra",
-            "published_at": "Jul 02, 2025",
-            "category": "Other",
-            "summary": "Mastercard Start Path has launched a new Security Solutions program to support high-potential startups in cybersecurity, fraud mitigation, digital identity, and payment resiliency. The program aims to accelerate innovation and adoption of new technologies. Startups selected for the program will receive funding, mentorship, and access to Mastercard's expertise and resources."
         }
     ]
 }
