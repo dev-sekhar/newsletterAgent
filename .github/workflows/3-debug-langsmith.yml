@@ -1,0 +1,43 @@
+# .github/workflows/3-debug-langsmith.yml
+
+name: "3: DEBUG LangSmith Connection"
+
+on:
+  # Run this workflow manually whenever you need to test
+  workflow_dispatch:
+
+jobs:
+  debug-connection:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: "Direct API Test with cURL"
+        env:
+          LANGSMITH_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
+        run: |
+          echo "--- Testing connection directly with cURL ---"
+          # This command tries to access a health-check endpoint on the LangSmith API
+          # It directly tests your API key and network connectivity.
+          curl -v -X GET https://api.smith.langchain.com/ping \
+            -H "x-api-key: ${{ env.LANGSMITH_API_KEY }}"
+          echo "--- cURL test finished ---"
+
+      - name: "Isolated Python Test"
+        env:
+          # Pass all secrets to the isolated test script
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LANGCHAIN_TRACING_V2: ${{ secrets.LANGCHAIN_TRACING_V2 }}
+          LANGCHAIN_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
+          LANGCHAIN_PROJECT: ${{ secrets.LANGCHAIN_PROJECT }}
+        run: python test_langsmith.py
