@@ -13,7 +13,7 @@ Here is your weekly roundup of the latest news in the world of {{ keyword }}.
 
 _{{ article.source }}, {{ article.published_at }}_ - ([link]({{ article.url }}))
 
-## {{ article.summary }}
+{{ article.summary }}
 
 {% endfor %}
 {% endif %}
