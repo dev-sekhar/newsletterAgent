@@ -1,218 +1,130 @@
 {
-    "topic": "Blockchain",
+    "topic": "Artificial Intelligence",
     "approved_articles": {
         "DeFi": [
             {
-                "title": "Cloudflare\u2019s bot paywall could ignite a tokenized content gold rush",
-                "url": "https://cryptoslate.com/cloudflares-bot-paywall-could-ignite-a-tokenized-content-gold-rush/",
-                "source": "CryptoSlate",
-                "published_at": "Jul 07, 2025",
-                "category": "DeFi",
-                "summary": "Cloudflare's bot paywall could spark a tokenized content gold rush, addressing the broken value exchange on the web where AI companies scrape content without permission or compensation."
-            },
-            {
-                "title": "Arclaim Secures $3 Million in Series A Funding to Transform DeFi Staking; Total Value Locked Reaches $150M",
-                "url": "https://www.globenewswire.com/news-release/2025/07/07/3111237/0/en/Arclaim-Secures-3-Million-in-Series-A-Funding-to-Transform-DeFi-Staking-Total-Value-Locked-Reaches-150M.html",
+                "title": "Pattern Computer Enters Financial Markets Leveraging Pattern Discovery Engine\u2122 and Risk and Confidence XAI",
+                "url": "https://www.globenewswire.com/news-release/2025/07/02/3109155/0/en/Pattern-Computer-Enters-Financial-Markets-Leveraging-Pattern-Discovery-Engine-and-Risk-and-Confidence-XAI.html",
                 "source": "GlobeNewswire",
-                "published_at": "Jul 07, 2025",
+                "published_at": "Jul 02, 2025",
                 "category": "DeFi",
-                "summary": "Arclaim, a DeFi staking leader, secured $3 million in Series A funding, with total value locked reaching $150 million, reflecting growing investor confidence."
-            },
-            {
-                "title": "Tokenised Stocks: What They Are, What They Aren't, and Why They Matter",
-                "url": "https://www.finextra.com/blogposting/28839/tokenised-stocks-what-they-are-what-they-arent-and-why-they-matter",
-                "source": "Finextra",
-                "published_at": "Jul 07, 2025",
-                "category": "DeFi",
-                "summary": "Tokenised stocks are a new investment option that allows for fractional ownership of traditional stocks, offering greater accessibility and flexibility. They are not the same as initial coin offerings (ICOs) or security tokens, but rather a way to tokenize existing stocks. This innovation has the potential to democratize investing and increase liquidity in the financial markets."
+                "summary": "Pattern Computer has entered the financial markets, leveraging its Pattern Discovery Engine and Risk and Confidence XAI (RC/XAI) to advance trust and transparency in high-stakes decision making."
             }
         ],
         "Crypto": [
             {
-                "title": "Smarter Mining Begins Now: HashFly Launches Groundbreaking AI Cloud Mining Platform for Smarter, Safer Crypto Growth",
-                "url": "https://www.globenewswire.com/news-release/2025/07/07/3111261/0/en/Smarter-Mining-Begins-Now-HashFly-Launches-Groundbreaking-AI-Cloud-Mining-Platform-for-Smarter-Safer-Crypto-Growth.html",
-                "source": "GlobeNewswire",
-                "published_at": "Jul 07, 2025",
+                "title": "Russian Malware Campaign Adds Downward Pressure to Internet Computer's ICP Token",
+                "url": "https://www.coindesk.com/markets/2025/07/04/russian-malware-campaign-adds-downward-pressure-to-internet-computer-icp",
+                "source": "CoinDesk",
+                "published_at": "Jul 04, 2025",
                 "category": "Crypto",
-                "summary": "HashFly launches AI-powered cloud mining platform for smarter, safer crypto growth, marking a major leap forward in intelligent, secure, and accessible cryptocurrency mining."
-            },
-            {
-                "title": "Bitcoin Solaris Announces LBank Listing and 72-Hour Price Rollback to $5",
-                "url": "https://www.globenewswire.com/news-release/2025/07/07/3110883/0/en/Bitcoin-Solaris-Announces-LBank-Listing-and-72-Hour-Price-Rollback-to-5.html",
-                "source": "GlobeNewswire",
-                "published_at": "Jul 07, 2025",
-                "category": "Crypto",
-                "summary": "Bitcoin Solaris announces its listing on LBank Exchange and rolls back its price to $5 for 72 hours to mark the milestone."
-            },
-            {
-                "title": "Ethereum\u2019s growing pains and the crypto landscape",
-                "url": "https://cryptoslate.com/ethereums-growing-pains-and-the-crypto-landscape/",
-                "source": "CryptoSlate",
-                "published_at": "Jul 05, 2025",
-                "category": "Crypto",
-                "summary": "Ethereum has dominated DeFi, NFTs, and smart contracts, but its position is being threatened by scalability struggles and internal strife. The crypto landscape is shifting, with new players emerging to challenge Ethereum's dominance. The future of Ethereum remains uncertain as it navigates these growing pains."
+                "summary": "A cybersecurity report links fake crypto wallet extensions to Russian-speaking attackers, causing market jitters and ICP token to break below $5 support."
             }
         ],
         "Web3": [],
         "NFTs": [],
         "Regulation": [
             {
-                "title": "Who\u2019s winning the West\u2019s crypto regulation race?",
-                "url": "https://cointelegraph.com/news/who-s-winning-the-west-s-crypto-regulation-race",
-                "source": "Cointelegraph",
-                "published_at": "Jul 04, 2025",
+                "title": "Identity Analytics Market to Reach USD 12.86 Billion by 2032, Driven by Cybersecurity Needs, Cloud Adoption, and Regulatory Demands | SNS Insider",
+                "url": "https://www.globenewswire.com/news-release/2025/07/07/3111117/0/en/Identity-Analytics-Market-to-Reach-USD-12-86-Billion-by-2032-Driven-by-Cybersecurity-Needs-Cloud-Adoption-and-Regulatory-Demands-SNS-Insider.html",
+                "source": "GlobeNewswire",
+                "published_at": "Jul 07, 2025",
                 "category": "Regulation",
-                "summary": "The US is pushing forward with sweeping crypto legislation, while the EU relies on MiCA and the UK takes a cautious approach. Gemini's head of Europe weighs in on the implications for innovation and adoption. The regulatory landscape is shaping up to be a key factor in the future of crypto."
+                "summary": "The Identity Analytics Market is expected to reach USD 12.86 billion by 2032, driven by the need for cybersecurity, cloud adoption, and regulatory demands."
+            },
+            {
+                "title": "Visa using AI to combat AI-driven fraud in New Zeland",
+                "url": "https://www.finextra.com/pressarticle/106232/visa-using-ai-to-combat-ai-driven-fraud-in-new-zeland",
+                "source": "Finextra",
+                "published_at": "Jul 07, 2025",
+                "category": "Regulation",
+                "summary": "Visa is using artificial intelligence to combat AI-driven fraud in New Zealand, as scammers increasingly use AI to target locals. The company is leveraging AI to identify and prevent fraudulent transactions. This move aims to protect New Zealanders from financial losses and maintain trust in digital payments."
+            },
+            {
+                "title": "Upcycled Materials in Packaging Market Ramps Up in 2025 with ESG Goals and Regulatory Support",
+                "url": "https://www.globenewswire.com/news-release/2025/07/03/3109692/0/en/Upcycled-Materials-in-Packaging-Market-Ramps-Up-in-2025-with-ESG-Goals-and-Regulatory-Support.html",
+                "source": "GlobeNewswire",
+                "published_at": "Jul 03, 2025",
+                "category": "Regulation",
+                "summary": "The global upcycled materials in packaging market is expected to experience significant growth from 2025 to 2034, driven by evolving industry trends, increasing demand, and technological advancements. This growth is fueled by ESG goals and regulatory support. The market is expected to witness a notable increase in demand during the forecast period."
             }
         ],
         "Metaverse": [],
         "Other": [
             {
-                "title": "Aviation and Defense Cyber Security Market Outlook 2025-2034 | AI and Blockchain Integration Transforming the Landscape, Stringent Regulations and Global Partnerships Drive Advancements",
-                "url": "https://www.globenewswire.com/news-release/2025/07/04/3110246/28124/en/Aviation-and-Defense-Cyber-Security-Market-Outlook-2025-2034-AI-and-Blockchain-Integration-Transforming-the-Landscape-Stringent-Regulations-and-Global-Partnerships-Drive-Advancemen.html",
+                "title": "GHO Capital to acquire FotoFinder Systems",
+                "url": "https://www.globenewswire.com/news-release/2025/07/08/3111446/0/en/GHO-Capital-to-acquire-FotoFinder-Systems.html",
                 "source": "GlobeNewswire",
-                "published_at": "Jul 04, 2025",
+                "published_at": "Jul 08, 2025",
                 "category": "Other",
-                "summary": "The Aviation and Defense Cyber Security Market is projected to grow from USD 89.3 billion in 2025 to USD 300.6 billion by 2034, driven by rising cyber threats and technological innovations such as AI-driven threat detection, blockchain, and zero-trust architecture."
+                "summary": "GHO Capital is set to acquire FotoFinder Systems, aligning with its strategy of investing in high growth areas of the MedTech market to improve patient care."
             },
             {
-                "title": "Global Real-World Evidence Solution Market to Grow at a Substantial Growth Rate of ~8% by 2032 | DelveInsight",
-                "url": "https://www.globenewswire.com/news-release/2025/07/02/3109420/0/en/Global-Real-World-Evidence-Solution-Market-to-Grow-at-a-Substantial-Growth-Rate-of-8-by-2032-DelveInsight.html",
+                "title": "Ceribell Files Complaints Against Natus Medical Incorporated with the U.S. International Trade Commission and\u00a0Federal Court in Delaware",
+                "url": "https://www.globenewswire.com/news-release/2025/07/07/3111338/0/en/Ceribell-Files-Complaints-Against-Natus-Medical-Incorporated-with-the-U-S-International-Trade-Commission-and-Federal-Court-in-Delaware.html",
                 "source": "GlobeNewswire",
-                "published_at": "Jul 02, 2025",
+                "published_at": "Jul 07, 2025",
                 "category": "Other",
-                "summary": "The real-world evidence solutions market is driven by the increasing prevalence of chronic diseases and advancements in technologies such as big data analytics, machine learning, and artificial intelligence, expected to grow at a substantial rate of ~8% by 2032."
+                "summary": "Ceribell has filed complaints against Natus Medical Incorporated with the U.S. International Trade Commission and Federal Court in Delaware, alleging infringement of patents related to point-of-care electroencephalography (EEG) technology."
             },
             {
-                "title": "Rivalry Reports Full-Year 2024 Results as Strategic Turnaround Takes Hold, Operating Loss Narrows, and Efficiency Improves",
-                "url": "https://www.globenewswire.com/news-release/2025/07/02/3109000/0/en/Rivalry-Reports-Full-Year-2024-Results-as-Strategic-Turnaround-Takes-Hold-Operating-Loss-Narrows-and-Efficiency-Improves.html",
+                "title": "How AI Diagnostics are Reshaping the Global Medical Market",
+                "url": "https://www.globenewswire.com/news-release/2025/07/07/3110850/28124/en/How-AI-Diagnostics-are-Reshaping-the-Global-Medical-Market.html",
                 "source": "GlobeNewswire",
-                "published_at": "Jul 02, 2025",
+                "published_at": "Jul 07, 2025",
                 "category": "Other",
-                "summary": "Rivalry reports full-year 2024 results, with operating expenses reduced by 17%, net loss narrowed, and foundational rebuild positioning the company for a leaner, more efficient, and financially disciplined 2025."
+                "summary": "AI-driven Smart Diagnostics are revolutionizing healthcare, shifting the market from research to clinical practice, with potential for premium diagnostics, pricing trends, and global expansion."
             }
         ]
     },
     "rejected_articles": [
         {
-            "title": "Ethereum\u2019s Pivotal Role in Decentralized Finance Evolution",
-            "url": "https://hackread.com/ethereum-role-in-decentralized-finance-evolution/",
-            "source": "HackRead",
+            "title": "Retail AI readiness: How the world\u2019s commerce giants are preparing for an AI future",
+            "url": "https://www.cbinsights.com/research/ai-readiness-index-for-retail/",
+            "source": "Cbinsights.com",
             "published_at": "Jul 03, 2025",
-            "category": "DeFi",
-            "summary": "Ethereum's early promise of smart contracts and decentralized applications has led to its pivotal role in the evolution of decentralized finance, enabling the creation of complex financial instruments and services."
+            "category": "Other",
+            "summary": "Tech giants are developing autonomous shopping tools, while payment companies like Visa, Mastercard, and PayPal are preparing for an AI future in retail."
         },
         {
-            "title": "Oasis Protocol Foundation Announces the Official Mainnet Launch of Runtime Offchain Logic (ROFL)",
-            "url": "https://zycrypto.com/oasis-protocol-foundation-announces-the-official-mainnet-launch-of-runtime-offchain-logic-rofl/",
-            "source": "ZyCrypto",
+            "title": "AI Call Bot for Customer Support: How It\u2019s Changing the Game",
+            "url": "https://izismile.com/2025/07/02/ai_call_bot_for_customer_support_how_its_changing_the_game.html",
+            "source": "Izismile.com",
             "published_at": "Jul 02, 2025",
-            "category": "DeFi",
-            "summary": "Oasis Protocol Foundation has announced the official mainnet launch of Runtime Offchain Logic (ROFL), aiming to help Web3 developers build seamless and efficient applications on the AI-focused and privacy-first Oasis Layer 1 blockchain."
+            "category": "Other",
+            "summary": "AI call bots are revolutionizing customer support by providing 24/7 assistance, automating routine tasks, and freeing up human agents to focus on complex issues. These intelligent systems use natural language processing and machine learning to understand customer queries and respond accordingly. As a result, businesses can improve customer satisfaction, reduce wait times, and increase operational efficiency."
         },
         {
-            "title": "Experts Tip Ruvi AI (RUVI) For ADA Latecomers, Over 103x Predicted For Its Utility Token This Year",
-            "url": "https://zycrypto.com/experts-tip-ruvi-ai-ruvi-for-ada-latecomers-over-103x-predicted-for-its-utility-token-this-year/",
-            "source": "ZyCrypto",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Cardano (ADA) has been a household name among cryptocurrency enthusiasts, particularly for those who had the foresight. Its innovative blockchain infrastructure and scalability fueled incredible returns during its prime growth phase. However, for those who missed out, experts recommend Ruvi AI (RUVI) as a potential alternative, with its utility token predicted to increase by over 103x this year."
-        },
-        {
-            "title": "Will BNB Rally Again? With Early Entry Bonuses, Experts Favor Ruvi AI\u2019s (RUVI) Token For 104x Rally",
-            "url": "https://zycrypto.com/will-bnb-rally-again-with-early-entry-bonuses-experts-favor-ruvi-ais-ruvi-token-for-104x-rally/",
-            "source": "ZyCrypto",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Binance Coin's growth is stabilizing, leading analysts to favor Ruvi AI's token for a 104x rally, citing early entry bonuses."
-        },
-        {
-            "title": "BTC Nears Its Peak, Yet This Undervalued AI Token Ruvi AI (RUVI) Is Quietly Offering a Shot at 106x",
-            "url": "https://zycrypto.com/btc-nears-its-peak-yet-this-undervalued-ai-token-ruvi-ai-ruvi-is-quietly-offering-a-shot-at-106x/",
-            "source": "ZyCrypto",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin's growth has stabilized, prompting traders to seek emerging assets with greater upside potential, with Ruvi AI (RUVI) being a standout newcomer offering a potential 106x return."
-        },
-        {
-            "title": "Analysts Forecast $1 for Ruvi AI\u2019s (RUVI) Audited Token Post-Listing, Could It Outshine SOL This Cycle?",
-            "url": "https://zycrypto.com/analysts-forecast-1-for-ruvi-ais-ruvi-audited-token-post-listing-could-it-outshine-sol-this-cycle/",
-            "source": "ZyCrypto",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "Analysts predict Ruvi AI's audited token will reach $1 post-listing, potentially outperforming Solana this cycle, as it builds on a strong foundation."
-        },
-        {
-            "title": "Elon Musk announces his \u2018America Party\u2019 will embrace Bitcoin, criticizes Trump\u2019s fiscal bill",
-            "url": "https://coinjournal.net/news/elon-musk-announces-his-america-party-will-embrace-bitcoin-criticizes-trumps-fiscal-bill/",
-            "source": "Coinjournal.net",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Elon Musk announces his 'America Party' will support Bitcoin, criticizing traditional fiat currency as 'hopeless'. The announcement comes amid a broader discussion about the future of currency. Musk's party aims to promote Bitcoin as a viable alternative."
-        },
-        {
-            "title": "Bitcoin to Benefit Immensely from Trump\u2019s Big Beautiful Bill: White House Advisor",
-            "url": "https://zycrypto.com/bitcoin-to-benefit-immensely-from-trumps-big-beautiful-bill-white-house-advisor/",
-            "source": "ZyCrypto",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "US Presidential advisor Bo Hines believes Bitcoin will greatly benefit from Trump's 'Big, Beautiful Bill', a recently signed bill. The advisor made the statement on Twitter. The bill's impact on the crypto economy is expected to be significant."
-        },
-        {
-            "title": "Applied Cryptography (CMPS 297AD/396AI) \u2014 American University of Beirut",
-            "url": "https://appliedcryptography.page/",
-            "source": "Appliedcryptography.page",
+            "title": "Data Collection Can Be Effective and Legal",
+            "url": "https://original.antiwar.com/bill_binney/2025/07/07/data-collection-can-be-effective-and-legal/",
+            "source": "Antiwar.com",
             "published_at": "Jul 08, 2025",
-            "category": "Crypto",
-            "summary": "Learn modern cryptography principles and applications in this comprehensive course at the American University of Beirut, covering cryptographic theory, practical implementations, and real-world security systems."
+            "category": "Other",
+            "summary": "Veteran Intelligence Professionals for Sanity argue that data collection can be both effective and legal, providing a memo to the President outlining their stance."
         },
         {
-            "title": "Best Blockchain Stocks To Consider \u2013 July 4th",
-            "url": "https://www.etfdailynews.com/2025/07/07/best-blockchain-stocks-to-consider-july-4th/",
-            "source": "ETF Daily News",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Oracle, Riot Platforms, Core Scientific, Applied Digital, Bitdeer Technologies Group, HIVE Digital Technologies, and FTI Consulting are the seven Blockchain stocks to watch today, according to MarketBeat's stock screener tool."
+            "title": "AI adoption in security: Top use cases and mistakes to avoid",
+            "url": "https://www.elastic.co/blog/ai-adoption-security",
+            "source": "Elastic.co",
+            "published_at": "Jul 08, 2025",
+            "category": "Other",
+            "summary": "Discover top AI use cases in cybersecurity, including threat detection, incident response, and vulnerability management, and learn how to avoid common mistakes when adopting AI in your Security Operations Center (SOC) to improve threat detection and response."
         },
         {
-            "title": "Top Blockchain Stocks To Consider \u2013 July 3rd",
-            "url": "https://www.etfdailynews.com/2025/07/06/top-blockchain-stocks-to-consider-july-3rd/",
-            "source": "ETF Daily News",
-            "published_at": "Jul 06, 2025",
-            "category": "Crypto",
-            "summary": "Oracle, Riot Platforms, and Applied Digital are the top Blockchain stocks to consider, according to MarketBeat's stock screener tool. These companies develop, implement, or utilize blockchain's decentralized technology. The stocks are publicly traded and offer a way to invest in the growing blockchain industry."
-        },
-        {
-            "title": "Promising Blockchain Stocks To Follow Now \u2013 July 2nd",
-            "url": "https://www.etfdailynews.com/2025/07/05/promising-blockchain-stocks-to-follow-now-july-2nd/",
-            "source": "ETF Daily News",
-            "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "Oracle, Riot Platforms, Earlyworks, Applied Digital, and Core Scientific are the five Blockchain stocks to watch today, according to MarketBeat's stock screener tool."
-        },
-        {
-            "title": "Best Blockchain Stocks To Follow Today \u2013 July 1st",
-            "url": "https://www.etfdailynews.com/2025/07/03/best-blockchain-stocks-to-follow-today-july-1st/",
-            "source": "ETF Daily News",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "Oracle, Riot Platforms, Applied Digital, Core Scientific, Argo Blockchain, HIVE Digital Technologies, and Globant are the seven Blockchain stocks to watch today, according to MarketBeat's stock screener tool."
-        },
-        {
-            "title": "Blockchain Stocks To Add to Your Watchlist \u2013 June 29th",
-            "url": "https://www.etfdailynews.com/2025/07/02/blockchain-stocks-to-add-to-your-watchlist-june-29th/",
-            "source": "ETF Daily News",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "Oracle, Core Scientific, Riot Platforms, Applied Digital, Bitdeer Technologies Group, Globant, and FTI Consulting are seven Blockchain stocks to watch, according to MarketBeat's stock screener tool."
-        },
-        {
-            "title": "Introducing simple and secure egress policies by hostname in Cloudflare\u2019s SASE platform",
-            "url": "https://blog.cloudflare.com/egress-policies-by-hostname/",
-            "source": "Cloudflare.com",
+            "title": "Identity, AI & Access: Highlights from Identiverse 2025 - Treb Ryan, Sagi Rodin, Amir Ofek, Artyom Poghosyan, Ajay Amlani, Ajay Gupta - ESW #414",
+            "url": "https://securityweeklytv.libsyn.com/identity-ai-access-highlights-from-identiverse-2025-treb-ryan-sagi-rodin-amir-ofek-artyom-poghosyan-ajay-amlani-ajay-gupta-esw-414",
+            "source": "Libsyn.com",
             "published_at": "Jul 07, 2025",
             "category": "Other",
-            "summary": "Cloudflare's SASE platform introduces egress policies by hostname, domain, content category, and application in open beta, allowing for simple and secure control of source IP addresses for internet traffic."
+            "summary": "Single Sign-On (SSO) and Multi-Factor Authentication (MFA) are critical to secure operations, but the foundation of cybersecurity is still locked behind enterprise licensing, making it inaccessible to companies of all sizes."
+        },
+        {
+            "title": "Identity, AI & Access: Highlights from Identiverse 2025 - Treb Ryan, Sagi Rodin, Amir Ofek, Artyom Poghosyan, Ajay Amlani, Ajay Gupta - ESW #414",
+            "url": "https://eswvideo.libsyn.com/identity-ai-access-highlights-from-identiverse-2025-treb-ryan-sagi-rodin-amir-ofek-artyom-poghosyan-ajay-amlani-ajay-gupta-esw-414",
+            "source": "Libsyn.com",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Single Sign-On (SSO) and Multi-Factor Authentication (MFA) are critical to secure operations, but the foundation of cybersecurity is still locked behind enterprise licensing, making it inaccessible to companies of all sizes."
         },
         {
             "title": "\u26a1 Weekly Recap: Chrome 0-Day, Ivanti Exploits, MacOS Stealers, Crypto Heists and More",
@@ -223,252 +135,492 @@
             "summary": "Even strong systems can be vulnerable to threats if a small detail is overlooked, and most attacks start with subtle, easily missed signs, rather than loud alarms."
         },
         {
-            "title": "Financial Comparison: Globant (NYSE:GLOB) vs. Aware (NASDAQ:AWRE)",
-            "url": "https://www.etfdailynews.com/2025/07/07/financial-comparison-globant-nyseglob-vs-aware-nasdaqawre/",
+            "title": "10 Reasons Why SIEM Solutions Are Essential",
+            "url": "https://cloudtweaks.com/2025/07/siem-security-information-event-management/",
+            "source": "Cloudtweaks.com",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "In an era of growing cyber threats, organizations must adopt robust security measures to protect their data and infrastructure, with SIEM solutions being one of the most effective ways to do so."
+        },
+        {
+            "title": "Identity, AI & Access: Highlights from Identiverse 2025 - Sagi Rodin, Ajay Amlani, Treb Ryan, Ajay Gupta, Artyom Poghosyan, Amir Ofek - ESW #414",
+            "url": "https://eswaudio.libsyn.com/identity-ai-access-highlights-from-identiverse-2025-sagi-rodin-ajay-amlani-treb-ryan-ajay-gupta-artyom-poghosyan-amir-ofek-esw-414",
+            "source": "Libsyn.com",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Single Sign-On (SSO) and Multi-Factor Authentication (MFA) are critical to secure operations, but the foundation of cybersecurity is still locked behind enterprise licensing, making it inaccessible to companies of all sizes."
+        },
+        {
+            "title": "AXRP Episode 45 - Samuel Albanie on DeepMind\u2019s AGI Safety Approach",
+            "url": "https://www.lesswrong.com/posts/nZtAkGmDELMnLJMQ5/axrp-episode-45-samuel-albanie-on-deepmind-s-agi-safety",
+            "source": "Lesswrong.com",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "I chat with Samuel Albanie about the Google DeepMind paper he co-authored on AGI safety and security, covering assumptions and approach."
+        },
+        {
+            "title": "Simplifying Cybersecurity With Fully Managed Solutions",
+            "url": "https://bitrebels.com/technology/simplifying-cybersecurity-fully-managed-solutions/",
+            "source": "Bitrebels.com",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Cyber threats are widespread, affecting both small businesses and large enterprises. Managing cybersecurity is complex, time-consuming, and costly, leaving many business owners feeling overwhelmed. Fully managed solutions can simplify cybersecurity and provide a more effective way to protect against threats."
+        },
+        {
+            "title": "Cybersecurity Stocks To Follow Today \u2013 July 3rd",
+            "url": "https://www.etfdailynews.com/2025/07/06/cybersecurity-stocks-to-follow-today-july-3rd/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Alphabet, CrowdStrike, Dell Technologies, Palo Alto Networks, and Fortinet are the top cybersecurity stocks to watch today, according to MarketBeat's stock screener tool."
+        },
+        {
+            "title": "Cybersecurity Snapshot: Expert Advice for Boosting AI Security",
+            "url": "https://www.tenable.com/blog/cybersecurity-snapshot-ai-security-controls-best-practices-advice-07-04-2025",
+            "source": "Tenable.com",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "As businesses increasingly adopt artificial intelligence, securing AI systems has become a top priority for cybersecurity teams, who must master this emerging and evolving field. Cybersecurity experts offer advice on boosting AI security, including implementing robust threat detection and incident response plans. Effective AI security requires a combination of technical expertise and strategic planning."
+        },
+        {
+            "title": "Tech-Driven Resilience: Strategies to Safeguard Operations Across Borders",
+            "url": "https://socialnomics.net/2025/07/03/tech-driven-resilience-strategies-to-safeguard-operations-across-borders/",
+            "source": "Socialnomics.net",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Resilience is crucial for global businesses in an interconnected economy, and tech-driven strategies can help safeguard operations across borders amidst geopolitical tensions, pandemics, and other forces."
+        },
+        {
+            "title": "Secure Your Business With Cisco Hybrid Mesh Firewall Solutions",
+            "url": "https://blogs.cisco.com/security/secure-your-business-with-cisco-hybrid-mesh-firewall",
+            "source": "Cisco.com",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Cisco Hybrid Mesh Firewall solutions offer advanced security for hybrid cloud environments, remote workforces, and AI-powered innovations, providing a robust defense against cyber threats."
+        },
+        {
+            "title": "Cybersecurity Stocks To Follow Today \u2013 July 1st",
+            "url": "https://www.etfdailynews.com/2025/07/03/cybersecurity-stocks-to-follow-today-july-1st/",
+            "source": "ETF Daily News",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Alphabet, CrowdStrike, Palo Alto Networks, Dell Technologies, and Motorola Solutions are the five Cybersecurity stocks to watch today, according to MarketBeat's stock screener tool."
+        },
+        {
+            "title": "AI Dilemma: Emerging Tech as Cyber Risk Escalates",
+            "url": "https://www.trendmicro.com/en_us/research/25/g/ai-cyber-risks.html",
+            "source": "Trendmicro.com",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "As AI adoption accelerates, businesses face mounting cyber threats, prompting urgent choices about secure implementation to mitigate risks. The increasing reliance on AI systems has created new vulnerabilities, making it crucial for companies to prioritize cybersecurity measures. Effective implementation of AI requires a balanced approach that balances innovation with security to ensure a safe and reliable technology ecosystem."
+        },
+        {
+            "title": "SOC analyst vs. security analyst: What\u2019s the difference?",
+            "url": "https://www.elastic.co/blog/soc-analyst-vs-security-analyst",
+            "source": "Elastic.co",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "A SOC analyst focuses on monitoring and responding to security incidents in real-time, while a security analyst focuses on proactively identifying and mitigating potential threats. Both roles require strong analytical and technical skills, but SOC analysts tend to work in a more fast-paced, incident-response environment. Understanding the differences between these roles can help organizations build a stronger cybersecurity team."
+        },
+        {
+            "title": "Navigating Heightened Cyber Risks from Iranian Threats",
+            "url": "https://www.paloaltonetworks.com/blog/2025/07/navigating-heightened-cyber-risks-iranian-threats/",
+            "source": "Paloaltonetworks.com",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Recent geopolitical tensions have elevated global cybersecurity risks, and the potential for increased cyber operations demands attention. The heightened risk landscape is attributed to Iranian threats. Cybersecurity measures must be taken to mitigate these risks."
+        },
+        {
+            "title": "Tracing the Future: How We Harness GenAI for Enhanced Security Solutions at Barracuda Networks",
+            "url": "https://www.databricks.com/blog/tracing-future-how-we-harness-genai-enhanced-security-solutions-barracuda-networks",
+            "source": "Databricks.com",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "At Barracuda, we're constantly innovating to stay ahead of emerging security threats. We're harnessing GenAI to develop enhanced security solutions. This enables us to stay ahead in the complex digital landscape."
+        },
+        {
+            "title": "That Network Traffic Looks Legit, But it Could be Hiding a Serious Threat",
+            "url": "https://thehackernews.com/2025/07/that-network-traffic-looks-legit-but-it.html",
+            "source": "Internet",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "With 80% of cyber threats mimicking legitimate user behavior, top SOCs struggle to determine legitimate traffic from potentially dangerous traffic, as firewalls and EDR often fall short in detection."
+        },
+        {
+            "title": "Artificial Intelligence Stocks To Keep An Eye On \u2013 July 4th",
+            "url": "https://www.etfdailynews.com/2025/07/07/artificial-intelligence-stocks-to-keep-an-eye-on-july-4th/",
             "source": "ETF Daily News",
             "published_at": "Jul 07, 2025",
             "category": "Other",
-            "summary": "Globant and Aware are both computer and technology companies, but which is the better investment? We will compare the two companies based on institutional ownership, valuation, and more."
+            "summary": "BigBear.ai, Salesforce, ServiceNow, Super Micro Computer, QUALCOMM, Snowflake, and Arista Networks are the seven Artificial Intelligence stocks to watch, according to MarketBeat's stock screener tool."
         },
         {
-            "title": "Data443 Risk Mitigation (OTCMKTS:ATDS) and Ituran Location and Control (NASDAQ:ITRN) Head to Head Analysis",
-            "url": "https://www.etfdailynews.com/2025/07/07/data443-risk-mitigation-otcmktsatds-and-ituran-location-and-control-nasdaqitrn-head-to-head-analysis/",
+            "title": "Nebius Group (NASDAQ:NBIS) versus Aware (NASDAQ:AWRE) Financial Survey",
+            "url": "https://www.etfdailynews.com/2025/07/05/nebius-group-nasdaqnbis-versus-aware-nasdaqawre-financial-survey/",
             "source": "ETF Daily News",
-            "published_at": "Jul 07, 2025",
-            "category": "Other",
-            "summary": "Data443 Risk Mitigation and Ituran Location and Control are both small-cap industrials companies, but which is the better investment? The article compares the two companies based on their strengths."
-        },
-        {
-            "title": "VC Roundup: DeFi, AI, hybrid exchanges showcase resilient month for crypto",
-            "url": "https://cointelegraph.com/news/vc-roundup-june-crypto-funding-rails-ai-defi",
-            "source": "Cointelegraph",
-            "published_at": "Jul 06, 2025",
-            "category": "DeFi",
-            "summary": "Crypto VC funding cooled overall, but June saw major raises by several companies, including Rails, Yupp, Beam, Frachtis, Interface Labs, Gradient Network, Story, Blueprint Finance, and Units Network."
-        },
-        {
-            "title": "Bitwise Lists NEAR Staking ETP on Xetra, Broadening Suite of Index-Based Staking Strategies",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3108925/0/en/Bitwise-Lists-NEAR-Staking-ETP-on-Xetra-Broadening-Suite-of-Index-Based-Staking-Strategies.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "DeFi",
-            "summary": "Bitwise launches Bitwise NEAR Staking ETP on Xetra, offering a new index-based staking strategy for NEAR Protocol, a blockchain platform focused on scalability and low-cost performance."
-        },
-        {
-            "title": "What Are Tokenized Stocks? Your Complete Guide To Digital Equities",
-            "url": "https://www.forbes.com/sites/digital-assets/article/what-are-tokenized-stocks-digital-equities/",
-            "source": "Forbes",
-            "published_at": "Jul 07, 2025",
-            "category": "DeFi",
-            "summary": "Tokenized stocks are digital representations of traditional equities, allowing for fractional ownership and increased liquidity. They offer benefits such as reduced minimum investment requirements and increased accessibility, but also come with risks like market volatility and regulatory uncertainty. Investors can access tokenized stocks through specialized platforms and exchanges."
-        },
-        {
-            "title": "YZi Labs joins Digital Asset funding round",
-            "url": "https://www.finextra.com/pressarticle/106221/yzi-labs-joins-digital-asset-funding-round",
-            "source": "Finextra",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "YZi Labs has invested in Digital Asset, a platform providing enterprise-grade tools for building compliant solutions in regulated markets."
-        },
-        {
-            "title": "Cryptocurrency Mining Hardware Market Report 2025: Supportive Policies, Including Tax Incentives and Land Allocation for Crypto Data Centers, are Accelerating the Scale-up of Mining Operations",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110230/28124/en/Cryptocurrency-Mining-Hardware-Market-Report-2025-Supportive-Policies-Including-Tax-Incentives-and-Land-Allocation-for-Crypto-Data-Centers-are-Accelerating-the-Scale-up-of-Mining-O.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "The global Cryptocurrency Mining Hardware market is expected to grow from $23.7 billion in 2024 to $51.8 billion by 2030, driven by advancements in ASIC, GPU, and FPGA technologies and supportive policies."
-        },
-        {
-            "title": "Breaking: $LILPEPE Declared the Most Promising EVM Layer 2 Meme Coin",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109360/0/en/Breaking-LILPEPE-Declared-the-Most-Promising-EVM-Layer-2-Meme-Coin.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "Little Pepe has surpassed $3 million in its presale, earning the title of most promising EVM Layer 2 meme coin, built on an ultra-fast, low-fee ERM."
-        },
-        {
-            "title": "Valour Launches Eight New ETPs on Spotlight Stock Market, Including Bitcoin Cash (BCH), Unus Sed Leo (LEO), OKB (OKB), Polygon (POL), Algorand (ALGO), Filecoin (FIL), Arbitrum (ARB), and Stacks (STX)",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109084/0/en/Valour-Launches-Eight-New-ETPs-on-Spotlight-Stock-Market-Including-Bitcoin-Cash-BCH-Unus-Sed-Leo-LEO-OKB-OKB-Polygon-POL-Algorand-ALGO-Filecoin-FIL-Arbitrum-ARB-and-Stacks-STX.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "Valour has launched eight new ETPs on the Spotlight Stock Market, including Bitcoin Cash, Unus Sed Leo, OKB, Polygon, Algorand, Filecoin, Arbitrum, and Stacks, expanding its Nordic product suite."
-        },
-        {
-            "title": "5 countries where crypto is (surprisingly) tax-free in 2025",
-            "url": "https://cointelegraph.com/news/countries-where-crypto-is-tax-free",
-            "source": "Cointelegraph",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Looking to live tax-free with crypto in 2025? These five countries, including the Cayman Islands, UAE and Germany, still offer legal, zero-tax treatment for cryptocurrencies."
-        },
-        {
-            "title": "Bluewave Nexor: This Bluewave Nexor App Sets New Standard in AI-Driven Trading with Unmatched Security and User Approval",
-            "url": "https://www.globenewswire.com/news-release/2025/07/07/3110925/0/en/Bluewave-Nexor-This-Bluewave-Nexor-App-Sets-New-Standard-in-AI-Driven-Trading-with-Unmatched-Security-and-User-Approval.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 07, 2025",
-            "category": "Crypto",
-            "summary": "Bluewave Nexor is redefining AI-powered trading with a platform built for precision, security, and global accessibility, backed by real-time analytics and advanced automation."
-        },
-        {
-            "title": "Aivora Trade: This Aivora Trade App Sets New Standard in AI-Driven Trading with Unmatched Security and User Approval",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110394/0/en/Aivora-Trade-This-Aivora-Trade-App-Sets-New-Standard-in-AI-Driven-Trading-with-Unmatched-Security-and-User-Approval.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "Aivora Trade is an AI-driven trading platform that sets a new standard with unmatched security and user approval. It offers automated tools and human-guided onboarding, redefining smart investing. The platform has gained rising user confidence worldwide."
-        },
-        {
-            "title": "Russian Malware Campaign Adds Downward Pressure to Internet Computer's ICP Token",
-            "url": "https://www.coindesk.com/markets/2025/07/04/russian-malware-campaign-adds-downward-pressure-to-internet-computer-icp",
-            "source": "CoinDesk",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "A cybersecurity report links fake crypto wallet extensions to Russian-speaking attackers, causing market jitters and ICP token to break below $5 support."
-        },
-        {
-            "title": "CoinEx Research June 2025 Report: Bitcoin in the Crossfire",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109834/0/en/CoinEx-Research-June-2025-Report-Bitcoin-in-the-Crossfire.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin experienced volatility and resilience in June, dipping due to Middle East tensions but rebounding by month-end as geopolitical risk eased."
-        },
-        {
-            "title": "Crypto Tax Breaks Are Here \u2014 DEAL Mining Launches New User Incentive Program",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109569/0/en/Crypto-Tax-Breaks-Are-Here-DEAL-Mining-Launches-New-User-Incentive-Program.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "DEAL Mining launches a new user incentive program, offering a $15 bonus and zero-barrier entry to cloud mining, following a U.S. policy shift that allows everyday investors to participate."
-        },
-        {
-            "title": "Will The United States Become A Blockchain Super Power?",
-            "url": "https://www.forbes.com/sites/digital-assets/2025/07/02/will-the-united-states-become-a-blockchain-super-power/",
-            "source": "Forbes",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "The US is poised to become a blockchain superpower with new legislation, potentially unleashing a wave of innovation similar to the 1996 Telecommunications Act's impact on the internet. The legislation aims to create a favorable regulatory environment for blockchain development and adoption. If successful, the US could become a hub for blockchain innovation and entrepreneurship."
-        },
-        {
-            "title": "Oculus founder Palmer Luckey leads group of tech billionaires launching new crypto-bank \u2014 aims to fill the void left by Silicon Valley Bank's 2023 collapse",
-            "url": "https://www.tomshardware.com/tech-industry/oculus-founder-palmer-luckey-launching-crypto-bank-tech-billionaires",
-            "source": "Tom's Hardware UK",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "Oculus founder Palmer Luckey leads a group of tech billionaires in launching a new crypto-bank, aiming to fill the void left by Silicon Valley Bank's collapse. The bank plans to fortify its funds with stablecoins. The new venture aims to provide a secure and reliable financial institution for the tech industry."
-        },
-        {
-            "title": "Bitget Wallet Partners with Mastercard and Immersve to Introduce Zero-Fee Crypto Card",
-            "url": "https://financialpost.com/globe-newswire/bitget-wallet-partners-with-mastercard-and-immersve-to-introduce-zero-fee-crypto-card",
-            "source": "Financial Post",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "Bitget Wallet partners with Mastercard and Immersve to introduce a zero-fee crypto card, enabling users to make payments directly from their digital wallets."
-        },
-        {
-            "title": "Bitget Wallet Partners with Mastercard and Immersve to Introduce Zero-Fee Crypto Card",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110273/0/en/Bitget-Wallet-Partners-with-Mastercard-and-Immersve-to-Introduce-Zero-Fee-Crypto-Card.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "Bitget Wallet has partnered with Mastercard and Immersve to introduce a zero-fee crypto card, allowing users to seamlessly convert and spend their cryptocurrencies."
-        },
-        {
-            "title": "Crypto & Bitcoin Casinos 2025 (EXPOSED): All iGaming Experts Disclose the No ID Verification Casinos",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109848/0/en/Crypto-Bitcoin-Casinos-2025-EXPOSED-All-iGaming-Experts-Disclose-the-No-ID-Verification-Casinos.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "All iGaming experts disclose no ID verification crypto casinos, also known as no-KYC, in a new report. The report highlights the rise of these casinos, which allow players to gamble without providing identification. The report aims to expose the best no ID verification crypto casinos for 2025."
-        },
-        {
-            "title": "Bitcoin & Crypto Casinos: CTR Collective Experts Help Players Choose No KYC Casinos",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109554/0/en/Bitcoin-Crypto-Casinos-CTR-Collective-Experts-Help-Players-Choose-No-KYC-Casinos.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 02, 2025",
-            "category": "Crypto",
-            "summary": "Players face issues like payout delays, identity checks, and limited wallet support when searching for the best crypto casino. To help, CTR Collective experts provide guidance on choosing no KYC casinos. Players are becoming more discerning and seeking tailored options based on their preferences."
-        },
-        {
-            "title": "Bitcoin Solaris Enters Final Phase of Presale Ahead of Mobile Mining App Launch",
-            "url": "https://www.globenewswire.com/news-release/2025/07/06/3110581/0/en/Bitcoin-Solaris-Enters-Final-Phase-of-Presale-Ahead-of-Mobile-Mining-App-Launch.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 06, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin Solaris enters its final phase of presale ahead of the launch of its mobile mining app, promising a unique take on the concept of Bitcoin 2.0."
-        },
-        {
-            "title": "AAS MINER Rolls Out 2025 AI Cloud Mining Plan \u2014 Fully SEC-Compliant, Risk-Controlled, and Tailored for Crypto Enthusiasts",
-            "url": "https://www.globenewswire.com/news-release/2025/07/05/3110566/0/en/AAS-MINER-Rolls-Out-2025-AI-Cloud-Mining-Plan-Fully-SEC-Compliant-Risk-Controlled-and-Tailored-for-Crypto-Enthusiasts.html",
-            "source": "GlobeNewswire",
             "published_at": "Jul 05, 2025",
-            "category": "Crypto",
-            "summary": "AAS MINER has launched its 2025 AI Cloud Mining Plan, which is fully SEC-compliant, risk-controlled, and designed for crypto enthusiasts. The plan aims to provide a secure and efficient mining experience. It is expected to be a game-changer in the crypto mining industry."
+            "category": "Other",
+            "summary": "Nebius Group and Aware are both computer and technology companies, but which is the superior investment? We will contrast the two businesses based on the strength of their analyst recommendations."
         },
         {
-            "title": "Bitcoin Solaris Unveils Nova App and Enters Final Presale Phase Ahead of July Launch",
-            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110351/0/en/Bitcoin-Solaris-Unveils-Nova-App-and-Enters-Final-Presale-Phase-Ahead-of-July-Launch.html",
-            "source": "GlobeNewswire",
+            "title": "multimodal-auv added to PyPI",
+            "url": "https://pypi.org/project/multimodal-auv/",
+            "source": "Pypi.org",
             "published_at": "Jul 04, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin Solaris has announced the upcoming release of its Solaris Nova App, a flagship app designed to democratize crypto mining, and has entered its final presale phase ahead of a July launch."
+            "category": "Other",
+            "summary": "Multimodal AUV Bayesian Neural Networks for Underwater Environmental Understanding has been added to PyPI, enabling developers to utilize multimodal Bayesian neural networks for underwater environmental understanding."
         },
         {
-            "title": "APT Miner launches GreenMine 2.0, redefining the global green cloud mining method",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3110108/0/en/APT-Miner-launches-GreenMine-2-0-redefining-the-global-green-cloud-mining-method.html",
+            "title": "arbitration-graphs added to PyPI",
+            "url": "https://pypi.org/project/arbitration-graphs/",
+            "source": "Pypi.org",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Arbitration-graphs have been added to PyPI, enabling hierarchical behavior models for complex decision-making and behavior generation in robotics."
+        },
+        {
+            "title": "What a Hacker Stole from Me",
+            "url": "https://mynoise.net/blog.php",
+            "source": "Mynoise.net",
+            "published_at": "Jul 05, 2025",
+            "category": "Other",
+            "summary": "St\u00e9phane, the creator of myNoise, shares a personal account of what a hacker stole from him, providing a behind-the-scenes look at the development of his noise-cancellation app."
+        },
+        {
+            "title": "Gist of The Hindu : FEBRUARY-2025",
+            "url": "https://iasexamportal.com/the-gist/the-hindu-february-2025",
+            "source": "Iasexamportal.com",
+            "published_at": "Jul 05, 2025",
+            "category": "Other",
+            "summary": "The Gist of The Hindu: FEBRUARY-2025 is a summary of the most important news and events from The Hindu newspaper for the month of February 2025."
+        },
+        {
+            "title": "In The AI Revolution, Medical Schools Are Falling Behind U.S. Colleges",
+            "url": "https://www.forbes.com/sites/robertpearl/2025/07/07/in-the-ai-revolution-medical-schools-are-falling-behind-us-colleges/",
+            "source": "Forbes",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "A recent study found that medical schools are lagging behind undergraduate programs in incorporating artificial intelligence (GenAI) into their curricula, with only 14% of medical schools having a formal GenAI curriculum compared to 60% of undergraduate programs."
+        },
+        {
+            "title": "$0.71 Billion by 2032: Why Digital Stethoscopes Are Transforming Modern Diagnostics | MarketsandMarkets\u2122",
+            "url": "https://www.prnewswire.co.uk/news-releases/0-71-billion-by-2032-why-digital-stethoscopes-are-transforming-modern-diagnostics--marketsandmarkets-302498132.html",
+            "source": "PR Newswire UK",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The global digital stethoscopes market is projected to grow from $0.49 billion in 2025 to $0.71 billion by 2032, driven by the shift from analog to intelligent auscultation, with a CAGR of 5.5%."
+        },
+        {
+            "title": "Wearable EEG Devices Market Size to Grow by USD 695.51 million by 2031, Experiences Growth Owing to Growing Prevalence of Neurological Disorders | The Insight Partners",
+            "url": "https://www.prnewswire.co.uk/news-releases/wearable-eeg-devices-market-size-to-grow-by-usd-695-51-million-by-2031--experiences-growth-owing-to-growing-prevalence-of-neurological-disorders--the-insight-partners-302498254.html",
+            "source": "PR Newswire UK",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The global wearable EEG devices market is expected to grow by USD 695.51 million by 2031, driven by the increasing prevalence of neurological disorders and the growing demand for non-invasive diagnostic solutions."
+        },
+        {
+            "title": "Mdxhealth Appoints Michael Holder to Board of Directors and Announces Management Change",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3110016/0/en/Mdxhealth-Appoints-Michael-Holder-to-Board-of-Directors-and-Announces-Management-Change.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "APT Miner launches GreenMine 2.0, a next-generation platform for green cloud mining, as the cryptocurrency market experiences a new round of growth."
+            "category": "Other",
+            "summary": "Mdxhealth appoints Michael Holder to its Board of Directors as Chair, and announces a management change."
         },
         {
-            "title": "CertiK Cements Institutional Presence After CEO\u2019s Strategic Engagements in Hong Kong",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109870/0/en/CertiK-Cements-Institutional-Presence-After-CEO-s-Strategic-Engagements-in-Hong-Kong.html",
-            "source": "GlobeNewswire",
+            "title": "Show HN: HeartLens \u2013 phone-camera blood-pressure and calorie checker",
+            "url": "https://apps.apple.com/us/app/heartlens-bp-tracker/id6747299126",
+            "source": "Apple Newsroom",
             "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "CertiK launches an institutional suite, offering Web3 security for banks, regulators, and enterprises, following CEO's strategic engagements in Hong Kong. The suite provides compliance-ready solutions for institutional clients. This move solidifies CertiK's institutional presence in the market."
+            "category": "Other",
+            "summary": "HeartLens is a Flutter app that turns an iPhone into a pocket health kit, allowing users to track blood pressure, calorie intake, and other health metrics by taking photos of their readings and meals."
         },
         {
-            "title": "Bitcoin Solaris Enters Final Weeks of Presale Amid Growing Investor Interest",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109776/0/en/Bitcoin-Solaris-Enters-Final-Weeks-of-Presale-Amid-Growing-Investor-Interest.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "Bitcoin Solaris has entered its final four weeks of presale, having raised over $6 million and gained 13,650 users, amid growing investor interest."
-        },
-        {
-            "title": "Crypto Security Market Size to Surpass USD 21.21 Billion by 2032, Owing to Rising Institutional Adoption and Demand for Robust Regulatory Compliance | SNS Insider",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109898/0/en/Crypto-Security-Market-Size-to-Surpass-USD-21-21-Billion-by-2032-Owing-to-Rising-Institutional-Adoption-and-Demand-for-Robust-Regulatory-Compliance-SNS-Insider.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "The crypto security market is expected to surpass USD 21.21 billion by 2032, driven by rising institutional adoption and demand for robust regulatory compliance, as the market witnesses exponential growth due to increased integration of cryptocurrencies across sectors and the need to safeguard digital assets from cyber threats."
-        },
-        {
-            "title": "Blue Gold Limited Partners with TripleBolt to Explore Possible Blockchain-Backed Gold Token",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109882/0/en/Blue-Gold-Limited-Partners-with-TripleBolt-to-Explore-Possible-Blockchain-Backed-Gold-Token.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "Blue Gold Limited partners with TripleBolt to explore a blockchain-backed gold token, advancing sustainable mining projects."
-        },
-        {
-            "title": "How to Mine Bitcoin: BSTR Miner Launches Simplified Bitcoin Mining Platform: Cloud Contracts & AI Tools Aim to Demystify Entry for Newcomers",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109627/0/en/How-to-Mine-Bitcoin-BSTR-Miner-Launches-Simplified-Bitcoin-Mining-Platform-Cloud-Contracts-AI-Tools-Aim-to-Demystify-Entry-for-Newcomers.html",
-            "source": "GlobeNewswire",
-            "published_at": "Jul 03, 2025",
-            "category": "Crypto",
-            "summary": "BSTR Miner has launched a simplified Bitcoin mining platform, offering cloud contracts and AI tools to help newcomers enter the market. The platform focuses on hardware rental and efficiency to make mining more accessible. As the Bitcoin market cap surpasses $2.1 trillion, the platform aims to capitalize on the surge in interest."
-        },
-        {
-            "title": "How a digital drug dealer went about business quietly with a postal plan",
-            "url": "https://economictimes.indiatimes.com/news/india/how-a-digital-drug-dealer-went-about-business-quietly-with-a-postal-plan/articleshow/122271622.cms",
+            "title": "Microsoft's new AI tool a medical genius? Tech giant claims it is 4x more accurate than real doctors",
+            "url": "https://economictimes.indiatimes.com/news/international/global-trends/microsofts-new-ai-tool-a-medical-genius-tech-giant-claims-it-is-4x-more-accurate-than-real-doctors/articleshow/122210292.cms",
             "source": "The Times of India",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Microsoft claims its new AI tool is 4x more accurate than real doctors at diagnosing complex health conditions, potentially replacing doctors and solving diagnostic challenges more efficiently."
+        },
+        {
+            "title": "AI Agents Market Size Worth USD 236.03 Billion by 2034 Fueled by Machine Learning and Natural Language Processing Advances",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109307/0/en/AI-Agents-Market-Size-Worth-USD-236-03-Billion-by-2034-Fueled-by-Machine-Learning-and-Natural-Language-Processing-Advances.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The global AI agents market is expected to reach USD 236.03 billion by 2034, growing at a CAGR of 45.82% from 2025 to 2034, driven by advancements in machine learning and natural language processing."
+        },
+        {
+            "title": "How ChatGPT actually works (and why it's been so game-changing)",
+            "url": "https://www.zdnet.com/article/how-chatgpt-actually-works-and-why-its-been-so-game-changing/",
+            "source": "ZDNet",
+            "published_at": "Jul 08, 2025",
+            "category": "Other",
+            "summary": "ChatGPT uses a type of AI called transformer architecture to generate human-like text responses. It's trained on a massive dataset of text from the internet and can learn from user interactions. This allows it to understand context and generate responses that are often surprisingly accurate and helpful."
+        },
+        {
+            "title": "Healthcare ERP Market 2025 Leads with 37% North America Share, Oracle and Microsoft Dominates",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111114/0/en/Healthcare-ERP-Market-2025-Leads-with-37-North-America-Share-Oracle-and-Microsoft-Dominates.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "The global healthcare ERP market is expected to grow from USD 8.57 billion in 2025 to USD 16.06 billion by 2034, with a CAGR of 7.23%. North America holds the largest share of 37%. Oracle and Microsoft dominate the market."
+        },
+        {
+            "title": "AI Becomes the Banker: 21 Case Studies Transforming Digital Banking CX",
+            "url": "https://www.finextra.com/blogposting/28841/ai-becomes-the-banker-21-case-studies-transforming-digital-banking-cx",
+            "source": "Finextra",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "AI has become a cornerstone of strategy in digital banking, transforming customer experience through 21 case studies. It has improved personalization, reduced costs, and enhanced security. AI-powered banking is no longer experimental, but a key driver of innovation in the industry."
+        },
+        {
+            "title": "Data Annotation Tools Market Report 2025, with Profiles of 30+ Companies including Amazon Mechanical Turk, Clickworker, CloudFactory, Cogito Tech, Figure Eight, Labelbox, LightTag, Playment, & Tagtog",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110324/28124/en/Data-Annotation-Tools-Market-Report-2025-with-Profiles-of-30-Companies-including-Amazon-Mechanical-Turk-Clickworker-CloudFactory-Cogito-Tech-Figure-Eight-Labelbox-LightTag-Playment.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The data annotation tools market is expected to grow with opportunities in AI-driven industries like automotive, healthcare, and finance, and expansion potential across regions."
+        },
+        {
+            "title": "Generative AI Fintech Market Report 2025, with Profiles of 25 Players including Azilen Technologies, Coherent Solutions, Genie AI, Google, IBM, Mostly AI, OpenAI, Rishabh Software, Salesforce, and more",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109946/28124/en/Generative-AI-Fintech-Market-Report-2025-with-Profiles-of-25-Players-including-Azilen-Technologies-Coherent-Solutions-Genie-AI-Google-IBM-Mostly-AI-OpenAI-Rishabh-Software-Salesfor.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Generative AI in fintech offers opportunities for fraud detection, investment optimization, customer engagement enhancement, compliance automation, and real-time transactions. Key drivers include demand for personalized solutions and increasing data complexity. The market is expected to grow with profiles of 25 players including Azilen Technologies, Coherent Solutions, and more."
+        },
+        {
+            "title": "AI API Market to Reach USD 373.38 Billion by 2032 Driven by Cloud Adoption, Generative AI, and Real-Time Intelligent Automation | SNS Insider",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109271/0/en/AI-API-Market-to-Reach-USD-373-38-Billion-by-2032-Driven-by-Cloud-Adoption-Generative-AI-and-Real-Time-Intelligent-Automation-SNS-Insider.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The AI API market is expected to reach USD 373.38 billion by 2032, driven by the adoption of cloud technology, generative AI, and real-time intelligent automation. The market is growing rapidly due to increasing demand for automation, generative AI, cloud-based deployment, and real-time voice applications. This growth is expected to continue as AI APIs become more integrated into various industries and applications."
+        },
+        {
+            "title": "ChatGPT Glossary: 53 AI Terms Everyone Should Know",
+            "url": "https://www.cnet.com/tech/services-and-software/chatgpt-glossary-53-ai-terms-everyone-should-know/",
+            "source": "CNET",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "This article provides a comprehensive glossary of 53 AI terms to help readers stay updated on the rapidly growing field of artificial intelligence."
+        },
+        {
+            "title": "What is Artificial Super-intelligence? Former Google CEO Eric Schmidt warns AI will soon outsmart humanity and we are not ready",
+            "url": "https://economictimes.indiatimes.com/magazines/panache/what-is-artificial-super-intelligence-former-google-ceo-eric-schmidt-warns-ai-will-soon-outsmart-humanity-and-we-are-not-ready/articleshow/122281885.cms",
+            "source": "The Times of India",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Former Google CEO Eric Schmidt warns that Artificial Super-intelligence (ASI) could surpass collective human intelligence within six years, and society is vastly unprepared for this shift."
+        },
+        {
+            "title": "Joe Rogan\u2019s Latest Episode Will Make You Question Everything About AI",
+            "url": "https://gizmodo.com/joe-rogans-latest-episode-will-make-you-question-everything-about-ai-2000624443",
+            "source": "Gizmodo.com",
             "published_at": "Jul 05, 2025",
             "category": "Other",
-            "summary": "Edison Babu, a former engineer, was the mastermind behind 'Ketamelon,' India's top-tier darknet drug empire, which exploited the government postal service to distribute drugs across the country, highlighting a vulnerability in the system."
+            "summary": "AI might be hiding its real capabilities, according to Dr. Roman Yampolskiy in a recent podcast episode with Joe Rogan, which may challenge both skeptics and believers."
+        },
+        {
+            "title": "[Latest] Global Hydrogen Technology TIC Market Size/Share Worth USD 18.4 Billion by 2034 at a 17.5% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+            "url": "https://www.globenewswire.com/news-release/2025/07/08/3111429/0/en/Latest-Global-Hydrogen-Technology-TIC-Market-Size-Share-Worth-USD-18-4-Billion-by-2034-at-a-17-5-CAGR-Custom-Market-Insights-Analysis-Outlook-Leaders-Report-Trends-Forecast-Segment.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 08, 2025",
+            "category": "Other",
+            "summary": "The global hydrogen technology TIC market is expected to grow from USD 4.3 billion in 2024 to USD 18.4 billion by 2034, with a compound annual growth rate (CAGR) of 17.5%. The market is driven by increasing demand for clean energy and government initiatives to reduce carbon emissions. The market is expected to witness significant growth in the coming years, driven by advancements in hydrogen technology and increasing adoption in various industries."
+        },
+        {
+            "title": "Why CISOs are making the SASE switch: Fewer vendors, smarter security, better AI guardrails",
+            "url": "https://venturebeat.com/security/facing-ai-powered-threats-cisos-consolidate-around-single-vendor-sase/",
+            "source": "VentureBeat",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "CISOs are switching to single-vendor SASE to consolidate vendors, reduce risk, and regain control, as AI attacks expose gaps in multivendor stacks."
+        },
+        {
+            "title": "AI Empowers Novices to Launch Cyberattacks",
+            "url": "http://cacm.acm.org/news/ai-empowers-novices-to-launch-cyberattacks/",
+            "source": "Acm.org",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "AI-powered tools enable individuals with limited technical expertise to launch cyberattacks, transforming them into cyber threats. These turnkey tools simplify the process, making it accessible to anyone. The rise of AI-powered cyberattacks poses a significant threat to global cybersecurity."
+        },
+        {
+            "title": "Palantir\u2019s +79% vs Bill\u2019s -43%: The AI Divide That Defined SaaS Performance in 1H\u201925",
+            "url": "https://www.saastr.com/saas-stock-performance-1h25-top-winners-losers/",
+            "source": "Saastr.com",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Palantir's stock rose 79% in the first half of 2025, while Bill's stock fell 43%, highlighting the significant divide in SaaS performance driven by AI differentiation and security."
+        },
+        {
+            "title": "AI-Powered Browser Agents Pose Major Security Risks, Experts Warn",
+            "url": "https://www.ubergizmo.com/2025/07/ai-powered-browser-agents-risk/",
+            "source": "Ubergizmo",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "AI-powered browser agents pose significant security risks, especially for Chrome and Microsoft Edge users, according to cybersecurity firm SquareX. The widespread adoption of agentic AI tools capable of autonomous actions increases the risk of cyber attacks. Experts warn that users should exercise caution when using these agents to avoid potential security breaches."
+        },
+        {
+            "title": "Jennifer Duman of Skyhawk Security Recognized as a 2025 CRN Inclusive Channel Leader",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111112/0/en/Jennifer-Duman-of-Skyhawk-Security-Recognized-as-a-2025-CRN-Inclusive-Channel-Leader.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Jennifer Duman, channel director at Skyhawk Security, has been recognized by CRN as an Inclusive Channel Leader for her efforts in promoting diversity and inclusion in the channel."
+        },
+        {
+            "title": "5 stock picks from an analyst for a new era of cybersecurity threats",
+            "url": "https://www.businessinsider.com/cybersecurity-stock-picks-ai-hacking-pltr-panw-crowd-fortinet-iran-2025-7",
+            "source": "Business Insider",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Tech expert Arnie Bellini recommends five cybersecurity stocks to buy in anticipation of a federal cyber defense push, citing the growing threat of cyber attacks and the need for increased government investment in cybersecurity."
+        },
+        {
+            "title": "Cloud-based Email Security - Global Strategic Business Report",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3110776/28124/en/Cloud-based-Email-Security-Global-Strategic-Business-Report.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "The global Cloud-Based Email Security market is expected to grow from $1.1 billion in 2024 to $1.6 billion by 2030, driven by rising cyber threats and cloud email adoption, with a CAGR of 7.4%."
+        },
+        {
+            "title": "Cyber forensics explained: investigating the digital crime scene",
+            "url": "https://www.thestar.com.my/tech/tech-news/2025/07/07/cyber-forensics-explained-investigating-the-digital-crime-scene",
+            "source": "The Star Online",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Cyber forensics is the process of investigating cybersecurity incidents to gather evidence and identify the perpetrators. Cyber forensic investigators use specialized tools and techniques to analyze digital data and reconstruct the crime scene. By doing so, they can help identify the source of the attack, track down the attackers, and prevent future incidents."
+        },
+        {
+            "title": "Week in review: Sudo local privilege escalation flaws fixed, Google patches actively exploited Chrome",
+            "url": "https://www.helpnetsecurity.com/2025/07/06/week-in-review-sudo-local-privilege-escalation-flaws-fixed-google-patches-actively-exploited-chrome/",
+            "source": "Help Net Security",
+            "published_at": "Jul 06, 2025",
+            "category": "Other",
+            "summary": "Sudo fixed local privilege escalation flaws, Google patches actively exploited Chrome vulnerabilities, and updates on recent news and articles."
+        },
+        {
+            "title": "Trump\u2019s All-Out Assault on Science Constitutes a \u201cMind-Boggling Own-Goal\u201d",
+            "url": "https://www.motherjones.com/politics/2025/07/trump-war-assault-national-science-foundation-american-innovation-greatness-education/",
+            "source": "Mother Jones",
+            "published_at": "Jul 05, 2025",
+            "category": "Other",
+            "summary": "The Trump administration's dismantling of the National Science Foundation's graduate research fellowship program is driving a generation of scientific talent to seek opportunities abroad, constituting a 'mind-boggling own-goal' for the US."
+        },
+        {
+            "title": "$20+ Bn IIoT Platform Markets - Global Industry Size, Share, Trends, Opportunity, and Forecast, 2020-2030F",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110255/28124/en/20-Bn-IIoT-Platform-Markets-Global-Industry-Size-Share-Trends-Opportunity-and-Forecast-2020-2030F.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The Industrial Internet of Things (IIoT) platform market offers opportunities to enhance operational efficiency through real-time data, predictive analytics, and automation in sectors like manufacturing and energy, with notable integration of AI and machine learning."
+        },
+        {
+            "title": "Aviation and Defense Cyber Security Market Outlook 2025-2034 | AI and Blockchain Integration Transforming the Landscape, Stringent Regulations and Global Partnerships Drive Advancements",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110246/28124/en/Aviation-and-Defense-Cyber-Security-Market-Outlook-2025-2034-AI-and-Blockchain-Integration-Transforming-the-Landscape-Stringent-Regulations-and-Global-Partnerships-Drive-Advancemen.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The Aviation and Defense Cyber Security Market is projected to grow from USD 89.3 billion in 2025 to USD 300.6 billion by 2034, driven by rising cyber threats and technological innovations such as AI-driven threat detection, blockchain, and zero-trust architecture."
+        },
+        {
+            "title": "Satellite Data Services Market Set to Surpass Valuation of US$ 67.02 Billion By 2033 | Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109999/0/en/Satellite-Data-Services-Market-Set-to-Surpass-Valuation-of-US-67-02-Billion-By-2033-Astute-Analytica.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The satellite data services market is expected to surpass a valuation of US$ 67.02 billion by 2033, driven by breakthroughs in satellite-to-cell connectivity and AI-powered analytics, as well as the proliferation of LEO constellations and in-space manufacturing."
+        },
+        {
+            "title": "Technology Buying Power Has Shifted - Here\u2019s What It Means",
+            "url": "https://www.forbes.com/sites/forbes-research/2025/07/03/technology-buying-power-has-shifted-heres-what-it-means/",
+            "source": "Forbes",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The 2025 Forbes Enterprise Technology Purchasing Report highlights the shift in technology buying power, driven by AI, cybersecurity, and business-led committees, which is reshaping strategy and fueling growth."
+        },
+        {
+            "title": "Cybersecurity Leadership Unites at EC-Council\u2019s Exclusive Executive Reception at Black Hat USA 2025",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109861/0/en/Cybersecurity-Leadership-Unites-at-EC-Council-s-Exclusive-Executive-Reception-at-Black-Hat-USA-2025.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "EC-Council hosted an exclusive Executive Cocktail Reception at Black Hat USA 2025, bringing together cybersecurity leaders. The event aimed to foster connections and discussions among industry experts. The reception was a highlight of the conference, offering a unique networking opportunity."
+        },
+        {
+            "title": "Land Based Defense Equipment Market Outlook 2025-2034 | AI and Modular Systems Drive Next-Gen Land Warfare Capabilities in Defense",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109736/28124/en/Land-Based-Defense-Equipment-Market-Outlook-2025-2034-AI-and-Modular-Systems-Drive-Next-Gen-Land-Warfare-Capabilities-in-Defense.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The Land Based Defense Equipment Market is projected to grow from USD 63.6 billion in 2025 to USD 134.1 billion by 2034, driven by geopolitical tensions and advancements in AI and modular systems."
+        },
+        {
+            "title": "90% aren\u2019t ready for AI attacks, are you?",
+            "url": "https://www.helpnetsecurity.com/2025/07/03/ai-cyber-defenses/",
+            "source": "Help Net Security",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "A new report from Accenture finds that 90% of organizations are not prepared to secure their AI-driven future, with 63% of companies lacking a cohesive cybersecurity strategy."
+        },
+        {
+            "title": "Congruity360 targets cyber threats lurking in unstructured data environments",
+            "url": "https://siliconangle.com/2025/07/02/congruity360-lessen-cyber-threats-unstructured-data-dataprotectionaisummit/",
+            "source": "SiliconANGLE News",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Congruity360 targets cyber threats lurking in unstructured data environments, as cloud- and AI-based threats top the list of concerns for IT and cybersecurity professionals, who struggle to contain the proliferation of unstructured data."
+        },
+        {
+            "title": "Congruity360 targets cyber threats lurking in unstructured data environments",
+            "url": "https://siliconangle.com/2025/07/02/congruity360-lessen-cyber-threats-unstructured-data-dataprotectionageofai/",
+            "source": "SiliconANGLE News",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "Congruity360 targets cyber threats lurking in unstructured data environments, as cloud- and AI-based threats top the list of concerns for IT and cybersecurity professionals, who struggle to contain the proliferation of unstructured data."
+        },
+        {
+            "title": "Public Safety and Security Industry Outlook Report 2025-2034 | AI and 5G Technologies Drive Market Growth, Geopolitical Tensions Bolster Investments",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109333/28124/en/Public-Safety-and-Security-Industry-Outlook-Report-2025-2034-AI-and-5G-Technologies-Drive-Market-Growth-Geopolitical-Tensions-Bolster-Investments.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The Public Safety and Security market is projected to grow at a CAGR of 12.2% from 2025 to 2034, driven by AI, IoT, and 5G advancements, smart city initiatives, and increased government spending, reaching USD 1.63 trillion by 2034."
+        },
+        {
+            "title": "Cyber Crisis Management Market Size to Surpass USD 7.3 Billion by 2032, Owing to Surging Cyber Threats and the Shift Toward AI-Powered Security Frameworks | SNS Insider",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109270/0/en/Cyber-Crisis-Management-Market-Size-to-Surpass-USD-7-3-Billion-by-2032-Owing-to-Surging-Cyber-Threats-and-the-Shift-Toward-AI-Powered-Security-Frameworks-SNS-Insider.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The cyber crisis management market is expected to surpass USD 7.3 billion by 2032, driven by the surge in cyber threats and the shift towards AI-powered security frameworks."
+        },
+        {
+            "title": "Conifers.ai Named in AI SOC Agents Category in the Gartner\u00ae Hype Cycle\u2122 for Security Operations, 2025",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109212/0/en/Conifers-ai-Named-in-AI-SOC-Agents-Category-in-the-Gartner-Hype-Cycle-for-Security-Operations-2025.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Conifers.ai, an agentic AI SOC platform, has been named in the Gartner Hype Cycle for Security Operations, 2025, in the AI SOC Agents category. The platform transforms modern Security Operations Centers (SOCs). This recognition highlights Conifers.ai's innovative approach to security operations."
+        },
+        {
+            "title": "EC-Council Announces a New Era in Cybersecurity Talent Development with Upgraded SOC and DevSecOps Credentials",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109145/0/en/EC-Council-Announces-a-New-Era-in-Cybersecurity-Talent-Development-with-Upgraded-SOC-and-DevSecOps-Credentials.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "EC-Council announces upgraded SOC and DevSecOps credentials with AI-powered labs, job-ready training, and real-world scenarios for the next generation of cybersecurity professionals."
+        },
+        {
+            "title": "Cycurion Announces a Strategic Partnership with AgileBlue to Deliver Advanced AI-Powered Cybersecurity Operations Across North America",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109100/0/en/Cycurion-Announces-a-Strategic-Partnership-with-AgileBlue-to-Deliver-Advanced-AI-Powered-Cybersecurity-Operations-Across-North-America.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Cycurion announces a strategic partnership with AgileBlue to deliver advanced AI-powered cybersecurity operations across North America, combining their expertise to enhance security services."
         },
         {
             "title": "Mastercard Start Path takes on cybersecurity startups",
@@ -479,100 +631,324 @@
             "summary": "Mastercard Start Path has launched a new Security Solutions program to support high-potential startups in cybersecurity, fraud mitigation, digital identity, and payment resiliency. The program aims to accelerate innovation and adoption of new technologies. Startups selected for the program will receive funding, mentorship, and access to Mastercard's expertise and resources."
         },
         {
-            "title": "Japan Testing, Inspection & Certification Market to Worth Over US$ 21.35 Billion by 2033 | Astute Analytica",
-            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111013/0/en/Japan-Testing-Inspection-Certification-Market-to-Worth-Over-US-21-35-Billion-by-2033-Astute-Analytica.html",
+            "title": "A Double-Edged Sword: AI\u2019s Janus Face In The Sweltering Climate Crisis",
+            "url": "https://www.forbes.com/sites/corneliawalther/2025/07/07/a-double-edged-sword-ais-janus-face-in-the-sweltering-climate-crisis/",
+            "source": "Forbes",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "AI has the potential to either exacerbate or mitigate the climate crisis, and it's up to us to decide how to use its power, as the technology already exists."
+        },
+        {
+            "title": "Global Simulation Market to Hit Valuation of US$ 172.33 Billion By 2033 | Astute Analytica",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111232/0/en/Global-Simulation-Market-to-Hit-Valuation-of-US-172-33-Billion-By-2033-Astute-Analytica.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 07, 2025",
             "category": "Other",
-            "summary": "Japan's testing, inspection & certification market is expected to reach over $21.35 billion by 2033, driven by intensified regulations, digitalized remote audits, and advanced labs addressing emerging risks."
+            "summary": "The global simulation market is expected to reach US$ 172.33 billion by 2033, driven by advancements in AI, digital twins, and cloud technologies, with industries like automotive, industrial, and smart buildings adopting simulation for innovation and efficiency."
         },
         {
-            "title": "Criminal Hackers Are Employing AI To Facilitate Identity Theft.",
-            "url": "https://www.forbes.com/sites/chuckbrooks/2025/07/06/criminal-hackers-are-employing-ai-to-facilitate-identity-theft/",
-            "source": "Forbes",
-            "published_at": "Jul 06, 2025",
+            "title": "We asked 3 autonomous driving experts to comment on Tesla's robotaxi launch and break down videos of some of its errors",
+            "url": "https://www.businessinsider.com/tesla-robotaxi-autonomous-driving-experts-respond-2025-6",
+            "source": "Business Insider",
+            "published_at": "Jul 05, 2025",
             "category": "Other",
-            "summary": "Criminal hackers are using artificial intelligence to facilitate identity theft by infiltrating and examining victim networks and launching automated phishing attempts."
+            "summary": "Three autonomous driving experts commented on Tesla's robotaxi launch, discussing its success and potential errors. They analyzed videos of some of the errors, offering insights on what may have caused them. The experts shared their thoughts on the launch's implications for the industry and Tesla's future in autonomous driving."
         },
         {
-            "title": "Codatta \u00d7 Binance Booster Program: Building a Global Knowledge Layer for AI-Powered Nutrition",
-            "url": "https://savoypetr02.medium.com/codatta-binance-booster-program-building-a-global-knowledge-layer-for-ai-powered-nutrition-d0f0c2fbb5b6",
-            "source": "Medium",
-            "published_at": "Jul 06, 2025",
-            "category": "Other",
-            "summary": "Codatta and Binance have launched a program to build a global knowledge layer for AI-powered nutrition, aiming to improve data precision in the health and nutrition industry."
-        },
-        {
-            "title": "At least 36 new tech unicorns were minted in 2025 so far | TechCrunch",
-            "url": "https://techcrunch.com/2025/07/06/7-new-tech-unicorns-were-minted-in-2025-so-far/",
-            "source": "TechCrunch",
-            "published_at": "Jul 06, 2025",
-            "category": "Other",
-            "summary": "At least 36 new tech startups have achieved unicorn status so far in 2025, driven by the investor frenzy surrounding AI. TechCrunch tracked this data using Crunchbase and PitchBook. The number of new unicorns is increasing every month."
-        },
-        {
-            "title": "At least 36 new tech unicorns were minted in 2025 so far",
-            "url": "https://finance.yahoo.com/news/least-36-tech-unicorns-were-174734390.html",
-            "source": "Yahoo Entertainment",
-            "published_at": "Jul 06, 2025",
-            "category": "Other",
-            "summary": "At least 36 new tech startups have achieved unicorn status so far in 2025, driven by investor enthusiasm for AI-powered companies. Every month, more startups are obtaining unicorn status. Data from Crunchbase and PitchBook was used to track these new unicorns."
-        },
-        {
-            "title": "At least 36 new tech unicorns were minted in 2025 so far | TechCrunch",
-            "url": "https://techcrunch.com/2025/07/06/at-least-36-new-tech-unicorns-were-minted-in-2025-so-far/",
-            "source": "TechCrunch",
-            "published_at": "Jul 06, 2025",
-            "category": "Other",
-            "summary": "At least 36 new tech startups have achieved unicorn status so far in 2025, driven by the investor frenzy surrounding AI. TechCrunch tracked this data using Crunchbase and PitchBook. The number of new unicorns is increasing every month."
-        },
-        {
-            "title": "India could reach $9.82 trillion in economic activity by 2035: PwC report",
-            "url": "https://economictimes.indiatimes.com/news/economy/indicators/india-could-reach-9-82-trillion-in-economic-activity-by-2035-pwc-report/articleshow/122280519.cms",
-            "source": "The Times of India",
-            "published_at": "Jul 06, 2025",
-            "category": "Other",
-            "summary": "PwC India predicts that Indian businesses could unlock $9.82 trillion in economic value by 2035 by adopting domain-led models addressing human and industrial needs, through cross-sector collaboration and innovation."
-        },
-        {
-            "title": "Cloud Computing Market worth $2,281.1 billion by 2030- Exclusive Report by MarketsandMarkets\u2122",
-            "url": "https://www.prnewswire.co.uk/news-releases/cloud-computing-market-worth-2-281-1-billion-by-2030--exclusive-report-by-marketsandmarkets-302498135.html",
+            "title": "Edge AI Hardware Market worth $58.90 billion by 2030 - Exclusive Report by MarketsandMarkets\u2122",
+            "url": "https://www.prnewswire.co.uk/news-releases/edge-ai-hardware-market-worth-58-90-billion-by-2030---exclusive-report-by-marketsandmarkets-302498129.html",
             "source": "PR Newswire UK",
             "published_at": "Jul 04, 2025",
             "category": "Other",
-            "summary": "The Cloud Computing Market is expected to grow from $1,294.9 billion in 2025 to $2,281.1 billion by 2030, at a CAGR of 12.0% during the forecast period."
+            "summary": "The edge AI hardware market is projected to reach $58.90 billion by 2030, growing at a CAGR of 17.6% from $26.14 billion in 2025, according to a new report by MarketsandMarkets\u2122."
         },
         {
-            "title": "Connected Logistics Market Outlook Report 2025-2034 | North America Leads Adoption; Asia-Pacific Emerges as Key Growth Region",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109929/28124/en/Connected-Logistics-Market-Outlook-Report-2025-2034-North-America-Leads-Adoption-Asia-Pacific-Emerges-as-Key-Growth-Region.html",
+            "title": "Automotive Diagnostic Scan Tools Market Analysis Report 2025-2034 | AI and Machine Learning Revolutionizing the Market, EV and Hybrid Diagnostic Needs Spark Specialized Tool Developments",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110306/28124/en/Automotive-Diagnostic-Scan-Tools-Market-Analysis-Report-2025-2034-AI-and-Machine-Learning-Revolutionizing-the-Market-EV-and-Hybrid-Diagnostic-Needs-Spark-Specialized-Tool-Developme.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The global automotive diagnostic scan tools market is projected to grow at a 5.3% CAGR, reaching USD 57.3 billion by 2034, driven by advancements in AI, wireless connectivity, and cloud-based technologies."
+        },
+        {
+            "title": "Road Logistics Industry Outlook Report 2025 | Market to Reach Sales of $3.9 Trillion by 2034 - Rising Demand for Speed and Efficiency Fuels Innovation and Consolidation in Last-Mile Delivery Market",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110304/28124/en/Road-Logistics-Industry-Outlook-Report-2025-Market-to-Reach-Sales-of-3-9-Trillion-by-2034-Rising-Demand-for-Speed-and-Efficiency-Fuels-Innovation-and-Consolidation-in-Last-Mile-Del.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The road logistics market is expected to reach $3.9 trillion by 2034, driven by a 7.4% CAGR, fueled by e-commerce growth, AI and IoT technology, and a focus on sustainability and innovative last-mile solutions."
+        },
+        {
+            "title": "$600+ Bn Express Delivery Market Outlook 2025-2034 | Technological Advancements Like AI, Drones, and Green Initiatives are Transforming the Landscape",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109922/28124/en/600-Bn-Express-Delivery-Market-Outlook-2025-2034-Technological-Advancements-Like-AI-Drones-and-Green-Initiatives-are-Transforming-the-Landscape.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 03, 2025",
             "category": "Other",
-            "summary": "The Connected Logistics Market is projected to grow from USD 26.1 billion in 2025 to USD 80.4 billion by 2034, with a 13.3% CAGR, driven by e-commerce, IoT adoption, and demand for efficiency."
+            "summary": "The express delivery market is expected to grow to over $600 billion by 2034, driven by technological advancements like AI, drones, and green initiatives. Cross-border e-commerce growth will fuel demand for efficient international express delivery services, prompting logistics firms to invest in tech-enabled global supply chains. Customer expectations for speed and convenience will continue to shape the market's development."
         },
         {
-            "title": "Hazardous Goods Logistics Market Outlook 2025-2034 | Global Push for Harmonized Safety Standards Fuels Growth, Europe and North America Lead in Regulatory Changes and Technological Integration",
-            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109924/28124/en/Hazardous-Goods-Logistics-Market-Outlook-2025-2034-Global-Push-for-Harmonized-Safety-Standards-Fuels-Growth-Europe-and-North-America-Lead-in-Regulatory-Changes-and-Technological-In.html",
+            "title": "Green Logistics Industry Outlook Report 2025-2034 | Innovations in Electric Fleets and AI-driven Logistics Fueling the Next-Generation Eco-friendly Supply Chain",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109872/28124/en/Green-Logistics-Industry-Outlook-Report-2025-2034-Innovations-in-Electric-Fleets-and-AI-driven-Logistics-Fueling-the-Next-Generation-Eco-friendly-Supply-Chain.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 03, 2025",
             "category": "Other",
-            "summary": "The Hazardous Goods Logistics Market is projected to grow from USD 212.8 billion in 2025 to USD 421.8 billion by 2034, driven by rising chemical, energy, and pharma sectors, and enhanced safety regulations and digitization."
+            "summary": "The Green Logistics Market is projected to grow from USD 1.2 trillion in 2025 to USD 2.1 trillion by 2034, driven by innovations in electric fleets and AI-driven logistics, with a CAGR of 6.8%. Eco-friendly supply chains are becoming essential, and regulatory efforts are fueling this growth. The market is expected to reach USD 2.1 trillion by 2034."
         },
         {
-            "title": "Influencer Marketing Platform Market to Worth Over US$ 216.3 Billion By 2033 | Astute Analytica",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109156/0/en/Influencer-Marketing-Platform-Market-to-Worth-Over-US-216-3-Billion-By-2033-Astute-Analytica.html",
+            "title": "AI Chip Market Set to Soar to US$ 229.08 Billion by 2032, Fueled by Robust 20.49% CAGR: AnalystView Market Insights",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109772/0/en/AI-Chip-Market-Set-to-Soar-to-US-229-08-Billion-by-2032-Fueled-by-Robust-20-49-CAGR-AnalystView-Market-Insights.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The AI chip market is expected to reach $229.08 billion by 2032, driven by a 20.49% CAGR. The AI industry is projected to employ over 50 million people by 2025, showcasing its massive growth potential. Over 80% of organizations now rely on AI for strategic decision-making."
+        },
+        {
+            "title": "Space Militarization Market Research Report 2025-2034 | Space Defense Innovations Focus on Resilient Satellites and Missile Systems",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109727/28124/en/Space-Militarization-Market-Research-Report-2025-2034-Space-Defense-Innovations-Focus-on-Resilient-Satellites-and-Missile-Systems.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The Space Militarization Market is projected to grow from USD 48.9 billion in 2025 to USD 112.7 billion in 2034, with a 9.7% CAGR, driven by rising geopolitical tensions and investment in advanced space technologies."
+        },
+        {
+            "title": "When stars align: Leveraging European defence budgets to drive a dual-use tech boom",
+            "url": "https://www.iss.europa.eu/publications/briefs/when-stars-align-leveraging-european-defence-budgets-drive-dual-use-tech-boom",
+            "source": "Europa.eu",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "Europe's security and economic competitiveness are under strain, and leveraging defence budgets could drive a dual-use tech boom, according to estimates."
+        },
+        {
+            "title": "Advantest\u2019s VOICE 2025 Draws Record Attendance in Austin, Texas",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3108921/0/en/Advantest-s-VOICE-2025-Draws-Record-Attendance-in-Austin-Texas.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 02, 2025",
             "category": "Other",
-            "summary": "The influencer marketing platform market is expected to reach US$ 216.3 billion by 2033, with a high return on investment of US$ 6.50 per dollar invested. AI-driven campaigns are widely adopted by 92% of brands, with mobile-first strategies and micro-influencers achieving superior engagement rates. The performance-based pricing model is also gaining popularity."
+            "summary": "Advantest's VOICE 2025 conference in Austin, Texas, drew a record attendance, hosting major semiconductor companies to discuss the latest test technologies and industry trends."
         },
         {
-            "title": "QuantGold Launches Qsecore: World\u2019s First SIM-Layer Encryption Platform for Mobile Security",
-            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109087/0/en/QuantGold-Launches-Qsecore-World-s-First-SIM-Layer-Encryption-Platform-for-Mobile-Security.html",
+            "title": "How can we create a sustainable AI future?",
+            "url": "https://www.techradar.com/pro/how-can-we-create-a-sustainable-ai-future",
+            "source": "TechRadar",
+            "published_at": "Jul 08, 2025",
+            "category": "Other",
+            "summary": "As AI innovation advances, it's crucial to address the challenges that come with it to create a sustainable future. This requires a multifaceted approach, including responsible development, ethical considerations, and societal engagement. By working together, we can harness the benefits of AI while minimizing its negative impacts."
+        },
+        {
+            "title": "IT Summit focuses on balancing AI challenges and opportunities",
+            "url": "https://news.harvard.edu/gazette/story/2025/07/it-summit-focuses-on-balancing-ai-challenges-and-opportunities/",
+            "source": "Harvard School of Engineering and Applied Sciences",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "The IT Summit emphasized the importance of balancing the challenges and opportunities presented by AI, with experts urging professors and students to become sophisticated users of the technology."
+        },
+        {
+            "title": "[Latest] Global 3D Printed Drones Market Size/Share Worth USD 3,855.5 Million by 2034 at a 20.7% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3111245/0/en/Latest-Global-3D-Printed-Drones-Market-Size-Share-Worth-USD-3-855-5-Million-by-2034-at-a-20-7-CAGR-Custom-Market-Insights-Analysis-Outlook-Leaders-Report-Trends-Forecast-Segmentati.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "The global 3D printed drones market is expected to grow from USD 710.5 million in 2024 to USD 3,855.5 million by 2034, with a compound annual growth rate (CAGR) of 20.7%. The market is driven by increasing demand for drones in various industries such as agriculture, construction, and entertainment. The market is expected to witness significant growth due to advancements in 3D printing technology and its increasing adoption in drone manufacturing."
+        },
+        {
+            "title": "Japan Cement Industry Report 2025-2029 | Innovation in Low-Carbon Technologies and Circular Economy Practices Bolsters Cement Producers",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3110839/28124/en/Japan-Cement-Industry-Report-2025-2029-Innovation-in-Low-Carbon-Technologies-and-Circular-Economy-Practices-Bolsters-Cement-Producers.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Japan's cement market is expected to grow by 5.1% annually, reaching $6.82 billion by 2025, driven by innovation in low-carbon technologies and circular economy practices. The sector has achieved a CAGR of 5.8% from 2020-2024 and is projected to grow by 4.8% from 2025-2029. The industry is adapting to low domestic demand by emphasizing exports and green innovation."
+        },
+        {
+            "title": "South Africa Cement Industry Report 2025-2029 | Key Risks Stem from Energy, Regulatory, and Market Volatility",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3110812/28124/en/South-Africa-Cement-Industry-Report-2025-2029-Key-Risks-Stem-from-Energy-Regulatory-and-Market-Volatility.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "South Africa's cement market is projected to grow at a CAGR of 8.1% to reach US$1.08 billion by 2025, driven by infrastructure investment, government housing programs, and regulatory interventions."
+        },
+        {
+            "title": "How Leading Companies in the Conveyor System Market are Navigating Tariff Impacts and Supply Chain Challenges",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3110801/28124/en/How-Leading-Companies-in-the-Conveyor-System-Market-are-Navigating-Tariff-Impacts-and-Supply-Chain-Challenges.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Leading companies in the conveyor system market are adapting to tariff impacts and supply chain challenges through operational agility, automation, and tailored solutions for diverse sectors, while also leveraging growth opportunities in moving floor conveyor systems."
+        },
+        {
+            "title": "Modernizing data center infrastructure: how businesses thrive beyond legacy data centers",
+            "url": "https://www.techradar.com/pro/modernizing-data-center-infrastructure-how-businesses-thrive-beyond-legacy-data-centers",
+            "source": "TechRadar",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Banks must modernize their data center infrastructure to achieve cloud-native agility and stay ahead of digital disruption, enabling customer-centric innovation."
+        },
+        {
+            "title": "Indosat Ooredoo Hutchison and Nokia partner to reduce energy demand and support AI-powered, sustainable operations",
+            "url": "https://www.globenewswire.com/news-release/2025/07/07/3110730/0/en/Indosat-Ooredoo-Hutchison-and-Nokia-partner-to-reduce-energy-demand-and-support-AI-powered-sustainable-operations.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Indosat Ooredoo Hutchison and Nokia partner to reduce energy demand and support AI-powered, sustainable operations, leveraging Nokia Energy's expertise to optimize energy efficiency and enable the use of artificial intelligence in their operations."
+        },
+        {
+            "title": "Coolant Distribution Units for Data Centers Market to Soar as AI and HPC Drive Cooling Demand | Valuates Reports",
+            "url": "https://www.prnewswire.co.uk/news-releases/coolant-distribution-units-for-data-centers-market-to-soar-as-ai-and-hpc-drive-cooling-demand--valuates-reports-302498263.html",
+            "source": "PR Newswire UK",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The Coolant Distribution Units (CDU) for Data Center Market is expected to grow significantly due to the increasing adoption of AI and HPC, driving the demand for efficient cooling solutions. The market is segmented by type and application, with liquid-to-liquid CDU and liquid-to-air CDU being the most popular types. The global opportunity analysis and industry forecast for the market is expected to reach $*** by 2031."
+        },
+        {
+            "title": "CF & CFRP Market worth $35.55 billion in 2030 - Exclusive Report by MarketsandMarkets\u2122",
+            "url": "https://www.prnewswire.co.uk/news-releases/cf--cfrp-market-worth-35-55-billion-in-2030--exclusive-report-by-marketsandmarkets-302498124.html",
+            "source": "PR Newswire UK",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The CF & CFRP market is expected to reach $35.55 billion by 2030, driven by increasing demand from aerospace and automotive industries. The market is segmented by precursor type, source, resin type, manufacturing process, and end-use industry. The report provides an in-depth analysis of the market trends, drivers, and challenges."
+        },
+        {
+            "title": "Autonomous Boats Industry Outlook Report 2025-2034 | AI and Sensor Technologies Propel Innovations, 5G and Satellite Communications to Revolutionize Operations",
+            "url": "https://www.globenewswire.com/news-release/2025/07/04/3110295/28124/en/Autonomous-Boats-Industry-Outlook-Report-2025-2034-AI-and-Sensor-Technologies-Propel-Innovations-5G-and-Satellite-Communications-to-Revolutionize-Operations.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The global Autonomous Boats Market is projected to surge from USD 1.6 billion in 2025 to USD 3.4 billion by 2034, with a CAGR of 8.4%, driven by AI-powered navigation technologies, enhanced safety, and cost reduction."
+        },
+        {
+            "title": "India\u2019s digital supply chain revolution: Turning e-waste into a trillion-dollar green opportunity",
+            "url": "https://economictimes.indiatimes.com/news/economy/policy/indias-digital-supply-chain-revolution-turning-e-waste-into-a-trillion-dollar-green-opportunity/articleshow/122229723.cms",
+            "source": "The Times of India",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "India's digital economy faces a significant e-waste challenge, generating millions of tons annually with minimal formal processing. Supply Chain 4.0, integrating AI, IoT, and blockchain, offers a technology-driven solution for sustainable e-waste management. This revolution has the potential to turn e-waste into a trillion-dollar green opportunity."
+        },
+        {
+            "title": "Agricultural Biotechnology Market Outlook Report to 2030, with Profiles of Bayer, Corteva, Syngenta, BASF, FMC, Bioceres Crop Solutions, Evogene, Marrone Bio Innovations, Calyxt & Arcadia Biosciences",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109949/28124/en/Agricultural-Biotechnology-Market-Outlook-Report-to-2030-with-Profiles-of-Bayer-Corteva-Syngenta-BASF-FMC-Bioceres-Crop-Solutions-Evogene-Marrone-Bio-Innovations-Calyxt-Arcadia-Bio.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The agricultural biotechnology market is driven by demand for climate-resilient, sustainable solutions, with opportunities in gene editing, precision breeding, and AI integration, and regional innovation and strategic alliances playing key roles."
+        },
+        {
+            "title": "Chemical Distribution Market Volume to Worth 440.18 Million Tons by 2034",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109943/0/en/Chemical-Distribution-Market-Volume-to-Worth-440-18-Million-Tons-by-2034.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The global chemical distribution market volume is projected to grow from 239.32 million tons in 2024 to 440.18 million tons by 2034, with a CAGR of 6.28%."
+        },
+        {
+            "title": "$5 Bn Pet Supplements Market Trends, Analysis, and Forecasts 2025-2034 | AI-Driven Personalized Nutrition and CBD-Infused Supplements Transforming Pet Health",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109881/28124/en/5-Bn-Pet-Supplements-Market-Trends-Analysis-and-Forecasts-2025-2034-AI-Driven-Personalized-Nutrition-and-CBD-Infused-Supplements-Transforming-Pet-Health.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The global pet supplements market is projected to grow at a 6.4% CAGR, reaching $5 billion by 2034, driven by rising pet ownership and focus on pet wellness, supported by AI-driven personalized nutrition and eco-friendly practices."
+        },
+        {
+            "title": "Car Pooling Market Outlook 2025-2034 | Corporate Car Pooling Programs Gain Traction Amid Rising Sustainability Goals, Asia-Pacific and Latin America Emerge as Strong Growth Markets",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109738/28124/en/Car-Pooling-Market-Outlook-2025-2034-Corporate-Car-Pooling-Programs-Gain-Traction-Amid-Rising-Sustainability-Goals-Asia-Pacific-and-Latin-America-Emerge-as-Strong-Growth-Markets.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The car pooling market is valued at $11.2 billion by 2025 and is projected to reach $36.4 billion by 2034, growing at a CAGR of 14.0%. Corporate car pooling programs are gaining traction amid rising sustainability goals, with Asia-Pacific and Latin America emerging as strong growth markets. Digital tech integration and environmental awareness are driving adoption in regions like Europe and North America."
+        },
+        {
+            "title": "Potato Processing Market Size, Share, Trends, Analysis, and Forecast 2025-2034 | Global Industry Growth, Competitive Landscape, Opportunities, and Challenges",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109735/28124/en/Potato-Processing-Market-Size-Share-Trends-Analysis-and-Forecast-2025-2034-Global-Industry-Growth-Competitive-Landscape-Opportunities-and-Challenges.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The global potato processing market is projected to grow from USD 28.5 billion in 2025 to USD 47.7 billion by 2034, driven by rising demand for convenient, ready-to-eat foods and plant-based diets, with a CAGR of 5.9%."
+        },
+        {
+            "title": "Refrigerated Warehousing and Storage Market Outlook 2025-2034 | Automation and Eco-Friendly Designs Lead Innovations, Emerging Markets Boost Investment Opportunities",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109734/28124/en/Refrigerated-Warehousing-and-Storage-Market-Outlook-2025-2034-Automation-and-Eco-Friendly-Designs-Lead-Innovations-Emerging-Markets-Boost-Investment-Opportunities.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The refrigerated warehousing and storage market is expected to grow from USD 182.2 billion in 2025 to USD 426.1 billion by 2034, driven by a 9.9% CAGR, with key growth drivers including increased consumption of perishable goods and automation and eco-friendly designs leading innovations."
+        },
+        {
+            "title": "Hydrogen Peroxide Market Report 2025-2030: 35% Grade Hydrogen Peroxide Emerges as Fastest-Growing Segment",
+            "url": "https://www.globenewswire.com/news-release/2025/07/03/3109702/28124/en/Hydrogen-Peroxide-Market-Report-2025-2030-35-Grade-Hydrogen-Peroxide-Emerges-as-Fastest-Growing-Segment.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 03, 2025",
+            "category": "Other",
+            "summary": "The hydrogen peroxide market is expected to grow from USD 3.48 billion in 2024 to USD 4.70 billion by 2030, with a CAGR of 5.1%, driven by its eco-friendly and oxidizing properties in industries like pulp & paper, electronics, and others."
+        },
+        {
+            "title": "Confronting the AI/energy conundrum",
+            "url": "https://news.mit.edu/2025/confronting-ai-energy-conundrum-0702",
+            "source": "Mit.edu",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The MIT Energy Initiative's annual research spring symposium examined the role of artificial intelligence in the clean energy transition, highlighting both its potential benefits and challenges."
+        },
+        {
+            "title": "Polystyrene Market Volume to Reach 62.33 Million Tons by 2034 | Says Towards Chem and Materials",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109399/0/en/Polystyrene-Market-Volume-to-Reach-62-33-Million-Tons-by-2034-Says-Towards-Chem-and-Materials.html",
             "source": "GlobeNewswire",
             "published_at": "Jul 02, 2025",
             "category": "Other",
-            "summary": "QuantGold has launched Qsecore, the world's first SIM-layer encryption platform for mobile security. The platform provides military-grade voice, messaging, and data vault to mobile users. The rollout is set to begin in August following successful testing."
+            "summary": "The global polystyrene market volume is expected to reach 62.33 million tons by 2034, growing at a CAGR of 4.51% from 2025, starting at 41.09 million tons."
+        },
+        {
+            "title": "Spatiotemporal pattern of land use and land cover changes of upper Sangu-Matamuhuri Watershed in the South-Eastern Bangladesh",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327284",
+            "source": "Plos.org",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "This study analyzed the spatiotemporal patterns of land use and land cover changes in the upper Sangu-Matamuhuri Watershed of Bangladesh from 1988 to 2019 using remote sensing and GIS approaches."
+        },
+        {
+            "title": "ZenaTech Expands Drone as a Service (DaaS) to California with Offer to Acquire an Engineering and Surveying Firm, Tapping into Precision Agriculture and Viticulture Market",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3109082/0/en/ZenaTech-Expands-Drone-as-a-Service-DaaS-to-California-with-Offer-to-Acquire-an-Engineering-and-Surveying-Firm-Tapping-into-Precision-Agriculture-and-Viticulture-Market.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "ZenaTech expands its Drone as a Service (DaaS) to California, offering to acquire an engineering and surveying firm to tap into the precision agriculture and viticulture market."
+        },
+        {
+            "title": "Fifth-Party Logistics (5PL) Market to Hit $10.7 Billion by 2030: Actionable Insights and Growth Forecasts",
+            "url": "https://www.globenewswire.com/news-release/2025/07/02/3108935/28124/en/Fifth-Party-Logistics-5PL-Market-to-Hit-10-7-Billion-by-2030-Actionable-Insights-and-Growth-Forecasts.html",
+            "source": "GlobeNewswire",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "The Fifth-Party Logistics (5PL) market is expected to reach $10.7 billion by 2030, driven by opportunities to leverage AI, IoT, and blockchain to optimize supply chains, enhance efficiency and sustainability, and meet growing e-commerce demands for faster delivery."
+        },
+        {
+            "title": "IBM z17 (9175) Technical Guide",
+            "url": "https://www.redbooks.ibm.com/abstracts/sg248579.html",
+            "source": "Ibm.com",
+            "published_at": "Jul 02, 2025",
+            "category": "Other",
+            "summary": "This IBM Redbooks publication describes the features and functions of the IBM z17 (9175) platform, built with the IBM Telum II processor, including details about the processor design, I/O, and more."
+        },
+        {
+            "title": "The AI Agent Economy: Redesigning Financial Interactions (Joris Lochy)",
+            "url": "https://www.finextra.com/blogposting/28846/the-ai-agent-economy-redesigning-financial-interactions",
+            "source": "Finextra",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "AI has transformed financial services with chatbots, robo-advisors, and KYC automation, and is poised to redesign financial interactions through the emergence of an AI agent economy."
+        },
+        {
+            "title": "The Walls Within: Why Organizations Cling to Data Silos in the Age of AI",
+            "url": "https://www.finextra.com/blogposting/28842/the-walls-within-why-organizations-cling-to-data-silos-in-the-age-of-ai",
+            "source": "Finextra",
+            "published_at": "Jul 07, 2025",
+            "category": "Other",
+            "summary": "Despite the promise of AI, many organizations continue to cling to data silos due to cultural and technological barriers, hindering the potential for smarter decisions and streamlined processes."
+        },
+        {
+            "title": "[CFP] 12th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems",
+            "url": "https://lists.w3.org/Archives/Public/semantic-web/2025Jul/0008.html",
+            "source": "W3.org",
+            "published_at": "Jul 04, 2025",
+            "category": "Other",
+            "summary": "The 12th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems is a conference that focuses on the intersection of human decision making and recommender systems, exploring how to improve the user experience and decision-making processes."
         }
     ]
 }
