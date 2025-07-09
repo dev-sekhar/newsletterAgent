@@ -1,139 +1,99 @@
-# 📰 AI-Powered Autonomous Newsletter Agent
+# Autonomous AI Newsletter Agent
 
-This project implements a sophisticated, autonomous AI agent designed to create, review, and publish a weekly newsletter on any given topic. It uses a multi-tool, goal-driven architecture powered by LangChain and Large Language Models (LLMs) to ensure high-quality, relevant, and consistent output.
+This project is an advanced, multi-agent system designed to autonomously research, curate, and draft a weekly topical newsletter. It leverages Large Language Models (LLMs) for content generation and analysis, and is built with a "Human-in-the-Loop" (HITL) architecture, ensuring that a human editor has the final say before publication.
 
----
+What began as a simple script evolved into a sophisticated AI collaborator, showcasing modern agentic design patterns, automated workflows, and the power of combining AI judgment with human oversight.
 
-## ✨ Features
+## Key Features
 
-- **Autonomous Operation**: Given a high-level goal, the agent independently plans and executes the necessary steps.
-- **Dynamic Research Strategy**: Brainstorms high-signal subtopics to gather more relevant articles.
-- **Multi-Layered Curation**: Filters articles based on source reputation and category diversity.
-- **AI-Powered Quality Assurance**: An "Editor-in-Chief" agent reviews every draft before publication.
-- **Robust State Management**: Prevents duplicate articles and ensures clean weekly runs.
-- **Graceful Failure**: Halts and reports if the draft doesn't meet quality standards.
-- **Flexible & Reusable**: Easily retarget the newsletter by changing the input keyword—no code changes required.
+- **Multi-Agent Architecture:** The system is not a single script, but a team of specialized AI agents, each with a distinct responsibility (Research, Analysis, Curation, Writing).
+- **Intelligent Content Sourcing:** The AI first brainstorms a list of specific, high-relevance sub-topics before fetching articles, dramatically improving the quality of the source material.
+- **AI-Powered Curation:** An editor agent vets all sources for reputability and filters articles for quality and diversity, reducing dozens of articles to a manageable, high-quality selection.
+- **Human-in-the-Loop (HITL):** The system's primary output is a `review_package.json` file. This allows a human editor to review the AI's selections, approve, reject, or modify the list before publishing.
+- **Fully Automated with GitHub Actions:** The entire workflow is managed by two distinct GitHub Actions, one for automated draft creation and one for manual, on-demand publishing.
+- **Explainability & Observability:** Integrated with **LangSmith** for detailed tracing, providing full transparency into each agent's decision-making process.
 
----
+## How It Works: The Two-Part Workflow
 
-## 🧠 Agentic Architecture
+The system is intentionally split into two parts to facilitate human review.
 
-This system is built as a true agentic workflow using the LangChain framework. A "Master Reasoning Agent" coordinates a toolbox of specialized functions to achieve its goal.
+### Part 1: AI Draft Creation
 
-### 🧩 Example Thought Process (Topic: "Blockchain")
+1.  **Trigger:** This workflow runs automatically on a schedule (e.g., every Friday) or can be triggered manually.
+2.  **Research:** The `ResearchAgent` takes a broad topic (e.g., "Artificial Intelligence") and uses a powerful LLM to generate a list of specific sub-topics (e.g., "AI-powered healthcare diagnosis," "Ethical considerations of autonomous vehicles").
+3.  **Fetch:** It then fetches articles for all these sub-topics from the NewsAPI.
+4.  **Analysis:** The `AnalysisAgent` processes each unique article, sanitizing any HTML, categorizing it, and generating a concise summary. All processed articles are temporarily stored in a local SQLite database to prevent re-processing.
+5.  **Curation:** The `CurationAgent` reviews all processed articles. It uses an LLM to judge the reputability of each news source and then selects a balanced, diverse list of the best articles.
+6.  **Output:** The workflow generates a `review_package.json` file containing the AI's recommended "approved" articles and a list of all "rejected" articles. This file is then committed back to the repository.
 
-1. **Goal**: “Create and publish a high-quality newsletter about ‘Blockchain’.”
-2. **Strategy Formulation**: Use `generate_search_subtopics` to find specific, high-signal queries.
-3. **Draft Creation**: Use `create_initial_draft` to generate content from those subtopics.
-4. **Quality Review**: Use `review_draft_for_relevance_and_quality` to act as an editor.
-5. **Decision Making**:
-   - ✅ If approved: Use `publish_approved_newsletter`
-   - ❌ If rejected: Halt and report the reason
-6. **Completion**: Report final status.
+### Part 2: Human Review & Publishing
 
----
+1.  **Human Review:** The project owner (the "Editor-in-Chief") receives a notification that the `review_package.json` has been updated. They can edit this file directly in GitHub, moving articles between the `approved_articles` and `rejected_articles` lists to give their final editorial approval.
+2.  **Trigger:** Once satisfied, the editor manually triggers the "Publish" workflow from the GitHub Actions tab.
+3.  **Publishing:** The `WritingAgent` reads the final, human-approved list from `review_package.json`, renders it using a Jinja2 template, and saves the final `newsletter_YYYY-MM-DD.md` file.
+4.  **Commit:** The final newsletter is committed to the repository.
 
-## 🗂️ Project Structure
+## Technology Stack
 
-The project is organized into a modular structure to separate concerns:
-Generated code
-newsletter-agent/
-├── tools/
-│ ├── **init**.py
-│ └── newsletter_tools.py # Defines the agent's toolbox and pipeline logic.
-├── templates/
-│ └── newsletter_template.md # Jinja2 template for the final newsletter format.
-├── .github/
-│ └── workflows/
-│ └── weekly_newsletter.yml # GitHub Actions workflow for weekly automation.
-├── main.py # Main entry point to initialize and run the agent.
-├── database.py # Handles the SQLite database for tracking articles.
-├── requirements.txt # Lists all necessary Python packages.
-├── .gitignore # Specifies files for Git to ignore.
-└── .env # Local configuration file for API keys (DO NOT COMMIT).
+- **Language:** Python 3.10
+- **AI/LLMs:**
+  - **Groq API:** For high-speed access to open-source LLMs.
+  - **Llama 3 (8B & 70B):** Used strategically for simple and complex reasoning tasks.
+- **Core AI Framework:**
+  - **LangChain:** While we evolved past the `AgentExecutor`, the core `langchain-groq` and `langchain-core` libraries are still used for interacting with the LLM.
+- **Automation:**
+  - **GitHub Actions:** For scheduling, execution, and CI/CD.
+- **Data & Storage:**
+  - **NewsAPI:** For fetching news articles.
+  - **SQLite:** For tracking processed article URLs.
+  - **Jinja2:** For newsletter templating.
+  - **BeautifulSoup:** For HTML sanitation of article descriptions.
+- **Observability:**
+  - **LangSmith:** For detailed tracing and debugging of the agent's internal processes.
 
----
+## How to Run This Project
 
-## 🚀 Quick Start
+### 1. Prerequisites
 
-1. Clone the repo and enter the directory:
-   ```bash
-   git clone <your-repository-url>
-   cd newsletter-agent
-   ```
-2. Set Up a Virtual Environment
-   It is highly recommended to use a Python virtual environment to manage dependencies and avoid conflicts with other projects.
+- A GitHub repository cloned to your local machine.
+- Python 3.10+ and `pip` installed.
+- API keys for **NewsAPI** and **Groq**.
+- (Optional but Recommended) An API key for **LangSmith**.
 
-# Create a virtual environment named 'venv'
+### 2. Setup
 
-python -m venv venv
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/dev-sekhar/newsletterAgent.git
+    cd newsletterAgent
+    ```
+2.  **Create a Virtual Environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+3.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Set Up Environment Variables:**
+    - **GitHub Secrets:** For the automated workflows, add your API keys to your repository's secrets under `Settings > Secrets and variables > Actions`. Required secrets:
+      - `NEWS_API_KEY`
+      - `GROQ_API_KEY`
+      - `LANGCHAIN_TRACING_V2` (set to `true`)
+      - `LANGCHAIN_API_KEY`
+      - `LANGCHAIN_PROJECT` (e.g., `Newsletter Production`)
+    - **Local `.env` File:** For local testing, create a `.env` file in the root directory and add your keys:
+      ```
+      NEWS_API_KEY="your_key"
+      GROQ_API_KEY="your_key"
+      LANGCHAIN_TRACING_V2="true"
+      LANGCHAIN_API_KEY="your_key"
+      LANGCHAIN_PROJECT="Newsletter - Local Test"
+      ```
 
-# Activate the virtual environment
+### 3. Manual Workflow Execution
 
-# On Windows:
-
-venv\Scripts\activate
-
-# On macOS/Linux:
-
-source venv/bin/activate
-
-Bash
-You will know the environment is active when you see (venv) at the beginning of your terminal prompt.
-
-3. Install Dependencies
-   Install all the required Python libraries using the requirements.txt file.
-   Generated bash
-   pip install -r requirements.txt
-
-4. Configure API Keys
-   The agent requires API keys from NewsAPI (for fetching articles) and Groq (for LLM access). These should be stored in a local .env file for security.
-   Create the .env file: In the root of the project directory (newsletter-agent/), create a new file named .env.
-   Get Your Keys:
-   NewsAPI: Get a free API key from newsapi.org.
-   Groq: Get a free API key from groq.com.
-
-Add Keys to .env File: Open the .env file and add your keys and the default keyword for local runs. The file should look exactly like this:
-Generated env
-
-# .env
-
-NEWS_API_KEY="your_key_from_newsapi_org"
-GROQ_API_KEY="your_key_from_groq"
-KEYWORD_INPUT="Startups"
-
-Env
-Note: This .env file is listed in .gitignore and should never be committed to your repository.
-
-## How to Run the Agent
-
-### Running Locally
-
-Once your setup is complete, you can run the agent directly from your terminal. Make sure you are in the project's root directory and your virtual environment is activated.
-Generated bash
-python main.py
-
-The agent will start its process, and you will see its detailed thought process and actions printed to the console, thanks to the verbose=True setting. A successful run will produce a newsletter_YYYY-MM-DD.md file in the project directory.
-
-### Running with GitHub Actions
-
-The repository is configured to run automatically once a week via the .github/workflows/weekly_newsletter.yml file. You can also trigger it manually for any topic.
-
-1. Navigate to your repository on GitHub and click the "Actions" tab.
-2. Select the "Generate Weekly Newsletter" workflow from the left sidebar.
-3. Click the "Run workflow" button.
-4. An input box will appear, pre-filled with the default keyword from the YAML file. You can change this to any topic you want.
-5. Click the green "Run workflow" button to start the job. You can monitor the progress in real-time.
-
-## TODO
-
-1. Level 1 (Essential First Steps):
-   a. Implement Structured Logging.
-   b. Set up LangSmith for observability. This is a game-changer.
-   c. Pin your dependencies using pip freeze > requirements.lock.
-2. Level 2 (Improving Reliability):
-   a. Add retry logic with tenacity to your API calls.
-   b. Implement Pydantic settings for cleaner configuration.
-   c. Consider creating a simple Docker container for your application.
-3. Level 3 (Scaling for High Volume):
-   a. (Only if needed) Re-architect the system using serverless functions and a message queue. This is a major undertaking but offers incredible scalability.
+1.  **Run the Draft Creation:** Go to the **Actions** tab in your GitHub repository, select **"1: Create Newsletter Draft for Review"**, and run the workflow. You can provide a custom topic.
+2.  **Review the Package:** Once the workflow completes, pull the latest changes to your local machine or edit `review_package.json` directly on GitHub. Make your editorial changes and commit them.
+3.  **Run the Publishing Workflow:** Go back to the Actions tab, select **"2: Publish Approved Newsletter"**, and run the workflow. This will use your edited JSON file to generate the final newsletter.```
