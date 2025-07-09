@@ -1,22 +1,25 @@
 # .github/workflows/1-create-draft.yml
 
-name: "1: Create Newsletter Draft for Review"
+name: '1: Create Newsletter Draft for Review'
 
 on:
+  # This workflow can be run on a schedule or manually
   schedule:
-    - cron: "0 12 * * 5"
+    # Runs every Friday at 12:00 PM UTC. You can change this.
+    - cron: '0 12 * * 5' 
   workflow_dispatch:
     inputs:
       keyword:
-        description: "The topic for the newsletter"
+        description: 'The topic for the newsletter'
         required: true
-        default: "Blockchain"
+        default: 'Artificial Intelligence'
 
 jobs:
   drafting:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      # This is required to allow the action to commit files back to the repository
+      contents: write 
 
     steps:
       - name: Checkout repository
@@ -25,23 +28,23 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
-          cache: "pip"
+          python-version: '3.10'
+          cache: 'pip'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Drafting Workflow (Part 1)
+      - name: Run Drafting Agent Workflow (Part 1)
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Blockchain' }}
-        run: python run_part1_drafting.py
+          # Use the manual input if provided, otherwise use the default
+          KEYWORD_INPUT: ${{ github.event.inputs.keyword || 'Artificial Intelligence' }}
+        run: python run_part1_drafting_agent.py
 
-      # --- START OF FIX ---
       - name: Commit Review Package (if it exists)
         run: |
-          # Only proceed if the review package was actually created
+          # Only proceed if the review package was actually created by the Python script
           if [ -f "review_package.json" ]; then
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -51,4 +54,3 @@ jobs:
           else
             echo "review_package.json not found. Skipping commit. This is normal if no articles passed curation."
           fi
-      # --- END OF FIX ---

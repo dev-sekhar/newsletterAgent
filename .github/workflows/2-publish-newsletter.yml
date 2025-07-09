@@ -1,7 +1,10 @@
+# .github/workflows/2-publish-newsletter.yml
+
 name: "2: Publish Approved Newsletter"
 
 on:
-  workflow_dispatch: # This workflow can ONLY be run manually
+  # This workflow can ONLY be run manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   publishing:
@@ -13,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # We need to pull the latest commit, which includes the human's edits
+          # Ensure we check out the latest commit, which includes the human's edits
           ref: ${{ github.ref }}
 
       - name: Set up Python
@@ -25,20 +28,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Publishing Workflow (Part 2)
+      # --- START OF THE FIX ---
+      - name: Run Publishing Script (Part 2)
         env:
+          # The writing agent doesn't use API keys, but it's good practice
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python run_part2_publishing.py
+        # This line is the only change. It now points to the correct script.
+        run: python run_part2_publish_script.py
+      # --- END OF THE FIX ---
 
-      - name: Commit Final Newsletter
+      - name: Commit Final Newsletter (if it exists)
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add newsletter_*.md
-          if git diff --staged --quiet; then
-            echo "No newsletter was generated."
-          else
+          # Use a wildcard to check if any file starting with 'newsletter_' was created
+          if ls newsletter_*.md 1> /dev/null 2>&1; then
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add newsletter_*.md
             git commit -m "docs: Publish final weekly newsletter"
             git push
+          else
+            echo "No newsletter file was generated to commit. This is normal if the approved articles list was empty."
           fi
